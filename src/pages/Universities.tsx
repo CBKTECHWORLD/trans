@@ -4,7 +4,7 @@ import CountryTabs from '../components/University/CountryTabs';
 import SearchBox from '../components/University/SearchBox';
 import FilterSection from '../components/University/FilterSection';
 import UniversityList from '../components/University/UniversityList';
-import { University } from '../components/types/University';
+// import { University } from '../components/types/University';
 import ApplicationProgressStatic from '../components/layout/ApplicationProgressStatic';
 import sampleUniversities from '../data/universities';
 

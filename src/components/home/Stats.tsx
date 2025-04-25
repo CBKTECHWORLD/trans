@@ -28,7 +28,7 @@ export default function StatsSection() {
   );
 }
 
-function StatItem({ target, label, isMoney = false, isPercent = false }) {
+function StatItem({ target, label, isMoney = false, isPercent = false }: { target: number; label: string; isMoney?: boolean; isPercent?: boolean }) {
   const [count, setCount] = useState(0);
   const duration = 2000; // Animation duration in ms
   const steps = 50; // Number of steps in the animation

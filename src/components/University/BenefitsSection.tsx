@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { Globe, GraduationCap, IndianRupee, Lightbulb } from 'lucide-react';
 
 const benefits = [

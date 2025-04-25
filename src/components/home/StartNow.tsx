@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 
 const StartNow = () => {
   // Function to open Google Form in a new tab

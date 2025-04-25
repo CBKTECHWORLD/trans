@@ -12,7 +12,7 @@ export default function LargerVideoTestimonials() {
   ];
 
   const [currentSet, setCurrentSet] = useState(0);
-  const [isPlaying, setIsPlaying] = useState(null);
+  const [isPlaying, setIsPlaying] = useState<number | null>(null);
   const videosPerPage = 5;
 
   useEffect(() => {

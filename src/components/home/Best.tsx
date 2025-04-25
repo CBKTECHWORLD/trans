@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { BookOpen, Search, Globe, Award } from 'lucide-react';
 
 const Best = () => {
