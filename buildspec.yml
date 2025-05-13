@@ -1,0 +1,25 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+    commands:
+      # Debugging commands (can remove after fixing)
+      - echo "Current directory: $(pwd)"
+      - ls -la
+      
+      # Navigate to correct directory if needed
+      - cd my-app  # Only if your package.json is in a subdirectory
+      
+      # Install dependencies
+      - npm ci  # Recommended over npm install for CI
+      
+  build:
+    commands:
+      - npm run build
+      
+cache:
+  paths:
+    - 'node_modules/**/*'
+

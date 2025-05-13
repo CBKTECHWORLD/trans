@@ -25,7 +25,7 @@ const SearchBox: React.FC<SearchBoxProps> = ({ onSearchChange }) => {
         <input
           type="text"
           id="university-search"
-          className="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+          className="block w-full pl-10 pr-3 py-2 border border-blue-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm text-blue-900"
           placeholder="University name..."
           value={query}
           onChange={handleChange}

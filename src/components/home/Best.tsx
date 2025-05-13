@@ -106,22 +106,22 @@ const Best = () => {
   ];
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-8">
-      <h2 className="text-3xl font-bold text-center text-white-900 mb-8">WHY WE ARE THE BEST?</h2>
+    <div className="max-w-6xl mx-auto px-4 py-8 bg-gray-100">
+      <h2 className="text-3xl font-bold text-center text-blue-900 mb-8">WHY WE ARE THE BEST?</h2>
       <p className="text-center text-gray-600 mb-12">
         You are taken care of all your requirements as we assist you at every step of your journey to your desired study abroad destination.
       </p>
 
-      <div className="flex">
-        {/* Tabs */}
-        <div className="w-1/4 pr-4 space-y-2">
+      <div className="flex flex-col">
+        {/* Horizontal Tabs */}
+        <div className="flex mb-6 space-x-2 overflow-x-auto pb-2">
           {tabs.map((tab) => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`w-full flex items-center p-3 rounded-lg transition-colors duration-200 ${
+              className={`flex items-center p-3 rounded-lg transition-colors duration-200 whitespace-nowrap ${
                 activeTab === tab.id 
-                  ? 'bg-blue-500 text-white' 
+                  ? 'bg-blue-900 text-white' 
                   : 'hover:bg-gray-100 text-gray-700'
               }`}
             >
@@ -132,7 +132,7 @@ const Best = () => {
         </div>
 
         {/* Content Area */}
-        <div className="w-3/4 p-6 bg-white rounded-lg shadow-md">
+        <div className="p-6 bg-grey-300 rounded-lg shadow-md">
           {tabs.find(tab => tab.id === activeTab)?.content}
         </div>
       </div>

@@ -15,9 +15,9 @@ const ContactSection: React.FC = () => {
                 <div className="ml-4">
                   <h3 className="text-lg font-medium text-gray-900">Office Address</h3>
                   <address className="mt-2 text-base text-gray-600 not-italic">
-                    123 Business Avenue<br />
-                    Cp <br />
-                    New Delhi 110001<br />
+                  22c  2nd Street 2nd cross, LGB nagar ,<br />
+                  Saravanampatti<br />
+                  Coimbatore, 651035<br />
                     India
                   </address>
                 </div>
@@ -38,7 +38,7 @@ const ContactSection: React.FC = () => {
                 <div className="ml-4">
                   <h3 className="text-lg font-medium text-gray-900">Email</h3>
                   <p className="mt-2 text-base text-gray-600">
-                    <a href="mailto:contact@example.com" className="hover:text-indigo-600">contact@example.com</a>
+                    <a href="mailto:contact@example.com" className="hover:text-indigo-600">contact@transitley.com</a>
                   </p>
                 </div>
               </div>
@@ -67,7 +67,7 @@ const ContactSection: React.FC = () => {
                 </p>
                 
                 <a 
-                  href="https://docs.google.com/forms/d/YOUR_GOOGLE_FORM_ID" 
+                  href="https://docs.google.com/forms/d/1-fOcqfMKJXuq7wHnUhZ3xjYxY3_jPFSuE6-ml9o3hSc" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="mt-4 inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700"

@@ -21,7 +21,7 @@ const Header: React.FC = () => {
             className="flex items-center space-x-4 cursor-pointer"
             onClick={() => setProfileOpen(!profileOpen)}
           >
-            <span className="text-sm font-medium text-gray-700">John Doe</span>
+            <span className="text-sm font-medium text-gray-700">User</span>
             <div className="h-8 w-8 rounded-full bg-gray-300 flex items-center justify-center">
               <User className="h-5 w-5 text-gray-600" />
             </div>
@@ -34,7 +34,7 @@ const Header: React.FC = () => {
                 <User className="h-4 w-4 mr-2" />
                 Profile
               </a>
-              <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 flex items-center">
+              <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 items-center">
                 <Settings className="h-4 w-4 mr-2" />
                 Settings
               </a>

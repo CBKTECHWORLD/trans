@@ -10,6 +10,7 @@ import { ApplicationProvider } from './contexts/ApplicationContext';
 import Universities from './pages/Universities';
 import ContactSection from './pages/ContactSection';
 
+
 const App: React.FC = () => {
   return (
     <ApplicationProvider>

@@ -2,7 +2,11 @@ import React from 'react';
 
 const ApplicationProcessSteps: React.FC = () => {
   return (
-    <div className="w-full py-12 px-4 bg-gray-50">
+    <div className="w-full py-12 px-4 bg-gray-50  rounded-lg shadow-md">
+      <h2 className="text-3xl font-bold text-center text-blue-900 mb-8">Application Process</h2>
+      <p className="text-center text-gray-600 mb-8">
+        Follow these steps to ensure a smooth application process for your study abroad journey.
+      </p>
       <div className="max-w-5xl mx-auto">
         <div className="relative flex justify-between items-start mb-16">
           {/* Connecting line - more prominent */}

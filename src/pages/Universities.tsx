@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import BenefitsSection from '../components/University/BenefitsSection';
+// import BenefitsSection from '../components/University/BenefitsSection';
 import CountryTabs from '../components/University/CountryTabs';
 import SearchBox from '../components/University/SearchBox';
 import FilterSection from '../components/University/FilterSection';
@@ -64,10 +64,10 @@ const Universities: React.FC = () => {
   const availableCities = [...new Set(sampleUniversities[selectedCountry]?.map(uni => uni.city) || [])];
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 xlg:px-8 py-8 bg-blue-200">
-      <h1 className="text-3xl font-bold text-gray-900 mb-8 ">University Details</h1>
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 xlg:px-8 py-8 bg-blue-900">
+      <h1 className="text-3xl font-bold text-gray-100 mb-8 ">University Details</h1>
       
-      <BenefitsSection />
+      {/* <BenefitsSection /> */}
       <ApplicationProgressStatic />
       
       <div className="mt-8">
