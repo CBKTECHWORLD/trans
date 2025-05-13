@@ -8,8 +8,8 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-dist
-dist-ssr
+# dist
+# dist-ssr
 *.local
 
 # Editor directories and files
@@ -29,9 +29,9 @@ npm-debug.log
 yarn-error.log
 
 # TypeScript/Build files
-dist/
-build/
-*.tsbuildinfo
+# dist/
+# build/
+# *.tsbuildinfo
 
 # Environment variables
 .env
