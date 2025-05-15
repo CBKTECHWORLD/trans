@@ -33,7 +33,7 @@ const Best = () => {
           </div>
           <div className="w-1/2">
             <img 
-              src="/src/assets/images/B2.jpg" 
+              src="/images/B2.jpg" 
               alt="Consultation Session" 
               className="w-full h-auto rounded-lg shadow-lg"
             />
@@ -69,7 +69,7 @@ const Best = () => {
           </div>
           <div className="w-1/2">
             <img 
-              src="/src/assets/images/B1.jpg" 
+              src="/images/B1.jpg" 
               alt="Test Preparation" 
               className="w-full h-auto rounded-lg shadow-lg"
             />
