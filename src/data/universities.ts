@@ -5,7 +5,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK1",
       "name": "ABERTAY UNIVERSITY",
-      "logo": "/Unilogo/ABERTAY.png",
+      "logo": "/uni/Abertay.png",
       "location": "SCOTLAND",
       "description": "",
       "intake": [],
@@ -19,7 +19,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK2",
       "name": "ABERYSTWYTH UNIVERSITY",
-      "logo": "/Unilogo/UK2_1.png",
+      "logo": "/uni/UK2.png",
       "location": "WALES,ENGLAND",
       "description": "",
       "intake": [],
@@ -33,7 +33,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK3",
       "name": "Anglia ruskin university",
-      "logo": "/Unilogo/UK2_2.png",
+      "logo": "/uni/UK2_2.png",
       "location": "Cambridge, Chelmsford, Peterborough and Writtle",
       "description": "",
       "intake": [],
@@ -47,7 +47,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK4",
       "name": "ARDEN UNIVERSITY",
-      "logo": "/Unilogo/UK2_3.png",
+      "logo": "/uni/UK2_3.png",
       "location": "Manchester, Birmingham, LONDON , LEEDS",
       "description": "",
       "intake": [],
@@ -61,7 +61,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK5",
       "name": "ARTS UNIVERSITY BOURNEMOUTH",
-      "logo": "/Unilogo/UK2_4.png",
+      "logo": "/uni/UK2_4.png",
       "location": "POOLE,ENGLAND",
       "description": "",
       "intake": [],
@@ -75,7 +75,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK6",
       "name": "ARTS UNIVERSITY PLYMOUTH",
-      "logo": "/Unilogo/UK2_5.png",
+      "logo": "/uni/UK2_5.png",
       "location": "PLYMOUTH",
       "description": "",
       "intake": [],
@@ -89,7 +89,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK7",
       "name": "ASHTON UNIVERSITY",
-      "logo": "/Unilogo/UK2_6.png",
+      "logo": "/uni/UK2_6.png",
       "location": "Birmingham, LONDON",
       "description": "",
       "intake": [],
@@ -103,7 +103,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK8",
       "name": "BANGOR UNIVERSITY",
-      "logo": "/Unilogo/UK2_6.png",
+      "logo": "/uni/UK2_6.png",
       "location": "BANGOR,NORTH WALES",
       "description": "",
       "intake": [],
@@ -117,7 +117,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK9",
       "name": "BATH SPA UNIVERSITY",
-      "logo": "/Unilogo/UK2_7.png",
+      "logo": "/uni/UK2_7.png",
       "location": "BATH, ENGLAND",
       "description": "",
       "intake": [],
@@ -131,7 +131,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK10",
       "name": "Birkbeck, University of London",
-      "logo": "/Unilogo/UK2_8.png",
+      "logo": "/uni/UK2_8.png",
       "location": "LONDON",
       "description": "",
       "intake": [],
@@ -145,7 +145,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK11",
       "name": "BIRMINGHAM CITY UNIVERSITY",
-      "logo": "/Unilogo/UK2_9.png",
+      "logo": "/uni/UK2_9.png",
       "location": "BIRMINGHAM",
       "description": "",
       "intake": [],
@@ -159,7 +159,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK12",
       "name": "Birmingham Newman University",
-      "logo": "/Unilogo/UK2_10.png",
+      "logo": "/uni/UK2_10.png",
       "location": "BIRMINGHAM",
       "description": "",
       "intake": [],
@@ -173,7 +173,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK13",
       "name": "Bishop Grosseteste University",
-      "logo": "/Unilogo/UK2_11.png",
+      "logo": "/uni/UK2_11.png",
       "location": "LINCOLN",
       "description": "",
       "intake": [],
@@ -187,7 +187,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK14",
       "name": "Bloomsbury Institute London",
-      "logo": "/Unilogo/UK2_12.png",
+      "logo": "/uni/UK2_12.png",
       "location": "LONDON",
       "description": "",
       "intake": [],
@@ -201,7 +201,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK15",
       "name": "Bournemouth University",
-      "logo": "/Unilogo/UK2_13.png",
+      "logo": "/uni/UK2_13.png",
       "location": "BOURNEMOUTH",
       "description": "",
       "intake": [],
@@ -215,7 +215,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK16",
       "name": "BPP UNIVERSITY",
-      "logo": "/Unilogo/UK2_14.png",
+      "logo": "/uni/UK2_14.png",
       "location": "LONDON, Midlands and the North, South East and South West, Channel Islands",
       "description": "",
       "intake": [],
@@ -229,7 +229,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK17",
       "name": "Brighton and Sussex Medical School",
-      "logo": "/Unilogo/UK2_15.png",
+      "logo": "/uni/UK2_15.png",
       "location": "BRIGHTON",
       "description": "",
       "intake": [],
@@ -243,7 +243,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK31",
       "name": "Brunel University of London",
-      "logo": "/Unilogo/UK3_16.png",
+      "logo": "/uni/UK3_16.png",
       "location": "LONDON",
       "description": "",
       "intake": [],
@@ -257,7 +257,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK32",
       "name": "Buckinghamshire New University",
-      "logo": "/Unilogo/UK3_16.png",
+      "logo": "/uni/UK3_16.png",
       "location": "WYCOMBE",
       "description": "",
       "intake": [],
@@ -271,7 +271,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK34",
       "name": "Canterbury Christ Church University",
-      "logo": "/Unilogo/UK3_17.png",
+      "logo": "/uni/UK3_17.png",
       "location": "Canterbury",
       "description": "",
       "intake": [],
@@ -285,7 +285,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK35",
       "name": "CARDIFF METROPOLITIAN UNIVERSITY",
-      "logo": "/Unilogo/3_18.png",
+      "logo": "/uni/3_18.png",
       "location": "CARDIFF",
       "description": "",
       "intake": [],
@@ -299,7 +299,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK36",
       "name": "CARDIFF UNIVERSITY",
-      "logo": "/Unilogo/UK3_19.png",
+      "logo": "/uni/UK3_19.png",
       "location": "CARDIFF",
       "description": "",
       "intake": [],
@@ -313,7 +313,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK37",
       "name": "Central Film School London",
-      "logo": "/Unilogo/UK3_20.png",
+      "logo": "/uni/UK3_20.png",
       "location": "LONDON",
       "description": "",
       "intake": [],
@@ -327,7 +327,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK42",
       "name": "City St George's, University of London (formerly City)",
-      "logo": "/Unilogo/UK3_21.png",
+      "logo": "/uni/UK3_21.png",
       "location": "LONDON",
       "description": "",
       "intake": [],
@@ -341,7 +341,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK47",
       "name": "Courtauld Institute of Art, University of London",
-      "logo": "/Unilogo/UK3_22.png",
+      "logo": "/uni/UK3_22.png",
       "location": "LONDON",
       "description": "",
       "intake": [],
@@ -355,7 +355,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK48",
       "name": "Coventry university",
-      "logo": "/Unilogo/UK3_23.png",
+      "logo": "/uni/UK3_23.png",
       "location": "COVENTRY, LONDON",
       "description": "",
       "intake": [],
@@ -369,7 +369,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK49",
       "name": "Cranfield university",
-      "logo": "/Unilogo/UK3_24.png",
+      "logo": "/uni/UK3_24.png",
       "location": "Wharley End",
       "description": "",
       "intake": [],
@@ -383,7 +383,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK52",
       "name": "De montfort university",
-      "logo": "/Unilogo/UK3_25.png",
+      "logo": "/uni/UK3_25.png",
       "location": "LEICESTER",
       "description": "",
       "intake": [],
@@ -397,7 +397,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK55",
       "name": "Durham university",
-      "logo": "/Unilogo/UK3_25.png",
+      "logo": "/uni/UK3_25.png",
       "location": "DURHAM",
       "description": "",
       "intake": [],
@@ -411,7 +411,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK57",
       "name": "Edge Hill University",
-      "logo": "/Unilogo/UK3_26.png",
+      "logo": "/uni/UK3_26.png",
       "location": "Ormskirk",
       "description": "",
       "intake": [],
@@ -425,7 +425,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK59",
       "name": "Edinburgh Napier University",
-      "logo": "/Unilogo/UK3_27.png",
+      "logo": "/uni/UK3_27.png",
       "location": "EDINBURGH",
       "description": "",
       "intake": [],
@@ -439,7 +439,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK62",
       "name": "Falmouth University",
-      "logo": "/Unilogo/UK3_28.png",
+      "logo": "/uni/UK3_28.png",
       "location": "FALMOUTH",
       "description": "",
       "intake": [],
@@ -453,7 +453,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK64",
       "name": "Glasgow Caledonian University",
-      "logo": "/Unilogo/UK3_29.png",
+      "logo": "/uni/UK3_29.png",
       "location": "SCOTLAND, LONDON",
       "description": "",
       "intake": [],
@@ -467,7 +467,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK65",
       "name": "Goldsmiths, University of London",
-      "logo": "/Unilogo/UK3_30.png",
+      "logo": "/uni/UK3_30.png",
       "location": "LONDON",
       "description": "",
       "intake": [],
@@ -481,7 +481,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK68",
       "name": "Harper adams university",
-      "logo": "/Unilogo/UK3_31.png",
+      "logo": "/uni/UK3_31.png",
       "location": "ENGLAND",
       "description": "",
       "intake": [],
@@ -495,7 +495,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK69",
       "name": "Hartpury university",
-      "logo": "/Unilogo/UK3_32.png",
+      "logo": "/uni/UK3_32.png",
       "location": "Gloucester",
       "description": "",
       "intake": [],
@@ -509,7 +509,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK70",
       "name": "Health sciences university (formerly aecc university college)",
-      "logo": "/Unilogo/UK3_33.png",
+      "logo": "/uni/UK3_33.png",
       "location": "Bournemouth",
       "description": "",
       "intake": [],
@@ -523,7 +523,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK72",
       "name": "Heriot-Watt University",
-      "logo": "/Unilogo/UK3_34.png",
+      "logo": "/uni/UK3_34.png",
       "location": "SCOTLAND",
       "description": "",
       "intake": [],
@@ -537,7 +537,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK74",
       "name": "Hull york medical school",
-      "logo": "/Unilogo/UK3_35.png",
+      "logo": "/uni/UK3_35.png",
       "location": "ENGLAND",
       "description": "",
       "intake": [],
@@ -551,7 +551,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK75",
       "name": "Hult international business school",
-      "logo": "/Unilogo/UK4_36.png",
+      "logo": "/uni/UK4_36.png",
       "location": "",
       "description": "",
       "intake": [],
@@ -565,7 +565,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK76",
       "name": "Imperial college london",
-      "logo": "/Unilogo/UK4_36.png",
+      "logo": "/uni/UK4_36.png",
       "location": "LONDON",
       "description": "",
       "intake": [],
@@ -579,7 +579,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK77",
       "name": "Institute of contemporary music performance",
-      "logo": "/Unilogo/UK4_37.png",
+      "logo": "/uni/UK4_37.png",
       "location": "LONDON",
       "description": "",
       "intake": [],
@@ -593,7 +593,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK78",
       "name": "Keele university",
-      "logo": "/Unilogo/UK4_38.png",
+      "logo": "/uni/UK4_38.png",
       "location": "ENGLAND",
       "description": "",
       "intake": [],
@@ -607,7 +607,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK79",
       "name": "Kent and medway medical school",
-      "logo": "/Unilogo/UK4_39.png",
+      "logo": "/uni/UK4_39.png",
       "location": "ENGLAND",
       "description": "",
       "intake": [],
@@ -621,7 +621,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK80",
       "name": "King's college london",
-      "logo": "/Unilogo/UK4_40.png",
+      "logo": "/uni/UK4_40.png",
       "location": "LONDON",
       "description": "",
       "intake": [],
@@ -635,7 +635,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK81",
       "name": "Kingston University London",
-      "logo": "/Unilogo/UK4_41.png",
+      "logo": "/uni/UK4_41.png",
       "location": "LONDON",
       "description": "",
       "intake": [],
@@ -649,7 +649,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK82",
       "name": "LAMDA (London Academy of Music and Dramatic Art)",
-      "logo": "/Unilogo/UK4_42.png",
+      "logo": "/uni/UK4_42.png",
       "location": "LONDON",
       "description": "",
       "intake": [],
@@ -663,7 +663,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK83",
       "name": "Lancaster University",
-      "logo": "/Unilogo/UK4_43.png",
+      "logo": "/uni/UK4_43.png",
       "location": "ENGLAND",
       "description": "",
       "intake": [],
@@ -677,7 +677,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK84",
       "name": "Leeds Arts University",
-      "logo": "/Unilogo/UK4_44.png",
+      "logo": "/uni/UK4_44.png",
       "location": "LEEDS",
       "description": "",
       "intake": [],
@@ -691,7 +691,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK85",
       "name": "Leeds Beckett University",
-      "logo": "/Unilogo/UK4_45.png",
+      "logo": "/uni/UK4_45.png",
       "location": "LEEDS",
       "description": "",
       "intake": [],
@@ -705,7 +705,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK86",
       "name": "Leeds Conservatoire",
-      "logo": "/Unilogo/UK4_46.png",
+      "logo": "/uni/UK4_46.png",
       "location": "LEEDS",
       "description": "",
       "intake": [],
@@ -719,7 +719,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK87",
       "name": "Leeds Trinity University",
-      "logo": "/Unilogo/UK4_47.png",
+      "logo": "/uni/UK4_47.png",
       "location": "LEEDS",
       "description": "",
       "intake": [],
@@ -733,7 +733,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK88",
       "name": "Leicester college",
-      "logo": "/Unilogo/UK4_48.png",
+      "logo": "/uni/UK4_48.png",
       "location": "LEICESTER",
       "description": "",
       "intake": [],
@@ -747,7 +747,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK90",
       "name": "Liverpool Hope University",
-      "logo": "/Unilogo/UK4_49.png",
+      "logo": "/uni/UK4_49.png",
       "location": "LIVERPOOL",
       "description": "",
       "intake": [],
@@ -761,7 +761,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK92",
       "name": "Liverpool john moores university",
-      "logo": "/Unilogo/UK4_50.png",
+      "logo": "/uni/UK4_50.png",
       "location": "LIVERPOOL",
       "description": "",
       "intake": [],
@@ -775,7 +775,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK93",
       "name": "Liverpool school of tropical medicine",
-      "logo": "/Unilogo/UK4_51.png",
+      "logo": "/uni/UK4_51.png",
       "location": "LIVERPOOL",
       "description": "",
       "intake": [],
@@ -789,7 +789,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK95",
       "name": "London film academy",
-      "logo": "/Unilogo/UK4_52.png",
+      "logo": "/uni/UK4_52.png",
       "location": "LONDON",
       "description": "",
       "intake": [],
@@ -803,7 +803,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK96",
       "name": "London Interdisciplinary School (LIS)",
-      "logo": "/Unilogo/UK4_53.png",
+      "logo": "/uni/UK4_53.png",
       "location": "LONDON",
       "description": "",
       "intake": [],
@@ -817,7 +817,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK97",
       "name": "LONDON METROPOLITIAN UNIVERSITY",
-      "logo": "/Unilogo/UK4_54.png",
+      "logo": "/uni/UK4_54.png",
       "location": "LONDON",
       "description": "",
       "intake": [],
@@ -831,7 +831,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK98",
       "name": "London School of Economics and Political Science, University of London",
-      "logo": "/Unilogo/UK4_55.png",
+      "logo": "/uni/UK4_55.png",
       "location": "LONDON",
       "description": "",
       "intake": [],
@@ -845,7 +845,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK99",
       "name": "London School of Hygiene & Tropical Medicine, University of London",
-      "logo": "/Unilogo/UK4_56.png",
+      "logo": "/uni/UK4_56.png",
       "location": "LONDON",
       "description": "",
       "intake": [],
@@ -859,7 +859,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK100",
       "name": "London south bank university",
-      "logo": "/Unilogo/UK4_56.png",
+      "logo": "/uni/UK4_56.png",
       "location": "LONDON",
       "description": "",
       "intake": [],
@@ -873,7 +873,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK102",
       "name": "Loughborough university",
-      "logo": "/Unilogo/UK4_57.png",
+      "logo": "/uni/UK4_57.png",
       "location": "ENGLAND",
       "description": "",
       "intake": [],
@@ -887,7 +887,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK104",
       "name": "Manchester Metropolitan University",
-      "logo": "/Unilogo/UK4_58.png",
+      "logo": "/uni/UK4_58.png",
       "location": "MANCHESTER",
       "description": "",
       "intake": [],
@@ -901,7 +901,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK105",
       "name": "Manchester school of architecture",
-      "logo": "/Unilogo/UK4_59.png",
+      "logo": "/uni/UK4_59.png",
       "location": "MANCHESTER",
       "description": "",
       "intake": [],
@@ -915,7 +915,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK106",
       "name": "Medway school of pharmacy",
-      "logo": "/Unilogo/UK4_60.png",
+      "logo": "/uni/UK4_60.png",
       "location": "ENGLAND",
       "description": "",
       "intake": [],
@@ -929,7 +929,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK109",
       "name": "Middlesex university",
-      "logo": "/Unilogo/UK4_61.png",
+      "logo": "/uni/UK4_61.png",
       "location": "LONDON",
       "description": "",
       "intake": [],
@@ -943,7 +943,7 @@ const sampleUniversities: Record<string, University[]> = {
          {
         "id": "UK115",
         "name": "Newcastle University",
-        "logo": "/Unilogo/UK5_64.png",
+        "logo": "/uni/UK5_64.png",
         "location": "NEWCASTLE",
         "description": "",
         "intake": [],
@@ -957,7 +957,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK117",
         "name": "NORTHEASTERN UNIVERSITY",
-        "logo": "/Unilogo/UK5_65.png",
+        "logo": "/uni/UK5_65.png",
         "location": "LONDON",
         "description": "",
         "intake": [],
@@ -971,7 +971,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK118",
         "name": "Northumbria university",
-        "logo": "/Unilogo/UK5_66.png",
+        "logo": "/uni/UK5_66.png",
         "location": "ENGLAND",
         "description": "",
         "intake": [],
@@ -985,7 +985,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK121",
         "name": "Nottingham trent university",
-        "logo": "/Unilogo/UK5_67.png",
+        "logo": "/uni/UK5_67.png",
         "location": "NOTTINGHAM",
         "description": "",
         "intake": [],
@@ -999,7 +999,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK122",
         "name": "Oxford brookes university",
-        "logo": "/Unilogo/UK5_65.png",
+        "logo": "/uni/UK5_65.png",
         "location": "OXFORD",
         "description": "",
         "intake": [],
@@ -1013,7 +1013,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK123",
         "name": "Plymouth Marjon University",
-        "logo": "/Unilogo/UK5_66.png",
+        "logo": "/uni/UK5_66.png",
         "location": "PLYMOUTH",
         "description": "",
         "intake": [],
@@ -1027,7 +1027,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK124",
         "name": "Queen margaret university",
-        "logo": "/Unilogo/UK5_67.png",
+        "logo": "/uni/UK5_67.png",
         "location": "SCOTLAND",
         "description": "",
         "intake": [],
@@ -1041,7 +1041,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK125",
         "name": "Queen mary university of london",
-        "logo": "/Unilogo/UK5_68.png",
+        "logo": "/uni/UK5_68.png",
         "location": "LONDON",
         "description": "",
         "intake": [],
@@ -1055,7 +1055,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK126",
         "name": "Queen's university belfast",
-        "logo": "/Unilogo/UK5_69.png",
+        "logo": "/uni/UK5_69.png",
         "location": "BELFAST",
         "description": "",
         "intake": [],
@@ -1069,7 +1069,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK127",
         "name": "Ravensbourne university london",
-        "logo": "/Unilogo/UK5_70.png",
+        "logo": "/uni/UK5_70.png",
         "location": "LONDON",
         "description": "",
         "intake": [],
@@ -1083,7 +1083,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK128",
         "name": "Regent's University London",
-        "logo": "/Unilogo/UK5_71.png",
+        "logo": "/uni/UK5_71.png",
         "location": "LONDON",
         "description": "",
         "intake": [],
@@ -1097,7 +1097,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK129",
         "name": "Richmond American University",
-        "logo": "/Unilogo/UK5_72.png",
+        "logo": "/uni/UK5_72.png",
         "location": "London",
         "description": "",
         "intake": [],
@@ -1111,7 +1111,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK130",
         "name": "Robert Gordon University",
-        "logo": "/Unilogo/UK5_73.png",
+        "logo": "/uni/UK5_73.png",
         "location": "SCOTLAND",
         "description": "",
         "intake": [],
@@ -1125,7 +1125,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK131",
         "name": "Royal agricultural university",
-        "logo": "/Unilogo/UK5_74.png",
+        "logo": "/uni/UK5_74.png",
         "location": "ENGLAND",
         "description": "",
         "intake": [],
@@ -1139,7 +1139,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK133",
         "name": "Royal Holloway, University of London",
-        "logo": "/Unilogo/UK5_75.png",
+        "logo": "/uni/UK5_75.png",
         "location": "LONDON",
         "description": "",
         "intake": [],
@@ -1153,7 +1153,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK134",
         "name": "Royal Veterinary College, University of London",
-        "logo": "/Unilogo/UK5_76.png",
+        "logo": "/uni/UK5_76.png",
         "location": "LONDON",
         "description": "",
         "intake": [],
@@ -1167,7 +1167,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK135",
         "name": "Sheffield Hallam University",
-        "logo": "/Unilogo/UK5_77.png",
+        "logo": "/uni/UK5_77.png",
         "location": "SHEFFIELD",
         "description": "",
         "intake": [],
@@ -1181,7 +1181,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK136",
         "name": "SOAS university of london",
-        "logo": "/Unilogo/UK5_78.png",
+        "logo": "/uni/UK5_78.png",
         "location": "LONDON",
         "description": "",
         "intake": [],
@@ -1195,7 +1195,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK137",
         "name": "Southampton Solent University",
-        "logo": "/Unilogo/UK5_79.png",
+        "logo": "/uni/UK5_79.png",
         "location": "SOUTHAMPTON",
         "description": "",
         "intake": [],
@@ -1209,7 +1209,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK138",
         "name": "St Mary's University",
-        "logo": "/Unilogo/UK5_79.png",
+        "logo": "/uni/UK5_79.png",
         "location": "ENGLAND",
         "description": "",
         "intake": [],
@@ -1223,7 +1223,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK140",
         "name": "Swansea University",
-        "logo": "/Unilogo/UK5_80.png",
+        "logo": "/uni/UK5_80.png",
         "location": "WALES",
         "description": "",
         "intake": [],
@@ -1237,7 +1237,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK141",
         "name": "Teesside University",
-        "logo": "/Unilogo/UK5_81.png",
+        "logo": "/uni/UK5_81.png",
         "location": "ENGLAND",
         "description": "",
         "intake": [],
@@ -1251,7 +1251,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK142",
         "name": "University of Northampton",
-        "logo": "/Unilogo/UK5_82.png",
+        "logo": "/uni/UK5_82.png",
         "location": "NORTHAMPTON",
         "description": "",
         "intake": [],
@@ -1265,7 +1265,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK143",
         "name": "UCEN Manchester",
-        "logo": "/Unilogo/UK5_83.png",
+        "logo": "/uni/UK5_83.png",
         "location": "MANCHESTER",
         "description": "",
         "intake": [],
@@ -1279,7 +1279,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK144",
         "name": "UCO School of Osteopathy",
-        "logo": "/Unilogo/UK5_84.png",
+        "logo": "/uni/UK5_84.png",
         "location": "LONDON",
         "description": "",
         "intake": [],
@@ -1293,7 +1293,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK145",
         "name": "Ulster University",
-        "logo": "/Unilogo/UK5_85.png",
+        "logo": "/uni/UK5_85.png",
         "location": "LONDON,MANCHESTER",
         "description": "",
         "intake": [],
@@ -1307,7 +1307,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK146",
         "name": "University College London",
-        "logo": "/Unilogo/UK5_86.png",
+        "logo": "/uni/UK5_86.png",
         "location": "LONDON",
         "description": "",
         "intake": [],
@@ -1321,7 +1321,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK147",
         "name": "university for the creative arts",
-        "logo": "/Unilogo/UK5_87.png",
+        "logo": "/uni/UK5_87.png",
         "location": "ENGLAND",
         "description": "",
         "intake": [],
@@ -1335,7 +1335,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK148",
         "name": "University of Aberdeen",
-        "logo": "/Unilogo/UK5_88.png",
+        "logo": "/uni/UK5_88.png",
         "location": "SCOTLAND",
         "description": "",
         "intake": [],
@@ -1349,7 +1349,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK149",
         "name": "University of Bath",
-        "logo": "/Unilogo/UK5_89.png",
+        "logo": "/uni/UK5_89.png",
         "location": "BATH",
         "description": "",
         "intake": [],
@@ -1363,7 +1363,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK150",
         "name": "University of Bedfordshire",
-        "logo": "/Unilogo/UK5_90.png",
+        "logo": "/uni/UK5_90.png",
         "location": "LUTON",
         "description": "",
         "intake": [],
@@ -1377,7 +1377,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK151",
         "name": "University of Birmingham",
-        "logo": "/Unilogo/UK5_91.png",
+        "logo": "/uni/UK5_91.png",
         "location": "BIRMINGHAM",
         "description": "",
         "intake": [],
@@ -1391,7 +1391,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK152",
         "name": "University of Bradford",
-        "logo": "/Unilogo/UK5_92.png",
+        "logo": "/uni/UK5_92.png",
         "location": "BRADFORD",
         "description": "",
         "intake": [],
@@ -1405,7 +1405,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK153",
         "name": "University of Brighton",
-        "logo": "/Unilogo/UK5_93.png",
+        "logo": "/uni/UK5_93.png",
         "location": "BRIGHTON",
         "description": "",
         "intake": [],
@@ -1419,7 +1419,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK154",
         "name": "University of Bristol",
-        "logo": "/Unilogo/UK6_94.png",
+        "logo": "/uni/UK6_94.png",
         "location": "BRISTOL",
         "description": "",
         "intake": [],
@@ -1433,7 +1433,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK155",
         "name": "University of Buckingham",
-        "logo": "/Unilogo/UK6_94.png",
+        "logo": "/uni/UK6_94.png",
         "location": "BUCKINGHAM",
         "description": "",
         "intake": [],
@@ -1447,7 +1447,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK156",
         "name": "University of Cambridge",
-        "logo": "/Unilogo/UK6_95.png",
+        "logo": "/uni/UK6_95.png",
         "location": "CAMBRIDGE",
         "description": "",
         "intake": [],
@@ -1461,7 +1461,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK157",
         "name": "University of Central Lancashire",
-        "logo": "/Unilogo/UK6_96.png",
+        "logo": "/uni/UK6_96.png",
         "location": "PRESTON",
         "description": "",
         "intake": [],
@@ -1475,7 +1475,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK158",
         "name": "University of Chester",
-        "logo": "/Unilogo/UK6_97.png",
+        "logo": "/uni/UK6_97.png",
         "location": "CHESTER",
         "description": "",
         "intake": [],
@@ -1489,7 +1489,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK159",
         "name": "University of Chichester",
-        "logo": "/Unilogo/UK6_98.png",
+        "logo": "/uni/UK6_98.png",
         "location": "ENGLAND",
         "description": "",
         "intake": [],
@@ -1503,7 +1503,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK160",
         "name": "University of Cumbria",
-        "logo": "/Unilogo/UK6_99.png",
+        "logo": "/uni/UK6_99.png",
         "location": "LANCASTER",
         "description": "",
         "intake": [],
@@ -1517,7 +1517,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK161",
         "name": "University of Derby",
-        "logo": "/Unilogo/UK6_100.png",
+        "logo": "/uni/UK6_100.png",
         "location": "DERBY",
         "description": "",
         "intake": [],
@@ -1531,7 +1531,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK162",
         "name": "University of Dundee",
-        "logo": "/Unilogo/UK6_101.png",
+        "logo": "/uni/UK6_101.png",
         "location": "SCOTLAND",
         "description": "",
         "intake": [],
@@ -1545,7 +1545,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK163",
         "name": "University of East Anglia",
-        "logo": "/Unilogo/UK6_102.png",
+        "logo": "/uni/UK6_102.png",
         "location": "ENGLAND",
         "description": "",
         "intake": [],
@@ -1559,7 +1559,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK164",
         "name": "University of East London",
-        "logo": "/Unilogo/UK6_103.png",
+        "logo": "/uni/UK6_103.png",
         "location": "LONDON",
         "description": "",
         "intake": [],
@@ -1573,7 +1573,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK165",
         "name": "University of Edinburgh",
-        "logo": "/Unilogo/UK6_104.png",
+        "logo": "/uni/UK6_104.png",
         "location": "SCOTLAND",
         "description": "",
         "intake": [],
@@ -1587,7 +1587,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK166",
         "name": "University of Essex",
-        "logo": "/Unilogo/UK6_105.png",
+        "logo": "/uni/UK6_105.png",
         "location": "ENGLAND",
         "description": "",
         "intake": [],
@@ -1601,7 +1601,7 @@ const sampleUniversities: Record<string, University[]> = {
             {
         "id": "UK168",
         "name": "University of Glasgow",
-        "logo": "/Unilogo/UK6_106.png",
+        "logo": "/uni/UK6_106.png",
         "location": "GLASGOW,SCOTLAND",
         "description": "",
         "intake": [],
@@ -1615,7 +1615,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK169",
         "name": "University of Gloucestershire",
-        "logo": "/Unilogo/UK6_107.png",
+        "logo": "/uni/UK6_107.png",
         "location": "ENGLAND",
         "description": "",
         "intake": [],
@@ -1629,7 +1629,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK170",
         "name": "UNIVERSITY OF BOLTON",
-        "logo": "/Unilogo/UK6_108.png",
+        "logo": "/uni/UK6_108.png",
         "location": "MANCHESTER",
         "description": "",
         "intake": [],
@@ -1643,7 +1643,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK171",
         "name": "University of Greenwich",
-        "logo": "/Unilogo/UK6_109.png",
+        "logo": "/uni/UK6_109.png",
         "location": "LONDON",
         "description": "",
         "intake": [],
@@ -1657,7 +1657,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK172",
         "name": "University of Hertfordshire",
-        "logo": "/Unilogo/UK6_110.png",
+        "logo": "/uni/UK6_110.png",
         "location": "",
         "description": "",
         "intake": [],
@@ -1671,7 +1671,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK173",
         "name": "University of Huddersfield",
-        "logo": "/Unilogo/UK6_111.png",
+        "logo": "/uni/UK6_111.png",
         "location": "HUDDERSFIELD",
         "description": "",
         "intake": [],
@@ -1685,7 +1685,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK174",
         "name": "University of Hull",
-        "logo": "/Unilogo/UK6_112.png",
+        "logo": "/uni/UK6_112.png",
         "location": "ENGLAND",
         "description": "",
         "intake": [],
@@ -1699,7 +1699,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK175",
         "name": "UNIVERSITY OF KENT",
-        "logo": "/Unilogo/UK6_113.png",
+        "logo": "/uni/UK6_113.png",
         "location": "CANTENBURY",
         "description": "",
         "intake": [],
@@ -1713,7 +1713,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK176",
         "name": "UNIVERISTY OF LAW",
-        "logo": "/Unilogo/UK6_114.png",
+        "logo": "/uni/UK6_114.png",
         "location": "MULTIPLE LOCATIONS",
         "description": "",
         "intake": [],
@@ -1727,7 +1727,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK177",
         "name": "UNIVERSITY OF LEEDS",
-        "logo": "/Unilogo/UK6_115.png",
+        "logo": "/uni/UK6_115.png",
         "location": "LEEDS",
         "description": "",
         "intake": [],
@@ -1741,7 +1741,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK178",
         "name": "University of Leicester",
-        "logo": "/Unilogo/UK7_116.png",
+        "logo": "/uni/UK7_116.png",
         "location": "LEICESTER",
         "description": "",
         "intake": [],
@@ -1755,7 +1755,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK179",
         "name": "University of Lincoln",
-        "logo": "/Unilogo/UK7_116.png",
+        "logo": "/uni/UK7_116.png",
         "location": "LINCOLNSHIRE",
         "description": "",
         "intake": [],
@@ -1769,7 +1769,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK180",
         "name": "UNIVERSITY OF LIVERPOOL",
-        "logo": "/Unilogo/UK7_117.png",
+        "logo": "/uni/UK7_117.png",
         "location": "LIVERPOOL",
         "description": "",
         "intake": [],
@@ -1783,7 +1783,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK181",
         "name": "University of Manchester",
-        "logo": "/Unilogo/UK7_118.png",
+        "logo": "/uni/UK7_118.png",
         "location": "MANCHESTER",
         "description": "",
         "intake": [],
@@ -1797,7 +1797,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK182",
         "name": "University of Nottingham",
-        "logo": "/Unilogo/UK7_119.png",
+        "logo": "/uni/UK7_119.png",
         "location": "NOTTINGHAM",
         "description": "",
         "intake": [],
@@ -1811,7 +1811,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK183",
         "name": "University of Oxford",
-        "logo": "/Unilogo/UK7_120.png",
+        "logo": "/uni/UK7_120.png",
         "location": "OXFORD",
         "description": "",
         "intake": [],
@@ -1824,7 +1824,7 @@ const sampleUniversities: Record<string, University[]> = {
       }, {
         "id": "UK184",
         "name": "University of Plymouth",
-        "logo": "/Unilogo/UK7_121.png",
+        "logo": "/uni/UK7_121.png",
         "location": "PLYMOUTH",
         "description": "",
         "intake": [],
@@ -1838,7 +1838,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK185",
         "name": "University of Portsmouth",
-        "logo": "/Unilogo/UK7_122.png",
+        "logo": "/uni/UK7_122.png",
         "location": "PORTSMOUTH",
         "description": "",
         "intake": [],
@@ -1852,7 +1852,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK186",
         "name": "University of Reading",
-        "logo": "/Unilogo/UK7_123.png",
+        "logo": "/uni/UK7_123.png",
         "location": "READING",
         "description": "",
         "intake": [],
@@ -1866,7 +1866,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK187",
         "name": "University of Roehampton",
-        "logo": "/Unilogo/UK7_124.png",
+        "logo": "/uni/UK7_124.png",
         "location": "LONDON",
         "description": "",
         "intake": [],
@@ -1880,7 +1880,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK188",
         "name": "University of Salford",
-        "logo": "/Unilogo/UK7_125.png",
+        "logo": "/uni/UK7_125.png",
         "location": "MANCHESTER",
         "description": "",
         "intake": [],
@@ -1894,7 +1894,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK189",
         "name": "University of Sheffield",
-        "logo": "/Unilogo/UK7_126.png",
+        "logo": "/uni/UK7_126.png",
         "location": "SHEFFIELD",
         "description": "",
         "intake": [],
@@ -1908,7 +1908,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK190",
         "name": "University of South Wales",
-        "logo": "/Unilogo/UK7_127.png",
+        "logo": "/uni/UK7_127.png",
         "location": "WALES",
         "description": "",
         "intake": [],
@@ -1922,7 +1922,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK191",
         "name": "University of Southampton",
-        "logo": "/Unilogo/UK7_127.png",
+        "logo": "/uni/UK7_127.png",
         "location": "SOUTHAMPTON",
         "description": "",
         "intake": [],
@@ -1936,7 +1936,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK192",
         "name": "University of St Andrews",
-        "logo": "/Unilogo/UK7_128.png",
+        "logo": "/uni/UK7_128.png",
         "location": "",
         "description": "",
         "intake": [],
@@ -1950,7 +1950,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK193",
         "name": "University of Staffordshire",
-        "logo": "/Unilogo/UK7_129.png",
+        "logo": "/uni/UK7_129.png",
         "location": "STOKE-ON-TRENT",
         "description": "",
         "intake": [],
@@ -1964,7 +1964,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK194",
         "name": "University of Stirling",
-        "logo": "/Unilogo/UK7_130.png",
+        "logo": "/uni/UK7_130.png",
         "location": "SCOTLAND",
         "description": "",
         "intake": [],
@@ -1978,7 +1978,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK195",
         "name": "University of Strathclyde",
-        "logo": "/Unilogo/UK7_131.png",
+        "logo": "/uni/UK7_131.png",
         "location": "GLASGOW",
         "description": "",
         "intake": [],
@@ -1992,7 +1992,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK196",
         "name": "University of Suffolk",
-        "logo": "/Unilogo/UK7_132.png",
+        "logo": "/uni/UK7_132.png",
         "location": "ENGLAND",
         "description": "",
         "intake": [],
@@ -2006,7 +2006,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK197",
         "name": "University of Sunderland",
-        "logo": "/Unilogo/UK7_133.png",
+        "logo": "/uni/UK7_133.png",
         "location": "SUNDERLAND",
         "description": "",
         "intake": [],
@@ -2020,7 +2020,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK198",
         "name": "University of Surrey",
-        "logo": "/Unilogo/UK7_134.png",
+        "logo": "/uni/UK7_134.png",
         "location": "ENGLAND",
         "description": "",
         "intake": [],
@@ -2034,7 +2034,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK199",
         "name": "University of Sussex",
-        "logo": "/Unilogo/UK7_135.png",
+        "logo": "/uni/UK7_135.png",
         "location": "ENGLAND",
         "description": "",
         "intake": [],
@@ -2048,7 +2048,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK200",
         "name": "University of the Arts London",
-        "logo": "/Unilogo/UK7_136.png",
+        "logo": "/uni/UK7_136.png",
         "location": "LONDON",
         "description": "",
         "intake": [],
@@ -2062,7 +2062,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK201",
         "name": "University of the Highlands and Islands (UHI)",
-        "logo": "/Unilogo/UK7_137.png",
+        "logo": "/uni/UK7_137.png",
         "location": "SCOTLAND",
         "description": "",
         "intake": [],
@@ -2076,7 +2076,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK202",
         "name": "University of the West of England",
-        "logo": "/Unilogo/UK8_138.png",
+        "logo": "/uni/UK8_138.png",
         "location": "BRISTOL",
         "description": "",
         "intake": [],
@@ -2090,7 +2090,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK203",
         "name": "University of the West of Scotland",
-        "logo": "/Unilogo/UK8_138.png",
+        "logo": "/uni/UK8_138.png",
         "location": "SCOTLAND,ENGLAND",
         "description": "",
         "intake": [],
@@ -2104,7 +2104,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK204",
         "name": "University of Wales Trinity Saint David",
-        "logo": "/Unilogo/UK8_139.png",
+        "logo": "/uni/UK8_139.png",
         "location": "WALES",
         "description": "",
         "intake": [],
@@ -2118,7 +2118,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK205",
         "name": "University of Warwick",
-        "logo": "/Unilogo/UK8_140.png",
+        "logo": "/uni/UK8_140.png",
         "location": "COVENTRY",
         "description": "",
         "intake": [],
@@ -2132,7 +2132,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK206",
         "name": "University of West London",
-        "logo": "/Unilogo/UK8_141.png",
+        "logo": "/uni/UK8_141.png",
         "location": "LONDON",
         "description": "",
         "intake": [],
@@ -2146,7 +2146,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK207",
         "name": "University of Westminster",
-        "logo": "/Unilogo/UK8_142.png",
+        "logo": "/uni/UK8_142.png",
         "location": "LONDON",
         "description": "",
         "intake": [],
@@ -2160,7 +2160,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK208",
         "name": "University of Winchester",
-        "logo": "/Unilogo/UK8_143.png",
+        "logo": "/uni/UK8_143.png",
         "location": "HAMPSHIRE",
         "description": "",
         "intake": [],
@@ -2174,7 +2174,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK209",
         "name": "University of Wolverhampton",
-        "logo": "/Unilogo/UK8_144.png",
+        "logo": "/uni/UK8_144.png",
         "location": "WOLVERHAMPTON",
         "description": "",
         "intake": [],
@@ -2188,7 +2188,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK210",
         "name": "University of Worcester",
-        "logo": "/Unilogo/UK8_145.png",
+        "logo": "/uni/UK8_145.png",
         "location": "WORCESTER",
         "description": "",
         "intake": [],
@@ -2202,7 +2202,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK211",
         "name": "University of York",
-        "logo": "/Unilogo/UK8_146.png",
+        "logo": "/uni/UK8_146.png",
         "location": "YORK",
         "description": "",
         "intake": [],
@@ -2216,7 +2216,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK212",
         "name": "Wrexham University",
-        "logo": "/Unilogo/UK8_147.png",
+        "logo": "/uni/UK8_147.png",
         "location": "WREXHAM",
         "description": "",
         "intake": [],
@@ -2230,7 +2230,7 @@ const sampleUniversities: Record<string, University[]> = {
       {
         "id": "UK213",
         "name": "York St John University",
-        "logo": "/Unilogo/UK8_148.png",
+        "logo": "/uni/UK8_148.png",
         "location": "YORK",
         "description": "",
         "intake": [],
