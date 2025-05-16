@@ -24,7 +24,7 @@ export default function HeroSection() {
         {/* Image */}
         <div className="md:w-1/2">
           <img 
-            src="/src/assets/banner/A1.jpg" 
+            src="/banner/A1.jpg" 
             alt="Students studying abroad"
             className="rounded-xl shadow-2xl border-4 border-white"
           />
