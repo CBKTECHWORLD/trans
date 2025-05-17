@@ -18,6 +18,7 @@ export default function Navbar() {
             <Link to="/visa" className="text-gray-700 hover:text-blue-600">Visa</Link>
             <Link to="/contact" className="text-gray-700 hover:text-blue-600">Contact</Link>
             <Link to="/events" className="text-gray-700 hover:text-blue-600">Events</Link>
+            <Link to="/cvmaker" className="text-gray-700 hover:text-blue-600">CVmaker</Link>
           </div>
         </div>
         <div className="flex items-center space-x-4">

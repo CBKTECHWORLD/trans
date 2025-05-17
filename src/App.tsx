@@ -10,6 +10,7 @@ import { ApplicationProvider } from './contexts/ApplicationContext';
 import Universities from './pages/Universities';
 import ContactSection from './pages/ContactSection';
 import EventsPage from './pages/EventsPage';
+import CVMaker from './pages/CVMaker';
 
 
 const App: React.FC = () => {
@@ -24,7 +25,8 @@ const App: React.FC = () => {
             <Route path="/universities" element={<Universities />} />
             <Route path="/contact" element={<ContactSection />} />
             <Route path="/events" element={<EventsPage />} />
-          </Routes>
+            <Route path="/cvmaker" element={<CVMaker />} />
+                      </Routes>
         </main>
         <WhatsAppButton />
         <Footer />
