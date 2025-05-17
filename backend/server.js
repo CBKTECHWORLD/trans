@@ -382,6 +382,9 @@ function generateOrangeCVHTML(data) {
     </html>
   `;
 }
+app.get('/health', (req, res) => {
+  res.status(200).json({ status: 'UP', message: 'Server is running correctly' });
+});
 
 app.post('/generate-cv', async (req, res) => {
   try {
