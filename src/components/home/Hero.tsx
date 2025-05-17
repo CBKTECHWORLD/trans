@@ -5,10 +5,10 @@ export default function HeroSection() {
         {/* Text Content */}
         <div className="md:w-1/2 space-y-6">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-            Study Abroad Made Simple
+            Students going Abroad Made Simple
           </h1>
           <p className="text-xl opacity-90">
-            Find the best universities, courses, and scholarships tailored for you.
+            Find the best universities, courses, jobs, rooms, forex, and scholarships tailored for you.
           </p>
           {/* <div className="flex flex-col sm:flex-row gap-3">
             <input
@@ -25,7 +25,7 @@ export default function HeroSection() {
         <div className="md:w-1/2">
           <img 
             src="/banner/A1.jpg" 
-            alt="Students studying abroad"
+            alt="Students in abroad"
             className="rounded-xl shadow-2xl border-4 border-white"
           />
         </div>

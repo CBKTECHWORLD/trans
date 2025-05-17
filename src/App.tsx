@@ -9,6 +9,7 @@ import Dashboard from './pages/Dashboard';
 import { ApplicationProvider } from './contexts/ApplicationContext';
 import Universities from './pages/Universities';
 import ContactSection from './pages/ContactSection';
+import EventsPage from './pages/EventsPage';
 
 
 const App: React.FC = () => {
@@ -22,6 +23,7 @@ const App: React.FC = () => {
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/universities" element={<Universities />} />
             <Route path="/contact" element={<ContactSection />} />
+            <Route path="/events" element={<EventsPage />} />
           </Routes>
         </main>
         <WhatsAppButton />

@@ -3,10 +3,10 @@ import { useState, useEffect } from 'react';
 export default function StatsSection() {
   // Define your target numbers
   const stats = [
-    { value: 50000, label: "Students Helped" },
+    { value: 1000, label: "Students Helped" },
     { value: 500, label: "Universities" },
     { value: 10, label: "Scholarships", isMoney: true },
-    { value: 98, label: "Success Rate", isPercent: true }
+    { value: 99, label: "Success Rate", isPercent: true }
   ];
 
   return (
@@ -61,7 +61,7 @@ function StatItem({ target, label, isMoney = false, isPercent = false }: { targe
 
   return (
     <div className="p-4">
-      <p className="text-4xl font-bold text-primary text-purple-500 mb-2">
+      <p className="text-4xl font-bold text-primary text-blue-500 mb-2">
         {formattedNumber()}
       </p>
       <p className="text-gray-600">{label}</p>
