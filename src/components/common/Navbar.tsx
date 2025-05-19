@@ -13,9 +13,9 @@ export default function Navbar() {
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-6">
             <Link to="/universities" className="text-gray-700 hover:text-blue-600">Universities</Link>
-            <Link to="/courses" className="text-gray-700 hover:text-blue-600">Courses</Link>
-            <Link to="/scholarships" className="text-gray-700 hover:text-blue-600">Scholarships</Link>
-            <Link to="/visa" className="text-gray-700 hover:text-blue-600">Visa</Link>
+            <Link to="/exam" className="text-gray-700 hover:text-blue-600">Exam</Link>
+            <Link to="/fund" className="text-gray-700 hover:text-blue-600">Fund</Link>
+            <Link to="/travel" className="text-gray-700 hover:text-blue-600">Travel</Link>
             <Link to="/contact" className="text-gray-700 hover:text-blue-600">Contact</Link>
             <Link to="/events" className="text-gray-700 hover:text-blue-600">Events</Link>
             <Link to="/cvmaker" className="text-gray-700 hover:text-blue-600">CVmaker</Link>
@@ -56,9 +56,9 @@ export default function Navbar() {
               <FiX size={28} />
             </button>
             <Link to="/universities" className="text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Universities</Link>
-            <Link to="/courses" className="text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Courses</Link>
-            <Link to="/scholarships" className="text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Scholarships</Link>
-            <Link to="/visa" className="text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Visa</Link>
+            <Link to="/exam" className="text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Courses</Link>
+            <Link to="/fund" className="text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Fund</Link>
+            <Link to="/travel" className="text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Travel</Link>
             <Link to="/contact" className="text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Contact</Link>
             <Link to="/events" className="text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Events</Link>
             <button

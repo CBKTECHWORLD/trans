@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 // import BenefitsSection from '../components/University/BenefitsSection';
 import CountryTabs from '../components/University/CountryTabs';
 import SearchBox from '../components/University/SearchBox';
-import FilterSection from '../components/University/FilterSection';
+// import FilterSection from '../components/University/FilterSection';
 import UniversityList from '../components/University/UniversityList';
 // import { University } from '../components/types/University';
 import ApplicationProgressStatic from '../components/layout/ApplicationProgressStatic';
@@ -11,9 +11,9 @@ import sampleUniversities from '../data/universities';
 const Universities: React.FC = () => {
   const [selectedCountry, setSelectedCountry] = useState<string>('uk');
   const [searchQuery, setSearchQuery] = useState<string>('');
-  const [selectedIntakes, setSelectedIntakes] = useState<string[]>([]);
-  const [selectedCities, setSelectedCities] = useState<string[]>([]);
-  const [selectedPrograms, setSelectedPrograms] = useState<string[]>([]);
+  // const [selectedIntakes, setSelectedIntakes] = useState<string[]>([]);
+  // const [selectedCities, setSelectedCities] = useState<string[]>([]);
+  // const [selectedPrograms, setSelectedPrograms] = useState<string[]>([]);
 
   const handleCountryChange = (country: string) => {
     setSelectedCountry(country);
@@ -23,17 +23,17 @@ const Universities: React.FC = () => {
     setSearchQuery(query);
   };
 
-  const handleIntakeChange = (intakes: string[]) => {
-    setSelectedIntakes(intakes);
-  };
+  // const handleIntakeChange = (intakes: string[]) => {
+  //   setSelectedIntakes(intakes);
+  // };
 
-  const handleCityChange = (cities: string[]) => {
-    setSelectedCities(cities);
-  };
+  // const handleCityChange = (cities: string[]) => {
+  //   setSelectedCities(cities);
+  // };
 
-  const handleProgramChange = (programs: string[]) => {
-    setSelectedPrograms(programs);
-  };
+  // const handleProgramChange = (programs: string[]) => {
+  //   setSelectedPrograms(programs);
+  // };
 
   // Filter universities based on selected filters
   const filteredUniversities = sampleUniversities[selectedCountry]?.filter(university => {
@@ -42,20 +42,20 @@ const Universities: React.FC = () => {
       return false;
     }
     
-    // Filter by intake
-    if (selectedIntakes.length > 0 && !university.intake.some(intake => selectedIntakes.includes(intake))) {
-      return false;
-    }
+    // // Filter by intake
+    // if (selectedIntakes.length > 0 && !university.intake.some(intake => selectedIntakes.includes(intake))) {
+    //   return false;
+    // }
     
-    // Filter by city
-    if (selectedCities.length > 0 && !selectedCities.includes(university.city)) {
-      return false;
-    }
+    // // Filter by city
+    // if (selectedCities.length > 0 && !selectedCities.includes(university.city)) {
+    //   return false;
+    // }
     
-    // Filter by program
-    if (selectedPrograms.length > 0 && !university.programs.some(program => selectedPrograms.includes(program))) {
-      return false;
-    }
+    // // Filter by program
+    // if (selectedPrograms.length > 0 && !university.programs.some(program => selectedPrograms.includes(program))) {
+    //   return false;
+    // }
     
     return true;
   }) || [];
@@ -78,7 +78,7 @@ const Universities: React.FC = () => {
             <div className="lg:col-span-1">
               <SearchBox onSearchChange={handleSearchChange} />
               
-              <FilterSection 
+              {/* <FilterSection 
                 availableIntakes={['January', 'May', 'September']}
                 availableCities={availableCities}
                 availablePrograms={['Bachelor', 'Master', 'PhD']}
@@ -88,7 +88,7 @@ const Universities: React.FC = () => {
                 onIntakeChange={handleIntakeChange}
                 onCityChange={handleCityChange}
                 onProgramChange={handleProgramChange}
-              />
+              /> */}
             </div>
             
             <div className="lg:col-span-3">
