@@ -4,7 +4,7 @@ const StartNow = () => {
   // Function to open Google Form in a new tab
   const openGoogleForm = () => {
     // Replace this URL with your actual Google Form URL
-    const googleFormUrl = "https://forms.gle/yourGoogleFormLinkHere";
+    const googleFormUrl = "https://docs.google.com/forms/d/1-fOcqfMKJXuq7wHnUhZ3xjYxY3_jPFSuE6-ml9o3hSc";
     window.open(googleFormUrl, "_blank");
   };
 

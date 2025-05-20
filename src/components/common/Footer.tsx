@@ -15,7 +15,17 @@ export default function Footer() {
             <div className="space-y-2">
               <div className="flex items-start">
                 <span className="mr-2">📍</span>
-                <span>Call us on: +91 9354449357<br />(Between 10 am to 6 pm)</span>
+                {/* <span>Call us on: +91 9354449357<br />(Between 10 am to 6 pm)</span> */}
+              <span>
+                <a
+                  href="https://docs.google.com/forms/d/1-fOcqfMKJXuq7wHnUhZ3xjYxY3_jPFSuE6-ml9o3hSc"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-400 hover:underline"
+                >
+                  Book an appointment
+                </a>
+              </span>
               </div>
               <div className="flex items-center">
                 <span className="mr-2">📎</span>

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FiSearch, FiMenu, FiX } from 'react-icons/fi';
+import { FiMenu, FiX } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 
 export default function Navbar() {
@@ -12,11 +12,11 @@ export default function Navbar() {
           <Link to="/" className="text-2xl font-bold text-blue-800">Transitley</Link>
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-6">
-            <Link to="/universities" className="text-gray-700 hover:text-blue-600">Universities</Link>
+            <Link to="/universities" className="text-gray-700 hover:text-blue-600">University in UK</Link>
             <Link to="/exam" className="text-gray-700 hover:text-blue-600">Exam</Link>
-            <Link to="/fund" className="text-gray-700 hover:text-blue-600">Fund</Link>
+            <Link to="/finance" className="text-gray-700 hover:text-blue-600">Finance</Link>
             <Link to="/travel" className="text-gray-700 hover:text-blue-600">Travel</Link>
-            <Link to="/contact" className="text-gray-700 hover:text-blue-600">Contact</Link>
+            {/* <Link to="/contact" className="text-gray-700 hover:text-blue-600">Contact</Link> */}
             <Link to="/events" className="text-gray-700 hover:text-blue-600">Events</Link>
             <Link to="/cvmaker" className="text-gray-700 hover:text-blue-600">CVmaker</Link>
           </div>
@@ -55,9 +55,9 @@ export default function Navbar() {
             >
               <FiX size={28} />
             </button>
-            <Link to="/universities" className="text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Universities</Link>
-            <Link to="/exam" className="text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Courses</Link>
-            <Link to="/fund" className="text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Fund</Link>
+            <Link to="/universities" className="text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>University in UK</Link>
+            <Link to="/exam" className="text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Exam</Link>
+            <Link to="/fund" className="text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Finance</Link>
             <Link to="/travel" className="text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Travel</Link>
             <Link to="/contact" className="text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Contact</Link>
             <Link to="/events" className="text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Events</Link>
