@@ -12,13 +12,15 @@ export default function Navbar() {
           <Link to="/" className="text-2xl font-bold text-blue-800">Transitley</Link>
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-6">
-            <Link to="/universities" className="text-gray-700 hover:text-blue-600">University in UK</Link>
-            <Link to="/exam" className="text-gray-700 hover:text-blue-600">Exam</Link>
+            <Link to="/universities" className="text-gray-700 hover:text-blue-600">Study in UK</Link>
+            {/* <Link to="/exam" className="text-gray-700 hover:text-blue-600">Exam</Link> */}
             <Link to="/finance" className="text-gray-700 hover:text-blue-600">Finance</Link>
-            <Link to="/travel" className="text-gray-700 hover:text-blue-600">Travel</Link>
+            <Link to="/travel" className="text-gray-700 hover:text-blue-600">Visa</Link>
             {/* <Link to="/contact" className="text-gray-700 hover:text-blue-600">Contact</Link> */}
-            <Link to="/events" className="text-gray-700 hover:text-blue-600">Events</Link>
-            <Link to="/cvmaker" className="text-gray-700 hover:text-blue-600">CVmaker</Link>
+            {/* <Link to="/events" className="text-gray-700 hover:text-blue-600">Events</Link> */}
+            <Link to="/flight" className="text-gray-700 hover:text-blue-600">Flights</Link>
+            <Link to="/job" className="text-gray-700 hover:text-blue-600">Jobs</Link>
+            {/* <Link to="/cvmaker" className="text-gray-700 hover:text-blue-600">CVmaker</Link> */}
           </div>
         </div>
         <div className="flex items-center space-x-4">
@@ -55,12 +57,14 @@ export default function Navbar() {
             >
               <FiX size={28} />
             </button>
-            <Link to="/universities" className="text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>University in UK</Link>
-            <Link to="/exam" className="text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Exam</Link>
+            <Link to="/universities" className="text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Study in UK</Link>
+            {/* <Link to="/exam" className="text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Exam</Link> */}
             <Link to="/fund" className="text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Finance</Link>
-            <Link to="/travel" className="text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Travel</Link>
-            <Link to="/contact" className="text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Contact</Link>
-            <Link to="/events" className="text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Events</Link>
+            <Link to="/travel" className="text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Visa</Link>
+            {/* <Link to="/contact" className="text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Contact</Link>
+            <Link to="/events" className="text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Events</Link> */}
+            <Link to="/flight" className="text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Flight</Link>
+            <Link to="/job" className="text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Job</Link>
             <button
               className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 mt-4"
               onClick={() => setMenuOpen(false)}
