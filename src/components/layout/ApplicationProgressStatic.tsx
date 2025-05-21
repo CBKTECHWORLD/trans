@@ -101,9 +101,14 @@ const ApplicationProcessSteps: React.FC = () => {
         
         {/* Explore Button */}
         <div className="flex justify-center">
-          <button className="bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-8 rounded-md shadow-md transition-colors">
+            <a
+            href="https://docs.google.com/forms/d/1-fOcqfMKJXuq7wHnUhZ3xjYxY3_jPFSuE6-ml9o3hSc"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-8 rounded-md shadow-md transition-colors text-center"
+            >
             Explore now
-          </button>
+            </a>
         </div>
       </div>
     </div>

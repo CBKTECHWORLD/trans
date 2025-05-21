@@ -1,6 +1,6 @@
 // import React from 'react';
 // import HeroSection from '../components/home/Hero';
-import StatsSection from '../components/home/Stats';
+// import StatsSection from '../components/home/Stats'; //Counting number automate
 import FeaturesSection from '../components/home/Features';
 // import Testimonials from '../components/home/Testimonials';
 import '../App.css'
@@ -19,7 +19,7 @@ export default function HomePage() {
       {/* <Banner /> */}
       <Intro />
 
-      <StatsSection />
+      {/* <StatsSection /> */}
       <Role />
       <StartNow />
       <FeaturesSection />

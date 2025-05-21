@@ -61,7 +61,7 @@ const Universities: React.FC = () => {
   }) || [];
 
   // Get unique cities for the selected country
-  const availableCities = [...new Set(sampleUniversities[selectedCountry]?.map(uni => uni.city) || [])];
+  // const availableCities = [...new Set(sampleUniversities[selectedCountry]?.map(uni => uni.city) || [])];
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 xlg:px-8 py-8 bg-blue-900">

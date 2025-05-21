@@ -59,7 +59,7 @@ export default function Navbar() {
             </button>
             <Link to="/universities" className="text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Study in UK</Link>
             {/* <Link to="/exam" className="text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Exam</Link> */}
-            <Link to="/fund" className="text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Finance</Link>
+            <Link to="/finance" className="text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Finance</Link>
             <Link to="/travel" className="text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Visa</Link>
             {/* <Link to="/contact" className="text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Contact</Link>
             <Link to="/events" className="text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Events</Link> */}
