@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
       <footer className="bg-gray-900 text-white py-12">
-                <div className="max-w-7xl mx-auto px-4 py-8 font-sans">
+      <div className="max-w-7xl mx-auto px-4 py-8 font-sans">
       {/* Header */}
       <header className="mb-8">
         <h1 className="text-3xl font-bold text-blue-800">Transitley</h1>
@@ -9,13 +9,13 @@ export default function Footer() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {/* Download Apps Section */}
-        <div className="space-y-6">
+        {/* <div className="space-y-6">
           <div>
             <h2 className="text-lg font-semibold mb-3 text-white-800">Contact</h2>
             <div className="space-y-2">
               <div className="flex items-start">
                 <span className="mr-2">📍</span>
-                {/* <span>Call us on: +91 9354449357<br />(Between 10 am to 6 pm)</span> */}
+                <span>Call us on: +91 9354449357<br />(Between 10 am to 6 pm)</span>
               <span>
                 <a
                   href="https://docs.google.com/forms/d/1-fOcqfMKJXuq7wHnUhZ3xjYxY3_jPFSuE6-ml9o3hSc"
@@ -33,16 +33,16 @@ export default function Footer() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* IELTS Test Center Section */}
-        <div>
+        {/* <div>
           <h2 className="text-lg font-semibold mb-3 text-white-800">IELTS Test Center</h2>
           <ul className="space-y-2">
             <li className="text-white-600">Free Counselling</li>
             <li className="text-white-600">Study Abroad Intakes</li>
             <li className="text-white-600">IELTS Exam Guidance</li>
-            {/* <li className="text-white-600">
+            <li className="text-white-600">
               Countries
               <ul className="ml-4 mt-1 space-y-1">
                 <li>USA</li>
@@ -52,44 +52,44 @@ export default function Footer() {
                 <li>Ireland</li>
                 <li>Germany</li>
               </ul>
-            </li> */}
+            </li>
           </ul>
-        </div>
+        </div> */}
 
         {/* Top Universities Section */}
-        <div>
+        {/* <div>
           <h2 className="text-lg font-semibold mb-3 text-white-800">Top Universities</h2>
           <ul className="space-y-2">
-            {/* <li className="text-white-600">Top Universities in USA</li> */}
+            <li className="text-white-600">Top Universities in USA</li>
             <li className="text-white-600">Top Universities in UK</li>
-            {/* <li className="text-white-600">Top Universities in Canada</li>
+            <li className="text-white-600">Top Universities in Canada</li>
             <li className="text-white-600">Top Universities in Australia</li>
-            <li className="text-white-600">Top Universities in Ireland</li> */}
+            <li className="text-white-600">Top Universities in Ireland</li>
           </ul>
 
-          {/* <h2 className="text-lg font-semibold mt-6 mb-3 text-white-800">Calculators</h2>
+          <h2 className="text-lg font-semibold mt-6 mb-3 text-white-800">Calculators</h2>
           <ul className="space-y-2">
             <li className="text-white-600">IELTS Coaching</li>
             <li className="text-white-600">Cue Card Categories</li>
             <li className="text-white-600">IELTS Writing Task 2 Categories</li>
-          </ul> */}
-        </div>
+          </ul>
+        </div> */}
 
         {/* Company Section */}
-        <div>
+        {/* <div>
           <h2 className="text-lg font-semibold mb-3 text-white-800">Company</h2>
           <ul className="space-y-2">
             <li className="text-white-600">About Us</li>
             <li className="text-white-600">Careers</li>
-            {/* <li className="text-white-600">Leap in the news!</li> */}
+            <li className="text-white-600">Leap in the news!</li>
           </ul>
 
-          {/* <h2 className="text-lg font-semibold mt-6 mb-3 text-white-800">Our Partners</h2>
+          <h2 className="text-lg font-semibold mt-6 mb-3 text-white-800">Our Partners</h2>
           <ul className="space-y-2">
             <li className="text-white-600">Yocket study abroad</li>
             <li className="text-white-600">GEEBEE</li>
-          </ul> */}
-        </div>
+          </ul>
+        </div> */}
 
         {/* LOR & SOP Section */}
         {/* <div>
@@ -142,10 +142,31 @@ export default function Footer() {
     </div>
     <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div>
-              <h3 className="text-xl font-bold mb-4">Transitley</h3>
-              <p className="text-white-400">Helping students achieve their study abroad dreams</p>
+               <div className="space-y-6">
+          <div>
+            <h2 className="text-lg font-semibold mb-3 text-white-800">Contact</h2>
+            <div className="space-y-2">
+              <div className="flex items-start">
+                <span className="mr-2">📍</span>
+                {/* <span>Call us on: +91 9354449357<br />(Between 10 am to 6 pm)</span> */}
+              <span>
+                <a
+                  href="https://docs.google.com/forms/d/1-fOcqfMKJXuq7wHnUhZ3xjYxY3_jPFSuE6-ml9o3hSc"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-400 hover:underline"
+                >
+                  Book an appointment
+                </a>
+              </span>
+              </div>
+              <div className="flex items-center">
+                <span className="mr-2">📎</span>
+                <span>Mail us on: info@transitley.com</span>
+              </div>
             </div>
+          </div>
+        </div>
             <div>
               <h4 className="font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2">

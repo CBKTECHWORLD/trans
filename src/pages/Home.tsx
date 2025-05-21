@@ -21,12 +21,12 @@ export default function HomePage() {
 
       {/* <StatsSection /> */}
       <Role />
-      <StartNow />
-      <FeaturesSection />
+      {/* <StartNow />
+      <FeaturesSection /> */}
    
       {/* <iframe className="aspect-video ..." src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
       <iframe className="aspect-video ..." src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe> */}
-      <Best />
+      {/* <Best /> */}
       {/* <Testimonials /> */}
       {/* <VideoTestimonials /> */}
       
