@@ -19,13 +19,12 @@ const Intro: React.FC<BannerProps> = ({ backgroundImage }) => {
         backgroundPosition: 'center',
       }}
     >
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="container mx-auto px-6 md:px-6">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 text-white mb-8 md:mb-0">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">
               One Portal. <br />
-              Endless <br />
-              Opportunities <br />
+              Endless Opportunities <br />
               in the UK
             </h1>
             <p className="text-lg mb-8">
@@ -45,7 +44,7 @@ const Intro: React.FC<BannerProps> = ({ backgroundImage }) => {
           </div>
           <div className="md:w-1/2">
             {/* This is where you will add your image */}
-            <img src="/banner/intro2.jpg" alt="People smiling" className="w-full rounded-lg" /> 
+            {/* <img src="/banner/intro2.jpg" alt="People smiling" className="w-full rounded-lg" />  */}
           </div>
         </div>
       </div>
