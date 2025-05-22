@@ -23,12 +23,12 @@ const Intro: React.FC<BannerProps> = ({ backgroundImage }) => {
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 text-white mb-8 md:mb-0">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              One Portal. <br />
-              Endless Opportunities <br />
-              in the UK
+              Land... <br />
+              Live... <br />
+              Launch...
             </h1>
             <p className="text-lg mb-8">
-              Find education, jobs, accommodation, and start your UK journey with confidence.
+             From admissions to accommodations, forex to flights, jobs to entrepreneurship—Transitely brings it all under one roof for UK-bound immigrants.
             </p>
             <div className="flex flex-wrap gap-4">
               <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-md transition duration-300">

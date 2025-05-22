@@ -13,6 +13,9 @@ import EventsPage from './pages/EventsPage';
 import CVMaker from './pages/CVMaker';
 import Travel from './pages/Travel';
 import Finance from './pages/Finance';
+import Accommodation from './components/home/Accomodation';
+import Job from './components/home/Job';
+import Business from './components/home/Business';
 
 
 const App: React.FC = () => {
@@ -30,6 +33,10 @@ const App: React.FC = () => {
             <Route path="/cvmaker" element={<CVMaker />} />
             <Route path="/travel" element={<Travel />} />
             <Route path="/finance" element={<Finance />} />
+            <Route path="/accommodation" element={<Accommodation />} />
+            <Route path="/job" element={<Job />} />
+            <Route path="/business" element={<Business />} />
+
         </Routes>
         </main>
         <WhatsAppButton />

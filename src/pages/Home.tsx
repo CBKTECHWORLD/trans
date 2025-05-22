@@ -1,11 +1,11 @@
 // import React from 'react';
 // import HeroSection from '../components/home/Hero';
 // import StatsSection from '../components/home/Stats'; //Counting number automate
-import FeaturesSection from '../components/home/Features';
+// import FeaturesSection from '../components/home/Features';
 // import Testimonials from '../components/home/Testimonials';
 import '../App.css'
-import StartNow from '../components/home/StartNow';
-import Best from '../components/home/Best';
+// import StartNow from '../components/home/StartNow';
+// import Best from '../components/home/Best';
 // import Banner from '../components/event/Banner';
 import Role from '../components/home/Role';
 import Intro from '../components/home/Intro';
