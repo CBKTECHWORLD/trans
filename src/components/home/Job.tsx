@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Briefcase, Clock, Users, Target, FileText, Globe, CheckCircle, Calendar } from 'lucide-react';
+import { Briefcase, Clock, Users, Target, FileText, Globe, CheckCircle, Calendar, ArrowRight, Phone } from 'lucide-react';
 
 export default function Job() {
   const [selectedJobType, setSelectedJobType] = useState('part-time');
@@ -421,6 +421,32 @@ export default function Job() {
                 <li>• Consistency and persistence are key</li>
               </ul>
             </div>
+          </div>
+        </div>
+
+          <div className="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-lg p-8 text-white text-center">
+          <h2 className="text-2xl font-bold mb-4">Ready to Find your job in UK?</h2>
+            <p className="text-lg mb-6">
+            Whether you're seeking your first part-time job or aiming for a full-time role, 
+            Transitley guides you every step of the way in your UK job search journey.
+            </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="mailto:mani@transitley.com?subject=Free%20Business%20Consultation"
+              className="bg-white text-indigo-600 px-6 py-3 rounded-lg font-semibold hover:bg-slate-100 transition-colors flex items-center justify-center"
+            >
+              <Phone className="mr-2" size={20} />
+              Free Consultation
+            </a>
+            <a
+              href="https://docs.google.com/forms/d/1-fOcqfMKJXuq7wHnUhZ3xjYxY3_jPFSuE6-ml9o3hSc"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors flex items-center justify-center"
+            >
+              Learn More
+              <ArrowRight className="ml-2" size={20} />
+            </a>
           </div>
         </div>
       </div>

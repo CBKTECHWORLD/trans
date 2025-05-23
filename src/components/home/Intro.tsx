@@ -20,13 +20,13 @@ const Intro: React.FC<BannerProps> = ({ backgroundImage }) => {
     >
       <div className="container mx-auto px-4 md:px-4">
         <div className="flex flex-col items-center justify-center min-h-[400px]">
-          <div className="text-white mb-4 md:mb-0 w-full max-w-xl text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+          <div className="text-white mb-8 md:mb-6 w-full max-w-xl text-center">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Land... <br />
               Live... <br />
               Launch...
             </h1>
-            <p className="text-lg mb-4">
+            <p className="text-lg mb-6">
               From admissions to accommodations, forex to flights, jobs to entrepreneurship—Transitely brings it all under one roof for UK-bound immigrants.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">

@@ -18,12 +18,10 @@ export default function HomePage() {
       {/* <HeroSection /> */}
       {/* <Banner /> */}
       <Intro />
-
-      {/* <StatsSection /> */}
       <Role />
-      {/* <StartNow />
+      {/* <StatsSection /> */}
+         {/* <StartNow />
       <FeaturesSection /> */}
-   
       {/* <iframe className="aspect-video ..." src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
       <iframe className="aspect-video ..." src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe> */}
       {/* <Best /> */}

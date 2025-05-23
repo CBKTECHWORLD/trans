@@ -1,13 +1,8 @@
 export default function Footer() {
     return (
       <footer className="bg-gray-900 text-white py-12">
-      <div className="max-w-7xl mx-auto px-4 py-8 font-sans">
-      {/* Header */}
-      <header className="mb-8">
-        <h1 className="text-3xl font-bold text-blue-800">Transitley</h1>
-      </header>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {/* <div className="max-w-7xl mx-auto px-4 py-8 font-sans">
+       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"> */}
         {/* Download Apps Section */}
         {/* <div className="space-y-6">
           <div>
@@ -136,39 +131,22 @@ export default function Footer() {
             <li className="text-white-600">GMAT</li>
           </ul>
         </div> */}
-      </div>
+      {/* </div>
 
       <hr className="my-8 border-gray-200" />
-    </div>
+    </div> */}
+
+    {/* Footer Bottom Section */}
     <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-               <div className="space-y-6">
-          <div>
-            <h2 className="text-lg font-semibold mb-3 text-white-800">
-              <a href="/contact" className="hover:underline">Contact</a>
-            </h2>
-            <div className="space-y-2">
-              <div className="flex items-start">
-                <span className="mr-2">📍</span>
-                {/* <span>Call us on: +91 9354449357<br />(Between 10 am to 6 pm)</span> */}
-              <span>
-                <a
-                  href="https://docs.google.com/forms/d/1-fOcqfMKJXuq7wHnUhZ3xjYxY3_jPFSuE6-ml9o3hSc"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-400 hover:underline"
-                >
-                  Book an appointment
-                </a>
-              </span>
-              </div>
-              <div className="flex items-center">
-                <span className="mr-2">📎</span>
-                <span>Mail us on: info@transitley.com</span>
-                {/* <span>Mail us on: mani@transitley.com</span> */}
-              </div>
-            </div>
-          </div>
+        <div className="space-y-6">
+          <header className="mb-8">
+        <h1 className="text-3xl font-bold text-blue-800 flex items-center">
+          Transitley
+          <sup className="ml-1 text-xs text-blue-800 align-super">®</sup>
+        </h1>
+        <p>One Stop Immigration</p>
+      </header>
         </div>
             <div>
               <h4 className="font-semibold mb-4">Quick Links</h4>
@@ -187,6 +165,21 @@ export default function Footer() {
             </div>
             <div>
               <h4 className="font-semibold mb-4">Contact</h4>
+               <div className="flex items-start">
+                {/* <span className="mr-2">📍</span> */}
+                {/* <span>Call us on: +91 9354449357<br />(Between 10 am to 6 pm)</span> */}
+              <span>
+                <a
+                  href="https://docs.google.com/forms/d/1-fOcqfMKJXuq7wHnUhZ3xjYxY3_jPFSuE6-ml9o3hSc"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-400 hover:underline"
+                >
+                  Book an appointment
+                </a>
+              </span>
+              </div>
+              
               <p className="text-white-400">info@transitley.com</p>
                 <div className="flex space-x-4 mt-4">
                 <a href="https://www.facebook.com/profile.php?id=61575658417715" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
