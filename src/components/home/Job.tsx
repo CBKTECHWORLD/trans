@@ -109,7 +109,7 @@ export default function Job() {
 
   const visaRequirements = [
     { visa: 'Tier 4/Student', hours: '20 hours/week (term time)', holiday: 'Full-time during holidays' },
-    { visa: 'Skilled Worker', hours: 'No restrictions', holiday: 'Full-time allowed' },
+    // { visa: 'Skilled Worker', hours: 'No restrictions', holiday: 'Full-time allowed' },
     { visa: 'Dependents', hours: 'Usually no restrictions', holiday: 'Check visa conditions' }
   ];
 
@@ -281,7 +281,7 @@ export default function Job() {
               <div className="p-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <h3 className="font-semibold text-slate-800 mb-3">Skilled Worker Visa Requirements:</h3>
+                    <h3 className="font-semibold text-slate-800 mb-3">Visa Requirements:</h3>
                     <ul className="space-y-2">
                       <li className="flex items-start">
                         <CheckCircle className="text-green-500 mr-2 mt-0.5" size={16} />
