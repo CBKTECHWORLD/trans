@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Flights: React.FC = () => {
+const Forex: React.FC = () => {
     return (
-              <div
+        <div
             style={{
             display: 'flex',
             flexDirection: 'column',
@@ -55,7 +55,7 @@ const Flights: React.FC = () => {
             letterSpacing: '0.02em',
             textShadow: '0 2px 8px rgba(25,118,210,0.08)'
             }}>
-            Flight Services
+            Forex Services
             </h1>
             <p style={{
             color: '#333',
@@ -104,4 +104,4 @@ const Flights: React.FC = () => {
     );
 };
 
-export default Flights;
+export default Forex;

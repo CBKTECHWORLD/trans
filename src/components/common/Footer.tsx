@@ -141,10 +141,11 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
         <div className="space-y-6">
           <header className="mb-8">
-        <h1 className="text-3xl font-bold text-blue-800 flex items-center">
-          Transitley
-          <sup className="ml-1 text-xs text-blue-800 align-super">®</sup>
-        </h1>
+        <img
+          src="/logo1.png"
+          alt="Transitley Logo"
+          className="h-18 w-auto mb-4"
+        />
         <p>One Stop Immigration</p>
       </header>
         </div>
@@ -161,6 +162,7 @@ export default function Footer() {
               <ul className="space-y-2">
                 <li><a href="#" className="text-white-400 hover:text-white">Privacy Policy</a></li>
                 <li><a href="#" className="text-white-400 hover:text-white">Terms of Service</a></li>
+                <li><a href="#" className="text-white-400 hover:text-white">Refund Policy</a></li>
               </ul>
             </div>
             <div>

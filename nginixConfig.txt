@@ -1,0 +1,86 @@
+server {
+    listen 80;
+    server_name transitley.com www.transitley.com;
+    return 301 https://transitley.com$request_uri;
+}
+
+server {
+    listen 443 ssl;
+    server_name transitley.com;
+    
+    ssl_certificate /etc/letsencrypt/live/transitley.com/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/transitley.com/privkey.pem;
+    
+    root /var/www/transitley.com/dist;
+     index index.html;
+
+    # This is critical for React Router
+    location / {
+        try_files $uri $uri/ /index.html =404;
+        add_header Cache-Control "no-cache, no-store, must-revalidate";
+    }
+
+    # Static assets can be cached
+    location ~* \.(js|css|png|jpg|jpeg|gif|ico|svg)$ {
+        expires 1y;
+        add_header Cache-Control "public, max-age=31536000";
+        try_files $uri =404;
+}
+
+server {
+    listen 443 ssl;
+    server_name www.transitley.com;
+    return 301 https://transitley.com$request_uri;
+}
+
+Tranistley..
+
+# HTTP → HTTPS redirect
+server {
+    if ($host = www.transitley.com) {
+        return 301 https://$host$request_uri;
+    } # managed by Certbot
+
+
+    if ($host = transitley.com) {
+        return 301 https://$host$request_uri;
+    } # managed by Certbot
+
+
+    listen 80;
+    server_name transitley.com www.transitley.com;
+    return 301 https://transitley.com$request_uri;
+}
+
+# Main HTTPS server
+server {
+    listen 443 ssl;
+    server_name transitley.com;
+
+    root /var/www/transitley.com/dist;
+    index index.html;
+
+    # SSL config
+    ssl_certificate /etc/letsencrypt/live/transitley.com/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/transitley.com/privkey.pem; # managed by Certbot
+    include /etc/letsencrypt/options-ssl-nginx.conf;
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
+
+    # Proper request handling
+    location / {
+        try_files $uri $uri/ / index.html;
+    }
+}
+# WWW → non-WWW redirect
+server {
+    listen 443 ssl;
+    server_name www.transitley.com;
+
+    # Same SSL config
+    ssl_certificate /etc/letsencrypt/live/transitley.com/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/transitley.com/privkey.pem; # managed by Certbot
+    include /etc/letsencrypt/options-ssl-nginx.conf;
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
+
+    return 301 https://transitley.com$request_uri;
+}
