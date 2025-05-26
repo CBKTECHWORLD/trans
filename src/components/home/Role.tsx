@@ -33,7 +33,7 @@ const Role: React.FC = () => {
               description="Admission support for top UK universities"
             />
           </Link>
-          <Link to="/finance" className="hover:shadow-lg transition-shadow duration-200">
+          <Link to="/forex" className="hover:shadow-lg transition-shadow duration-200">
             <FeatureCard
               icon={
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">

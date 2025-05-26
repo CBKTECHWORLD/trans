@@ -59,8 +59,7 @@ const ContactSection: React.FC = () => {
             <div className="prose prose-indigo text-gray-600">
               <p>
                 We are a dedicated team of professionals committed to providing exceptional services to our clients. 
-                With over 15 years of experience in the industry, we pride ourselves on our expertise, 
-                reliability, and customer-focused approach.
+                
               </p>
               
               <p>
