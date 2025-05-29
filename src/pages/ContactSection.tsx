@@ -10,7 +10,7 @@ const ContactSection: React.FC = () => {
           <div>
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Contact Us</h2>
             <div className="space-y-8">
-              <div className="flex items-start">
+              {/* <div className="flex items-start">
                 <MapPin className="h-6 w-6 text-indigo-600 mt-1 flex-shrink-0" />
                 <div className="ml-4">
                   <h3 className="text-lg font-medium text-gray-900">Office Address</h3>
@@ -21,7 +21,7 @@ const ContactSection: React.FC = () => {
                     India
                   </address>
                 </div>
-              </div>
+              </div> */}
               
               <div className="flex items-start">
                 <Phone className="h-6 w-6 text-indigo-600 mt-1 flex-shrink-0" />

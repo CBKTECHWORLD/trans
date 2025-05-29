@@ -28,18 +28,23 @@ const Intro: React.FC<BannerProps> = ({ backgroundImage }) => {
       </div>
       <div className="container mx-auto px-4 md:px-4 relative z-10">
         <div className="flex flex-col items-center justify-center min-h-[400px]">
-          <div className="text-white mb-8 md:mb-6 w-full max-w-xl text-center">
+          <div className="text-white mb-8 md:mb-4 w-full max-w-xl text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-8 animate-fade-in-down">
-              Land... <br />
-              Live... <br />
-              Launch...
-            </h1>
-            <p className="text-lg mb-6 animate-fade-in-up">
-              From admissions to accommodations, forex to flights, jobs to entrepreneurship—Transitely brings it all under one roof for UK-bound immigrants.
+              Start Fresh. <br />
+              Feel at Home. <br /></h1>
+                <h3 className="text-xl mb-6"><em >Leaving home is hard—but with Transitley, you're never alone.</em></h3>
+            
+            <p className="text-l mb-6 animate-fade-in-up">
+              From admissions to jobs, housing to flights, we guide your every step to build a life you love in the UK.
+            </p>
+            <p className="text-l mb-6 animate-fade-in-up">
+              Because your dreams deserve more than just a destination—they deserve a journey that feels like home.
+
+
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <button className="bg-gradient-to-r from-blue-900 via-blue-800 to-blue-700 hover:from-blue-800 hover:to-blue-900 text-white font-medium py-3 px-6 rounded-md transition duration-300 shadow-lg animate-pop">
-                Get Started
+                Begin Your New Chapter
               </button>
               <button 
                 onClick={openGoogleForm}
