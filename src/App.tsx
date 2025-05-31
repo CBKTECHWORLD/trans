@@ -18,6 +18,8 @@ import Job from './components/home/Job';
 import Business from './components/home/Business';
 import Flights from './pages/Flights';
 import Forex from './pages/Forex';
+import About from './pages/About';
+import Legal from './pages/Legal';
 
 
 const App: React.FC = () => {
@@ -40,6 +42,8 @@ const App: React.FC = () => {
             <Route path="/business" element={<Business />} />
             <Route path="/flight" element={<Flights />} />
             <Route path="/forex" element={<Forex />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/legal" element={<Legal />} />
 
         </Routes>
         </main>
