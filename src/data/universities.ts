@@ -215,7 +215,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK16",
       "name": "BPP UNIVERSITY",
-      "logo": "/uni/UK2_14.png",
+      "logo": "/uni/bpp.png",
       "location": "LONDON, Midlands and the North, South East and South West, Channel Islands",
       "description": "",
       "intake": [],
@@ -229,7 +229,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK17",
       "name": "Brighton and Sussex Medical School",
-      "logo": "/uni/UK2_15.png",
+      "logo": "/uni/brighton.jpg",
       "location": "BRIGHTON",
       "description": "",
       "intake": [],
@@ -285,7 +285,7 @@ const sampleUniversities: Record<string, University[]> = {
     {
       "id": "UK35",
       "name": "CARDIFF METROPOLITIAN UNIVERSITY",
-      "logo": "/uni/3_18.png",
+      "logo": "/uni/cardiffMetro.png",
       "location": "CARDIFF",
       "description": "",
       "intake": [],
