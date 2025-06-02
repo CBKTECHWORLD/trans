@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/common/Navbar'; 
 import HomePage from './pages/Home';
 import './index.css'
-import WhatsAppButton from './components/common/WhatsAppButton';
+// import WhatsAppButton from './components/common/WhatsAppButton';
 import Footer from './components/common/Footer';
 import Dashboard from './pages/Dashboard';
 import { ApplicationProvider } from './contexts/ApplicationContext';
