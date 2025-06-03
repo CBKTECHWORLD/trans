@@ -20,11 +20,14 @@ import Flights from './pages/Flights';
 import Forex from './pages/Forex';
 import About from './pages/About';
 import Legal from './pages/Legal';
+import GoogleTagManager from './components/GTM';
 
 
 const App: React.FC = () => {
   return (
+   
     <ApplicationProvider>
+    <GoogleTagManager />
       <div className="app">
         <Navbar />
         <main>
