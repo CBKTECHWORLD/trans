@@ -9,19 +9,70 @@ const VisaInfoPage: React.FC = () => {
             {/* <p className="mb-4 text-lg">Welcome! This page provides an overview of the main UK visa types and how they can lead to permanent residency. Whether you are planning to study, visit, work, join family, or start a business, understanding your options is the first step.</p> */}
               
           
-            <div className="mb-4 bg-blue-700 bg-opacity-80 rounded-md p-4 shadow-sm">
-              <h2 className="text-lg font-medium mb-2 text-blue-100">Main Types of UK Visas:</h2>
-              <ul className="list-disc pl-6 text-blue-50 space-y-1">
-              <li><span className="font-semibold">Student Visa:</span> For international students enrolling in UK educational institutions.</li>
-              <li><span className="font-semibold">Visitor Visa:</span> For short-term visits, tourism, business meetings, or family visits.</li>
-              <li><span className="font-semibold">Skilled Worker Visa:</span> For professionals with a job offer from a UK employer.</li>
-              <li><span className="font-semibold">Graduate Route:</span> For recent graduates of UK universities to stay and work.</li>
-              <li><span className="font-semibold">Innovator Founder Visa:</span> For entrepreneurs with innovative business ideas.</li>
-              <li><span className="font-semibold">Health and Care Worker Visa:</span> For healthcare professionals joining the NHS or care sector.</li>
-              <li><span className="font-semibold">Family Route Visa:</span> For joining family members who are settled in the UK.</li>
-              <li><span className="font-semibold">Global Talent Visa:</span> For leaders or emerging leaders in academia, arts, or tech.</li>
-              <li><span className="font-semibold">Expansion Worker & Business Visas:</span> For business expansion and sponsorship routes.</li>
-              <li><span className="font-semibold">Asylum or Humanitarian Protection:</span> For those seeking refuge or protection in the UK.</li>
+            <div className="mb-6 bg-gradient-to-r from-blue-700 via-blue-600 to-blue-500 rounded-xl p-6 shadow-lg border border-blue-400">
+              <h2 className="text-xl font-extrabold mb-3 text-white tracking-wide flex items-center gap-2">
+              <svg className="w-6 h-6 text-white inline-block" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 11c0-1.657-1.343-3-3-3s-3 1.343-3 3 1.343 3 3 3 3-1.343 3-3zm0 0c0-1.657 1.343-3 3-3s3 1.343 3 3-1.343 3-3 3-3-1.343-3-3zm0 8v-5m0 0c-4.418 0-8-1.79-8-4V7a2 2 0 012-2h16a2 2 0 012 2v3c0 2.21-3.582 4-8 4z" />
+              </svg>
+              Main Types of UK Visas
+              </h2>
+              <ul className="space-y-2">
+              <li className="flex items-start gap-2">
+                <span className="mt-1 text-blue-200">•</span>
+                <span>
+                <span className="font-semibold text-white">Skilled Worker Visa:</span>
+                <span className="text-blue-100"> For professionals with a job offer from a UK employer.</span>
+                </span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="mt-1 text-blue-200">•</span>
+                <span>
+                <span className="font-semibold text-white">Graduate Route:</span>
+                <span className="text-blue-100"> For recent graduates of UK universities to stay and work.</span>
+                </span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="mt-1 text-blue-200">•</span>
+                <span>
+                <span className="font-semibold text-white">Innovator Founder Visa:</span>
+                <span className="text-blue-100"> For entrepreneurs with innovative business ideas.</span>
+                </span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="mt-1 text-blue-200">•</span>
+                <span>
+                <span className="font-semibold text-white">Health and Care Worker Visa:</span>
+                <span className="text-blue-100"> For healthcare professionals joining the NHS or care sector.</span>
+                </span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="mt-1 text-blue-200">•</span>
+                <span>
+                <span className="font-semibold text-white">Family Route Visa:</span>
+                <span className="text-blue-100"> For joining family members who are settled in the UK.</span>
+                </span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="mt-1 text-blue-200">•</span>
+                <span>
+                <span className="font-semibold text-white">Global Talent Visa:</span>
+                <span className="text-blue-100"> For leaders or emerging leaders in academia, arts, or tech.</span>
+                </span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="mt-1 text-blue-200">•</span>
+                <span>
+                <span className="font-semibold text-white">Expansion Worker &amp; Business Visas:</span>
+                <span className="text-blue-100"> For business expansion and sponsorship routes.</span>
+                </span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="mt-1 text-blue-200">•</span>
+                <span>
+                <span className="font-semibold text-white">Asylum or Humanitarian Protection:</span>
+                <span className="text-blue-100"> For those seeking refuge or protection in the UK.</span>
+                </span>
+              </li>
               </ul>
             </div>
             <h1 className="text-3xl font-bold mb-2">🛂 How to Settle in the UK</h1>
