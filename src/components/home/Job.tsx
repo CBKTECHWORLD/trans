@@ -135,12 +135,90 @@ export default function Job() {
     <div className="bg-slate-50 min-h-screen">
       <div className="max-w-6xl mx-auto px-4 py-8 md:py-12">
         <header className="mb-10 text-center">
-          <h1 className="text-3xl md:text-4xl font-bold text-indigo-800 mb-2">
+            <h1 className="text-3xl md:text-4xl font-bold text-indigo-800 mb-2">
             UK Job Search Guide
-          </h1>
+            </h1>
+            {/* Notice Board for Current Openings */}
+            <div className="flex justify-center mt-4">
+              <div className="relative bg-yellow-50 border-4 border-yellow-400 rounded-xl shadow-lg px-6 py-4 w-full max-w-2xl">
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 flex items-center">
+                <span className="bg-yellow-400 text-white font-bold px-4 py-1 rounded-full shadow-md text-lg tracking-wide">
+                Notice Board
+                </span>
+              </div>
+              <div className="mt-4">
+                <h3 className="text-lg font-semibold text-yellow-800 mb-2 flex items-center">
+                <Briefcase className="mr-2 text-yellow-600" size={20} />
+                Current Openings
+                </h3>
+               {/* Animated/marquee-style or two-column job openings */}
+          <div className="mt-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 animate-marquee">
+              {[
+                "Receptionist - Crawley",
+                "Offlicence - Dorking",
+                "Chef assistant - Crawley",
+                "F&B team member ×4 - Guildford",
+                "F&B team members X2 - Hailsham BN27 - Full time",
+                "Store Manager X1 - Hailsham BN27 - Full time",
+                "F&B team member X1 - Tadley RG26 - Full time",
+                "Store Manager X1 - Tadley RG26- Full time",
+                "Food court Supervisor-Tadley - Full time",
+                "Food court assistant-Littlehampton - Full time",
+                "Petrol site-Doncaster",
+                "Off licence-Lancaster",
+                "Off licence-Jaywick",
+                "Crew Member, Subway-Wales",
+                "Off licence-Northampton",
+                "Petrol Site-Bradford",
+                "Off licence-Gosport",
+                "Petrol site-Hull",
+                "Petrol Site-Gloucecster",
+                "Off licence-Liverpool - 2",
+                "Petrol Assistant-Halifax",
+                "Cafe Assistant-Rotherham",
+                "Super market-Bowburn",
+                "Petrol Station-Lancaster",
+                "Petrol Station-Barrow",
+                "Off Licence Job - Scotland-Elgin",
+                "Off Licence Job - Scotland-Abroath",
+                "Off Licence - Alva"
+              ].map((title, idx) => (
+                <div key={idx} className="flex items-center justify-between bg-yellow-100 rounded p-2 shadow">
+                  <span className="font-medium text-yellow-900">{title}</span>
+                  <a
+                    href="https://docs.google.com/forms/d/1-fOcqfMKJXuq7wHnUhZ3xjYxY3_jPFSuE6-ml9o3hSc"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-indigo-700 font-semibold hover:underline text-sm"
+                  >
+                    Apply
+                  </a>
+                </div>
+              ))}
+            </div>
+            {/* Optional: Add a simple marquee animation for mobile/small screens */}
+            <style>
+              {`
+                // @media (max-width: 767px) {
+                //   .animate-marquee {
+                //     animation: marquee 20s linear infinite;
+                //   }
+                  @keyframes marquee {
+                    0% { transform: translateY(0); }
+                    100% { transform: translateY(-50%); }
+                  }
+                }
+              `}
+            </style>
+          </div>
+              </div>
+              </div>
+            </div>
           <p className="text-xl text-slate-700">
             Strategic approaches for landing part-time and full-time positions
           </p>
+         
         </header>
 
         <div className="mb-8">

@@ -6,6 +6,24 @@ const VisaInfoPage: React.FC = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-md overflow-hidden">
           <div className="bg-blue-600 text-white p-6">
+            {/* <p className="mb-4 text-lg">Welcome! This page provides an overview of the main UK visa types and how they can lead to permanent residency. Whether you are planning to study, visit, work, join family, or start a business, understanding your options is the first step.</p> */}
+              
+          
+            <div className="mb-4 bg-blue-700 bg-opacity-80 rounded-md p-4 shadow-sm">
+              <h2 className="text-lg font-medium mb-2 text-blue-100">Main Types of UK Visas:</h2>
+              <ul className="list-disc pl-6 text-blue-50 space-y-1">
+              <li><span className="font-semibold">Student Visa:</span> For international students enrolling in UK educational institutions.</li>
+              <li><span className="font-semibold">Visitor Visa:</span> For short-term visits, tourism, business meetings, or family visits.</li>
+              <li><span className="font-semibold">Skilled Worker Visa:</span> For professionals with a job offer from a UK employer.</li>
+              <li><span className="font-semibold">Graduate Route:</span> For recent graduates of UK universities to stay and work.</li>
+              <li><span className="font-semibold">Innovator Founder Visa:</span> For entrepreneurs with innovative business ideas.</li>
+              <li><span className="font-semibold">Health and Care Worker Visa:</span> For healthcare professionals joining the NHS or care sector.</li>
+              <li><span className="font-semibold">Family Route Visa:</span> For joining family members who are settled in the UK.</li>
+              <li><span className="font-semibold">Global Talent Visa:</span> For leaders or emerging leaders in academia, arts, or tech.</li>
+              <li><span className="font-semibold">Expansion Worker & Business Visas:</span> For business expansion and sponsorship routes.</li>
+              <li><span className="font-semibold">Asylum or Humanitarian Protection:</span> For those seeking refuge or protection in the UK.</li>
+              </ul>
+            </div>
             <h1 className="text-3xl font-bold mb-2">🛂 How to Settle in the UK</h1>
             <p className="text-xl">A Complete Guide to Immigration Visa Types and Pathways to Permanent Residency</p>
           </div>
@@ -273,7 +291,7 @@ const VisaInfoPage: React.FC = () => {
           </div>
         </div>
       </div>
-    </div>
+   </div>
   );
 };
 

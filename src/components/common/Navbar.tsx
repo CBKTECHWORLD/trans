@@ -18,7 +18,7 @@ export default function Navbar() {
             <Link to="/universities" className="text-lg text-gray-700 hover:text-blue-600">Study in UK</Link>
             {/* <Link to="/exam" className="text-lg text-gray-700 hover:text-blue-600">Exam</Link> */}
             <Link to="/finance" className="text-lg text-gray-700 hover:text-blue-600">Finance</Link>
-            <Link to="/travel" className="text-lg text-gray-700 hover:text-blue-600">Visa</Link>
+            <Link to="/travel" className="text-lg text-gray-700 hover:text-blue-600">Visas</Link>
             {/* <Link to="/contact" className="text-lg text-gray-700 hover:text-blue-600">Contact</Link> */}
             {/* <Link to="/events" className="text-lg text-gray-700 hover:text-blue-600">Events</Link> */}
             <Link to="/flight" className="text-lg text-gray-700 hover:text-blue-600">Flights</Link>
@@ -69,13 +69,13 @@ export default function Navbar() {
             <Link to="/universities" className="text-lg text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Study in UK</Link>
             {/* <Link to="/exam" className="text-lg text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Exam</Link> */}
             <Link to="/finance" className="text-lg text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Finance</Link>
-            <Link to="/travel" className="text-lg text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Visa</Link>
+            <Link to="/travel" className="text-lg text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Visas</Link>
             {/* <Link to="/contact" className="text-lg text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Contact</Link>
             <Link to="/events" className="text-lg text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Events</Link> */}
             <Link to="/flight" className="text-lg text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Flight</Link>
             <Link to="/forex" className="text-lg text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Forex</Link>  
             <Link to="/accommodation" className="text-lg text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Accommodation</Link>
-            <Link to="/job" className="text-lg text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Job</Link>
+            <Link to="/job" className="text-lg text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Jobs</Link>
             <Link to="/business" className="text-lg text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Business</Link>
 
             {/* <button
