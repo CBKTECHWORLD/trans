@@ -21,9 +21,17 @@ export default function Navbar() {
             <Link to="/travel" className="text-lg text-gray-700 hover:text-blue-600">Visas</Link>
             {/* <Link to="/contact" className="text-lg text-gray-700 hover:text-blue-600">Contact</Link> */}
             {/* <Link to="/events" className="text-lg text-gray-700 hover:text-blue-600">Events</Link> */}
-            <Link to="/flight" className="text-lg text-gray-700 hover:text-blue-600">Flights</Link>
-            <Link to="/forex" className="text-lg text-gray-700 hover:text-blue-600">Forex</Link>
-            <Link to="/accommodation" className="text-lg text-gray-700 hover:text-blue-600">Accommodation</Link>
+            {/* <Link to="/flight" className="text-lg text-gray-700 hover:text-blue-600">Flights</Link>
+            <Link to="/forex" className="text-lg text-gray-700 hover:text-blue-600">Forex</Link> */}
+            <a
+              href="https://transitley.studentacco.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-lg text-gray-700 hover:text-blue-600"
+            >
+              Accommodation
+            </a>
+            {/* <Link to="/accommodation" className="text-lg text-gray-700 hover:text-blue-600">Accommodation</Link> */}
             <Link to="/job" className="text-lg text-gray-700 hover:text-blue-600">Jobs</Link>
             <Link to="/business" className="text-lg text-gray-700 hover:text-blue-600">Business</Link>
 
@@ -72,9 +80,17 @@ export default function Navbar() {
             <Link to="/travel" className="text-lg text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Visas</Link>
             {/* <Link to="/contact" className="text-lg text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Contact</Link>
             <Link to="/events" className="text-lg text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Events</Link> */}
-            <Link to="/flight" className="text-lg text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Flight</Link>
-            <Link to="/forex" className="text-lg text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Forex</Link>  
-            <Link to="/accommodation" className="text-lg text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Accommodation</Link>
+            {/* <Link to="/flight" className="text-lg text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Flight</Link>
+            <Link to="/forex" className="text-lg text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Forex</Link> */}
+            <a
+              href="https://transitley.studentacco.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-lg text-gray-700 hover:text-blue-600"
+              onClick={() => setMenuOpen(false)}
+            >
+              Accommodation
+            </a>
             <Link to="/job" className="text-lg text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Jobs</Link>
             <Link to="/business" className="text-lg text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Business</Link>
 

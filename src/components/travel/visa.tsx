@@ -14,7 +14,7 @@ const VisaInfoPage: React.FC = () => {
               <svg className="w-6 h-6 text-white inline-block" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 11c0-1.657-1.343-3-3-3s-3 1.343-3 3 1.343 3 3 3 3-1.343 3-3zm0 0c0-1.657 1.343-3 3-3s3 1.343 3 3-1.343 3-3 3-3-1.343-3-3zm0 8v-5m0 0c-4.418 0-8-1.79-8-4V7a2 2 0 012-2h16a2 2 0 012 2v3c0 2.21-3.582 4-8 4z" />
               </svg>
-              Main Types of UK Visas
+              Visa, we offer
               </h2>
               <ul className="space-y-2">
               <li className="flex items-start gap-2">
@@ -66,13 +66,13 @@ const VisaInfoPage: React.FC = () => {
                 <span className="text-blue-100"> For business expansion and sponsorship routes.</span>
                 </span>
               </li>
-              <li className="flex items-start gap-2">
+              {/* <li className="flex items-start gap-2">
                 <span className="mt-1 text-blue-200">•</span>
                 <span>
                 <span className="font-semibold text-white">Asylum or Humanitarian Protection:</span>
                 <span className="text-blue-100"> For those seeking refuge or protection in the UK.</span>
                 </span>
-              </li>
+              </li> */}
               </ul>
             </div>
             <h1 className="text-3xl font-bold mb-2">🛂 How to Settle in the UK</h1>
@@ -294,7 +294,7 @@ const VisaInfoPage: React.FC = () => {
             
             <hr className="my-8 border-gray-200" />
             
-            <div className="mb-8 text-black">
+            {/* <div className="mb-8 text-black">
               <h2 className="text-2xl font-semibold mb-3">🛬 8. Asylum or Humanitarian Protection</h2>
               <p className="text-blue-600 font-medium mb-2">✅ Best for: Refugees or individuals fleeing persecution</p>
               
@@ -310,9 +310,9 @@ const VisaInfoPage: React.FC = () => {
                   https://www.gov.uk/claim-asylum
                 </a>
               </div>
-            </div>
+            </div> */}
             
-            <hr className="my-8 border-gray-200" />
+            {/* <hr className="my-8 border-gray-200" /> */}
             
             <div className="mb-8 text-black">
               <h2 className="text-2xl font-semibold mb-3">✅ What is Indefinite Leave to Remain (ILR)?</h2>
