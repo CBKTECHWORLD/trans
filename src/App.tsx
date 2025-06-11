@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/common/Navbar'; 
 import HomePage from './pages/Home';
 import './index.css'
@@ -22,37 +22,36 @@ import About from './pages/About';
 import Legal from './pages/Legal';
 import GoogleTagManager from './components/GTM';
 
-
 const App: React.FC = () => {
   return (
-   
     <ApplicationProvider>
-    <GoogleTagManager />
-      <div className="app">
-        <Navbar />
-        <main>
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/universities" element={<Universities />} />
-            <Route path="/contact" element={<ContactSection />} />
-            <Route path="/events" element={<EventsPage />} />
-            <Route path="/cvmaker" element={<CVMaker />} />
-            <Route path="/travel" element={<Travel />} />
-            <Route path="/finance" element={<Finance />} />
-            <Route path="/accommodation" element={<Accommodation />} />
-            <Route path="/job" element={<Job />} />
-            <Route path="/business" element={<Business />} />
-            <Route path="/flight" element={<Flights />} />
-            <Route path="/forex" element={<Forex />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/legal" element={<Legal />} />
-
-        </Routes>
-        </main>
-        {/* <WhatsAppButton /> */}
-        <Footer />
-      </div>
+      <GoogleTagManager />
+      <Router>
+        <div className="app">
+          <Navbar />
+          <main>
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/universities" element={<Universities />} />
+              <Route path="/contact" element={<ContactSection />} />
+              <Route path="/events" element={<EventsPage />} />
+              <Route path="/cvmaker" element={<CVMaker />} />
+              <Route path="/travel" element={<Travel />} />
+              <Route path="/finance" element={<Finance />} />
+              <Route path="/accommodation" element={<Accommodation />} />
+              <Route path="/job" element={<Job />} />
+              <Route path="/business" element={<Business />} />
+              <Route path="/flight" element={<Flights />} />
+              <Route path="/forex" element={<Forex />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/legal" element={<Legal />} />
+            </Routes>
+          </main>
+          {/* <WhatsAppButton /> */}
+          <Footer />
+        </div>
+      </Router>
     </ApplicationProvider>
   );
 };

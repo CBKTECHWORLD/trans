@@ -102,7 +102,36 @@ const Accommodation: React.FC = () => {
           </div>
         </div>
       </div>
-
+      {/* Book Now Button */}
+      <div className="max-w-6xl mx-auto px-6 mt-8 flex justify-center">
+        <a
+          href="https://transitley.studentacco.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="relative inline-flex items-center px-10 py-5 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold rounded-full shadow-xl hover:from-blue-700 hover:to-purple-700 transition-colors text-lg group overflow-hidden"
+          style={{ boxShadow: '0 8px 32px 0 rgba(80, 72, 229, 0.25)' }}
+        >
+          <span className="absolute left-0 top-0 w-full h-full bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 opacity-0 group-hover:opacity-20 transition-opacity duration-500 rounded-full animate-pulse pointer-events-none"></span>
+          <svg className="w-6 h-6 mr-3 text-yellow-300 animate-bounce" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+          Book Now
+          <span className="ml-3 flex items-center">
+        <svg className="w-5 h-5 text-white animate-spin-slow" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10" stroke="currentColor" strokeOpacity="0.2" strokeWidth="4" />
+          <path d="M12 2a10 10 0 0 1 10 10" stroke="currentColor" strokeWidth="4" strokeLinecap="round" />
+        </svg>
+          </span>
+        </a>
+      </div>
+      <div className="flex justify-center mt-2">
+        <span className="inline-flex items-center bg-gradient-to-r from-yellow-200 via-pink-200 to-purple-200 text-purple-800 font-semibold px-4 py-2 rounded-full shadow hover:scale-105 transition-transform text-sm">
+          <svg className="w-4 h-4 mr-2 text-pink-500" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13v4h3a1 1 0 110 2h-4a1 1 0 01-1-1V5a1 1 0 112 0z" />
+          </svg>
+          Limited slots available!
+        </span>
+      </div>
       {/* Main Content */}
       <div className="max-w-6xl mx-auto px-6 py-12">
         
