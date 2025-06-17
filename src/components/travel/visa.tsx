@@ -6,8 +6,7 @@ const VisaInfoPage: React.FC = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-md overflow-hidden">
           <div className="bg-blue-600 text-white p-6">
-            {/* <p className="mb-4 text-lg">Welcome! This page provides an overview of the main UK visa types and how they can lead to permanent residency. Whether you are planning to study, visit, work, join family, or start a business, understanding your options is the first step.</p> */}
-              
+            {/* <p className="mb-4 text-lg">Welcome! This page provides an overview of the main UK visa types and how they can lead to permanent residency. Whether you are planning to study, visit, work, join family, or start a business, understanding your options is the first step.</p> */}  
           
             <div className="mb-6 bg-gradient-to-r from-blue-700 via-blue-600 to-blue-500 rounded-xl p-6 shadow-lg border border-blue-400">
               <h2 className="text-xl font-extrabold mb-3 text-white tracking-wide flex items-center gap-2">

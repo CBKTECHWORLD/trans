@@ -55,17 +55,22 @@ const Role: React.FC = () => {
               description="Exclusive offers on flights to the UK"
             />
           </Link>
-          <Link to="/accommodation" className="hover:shadow-lg transition-shadow duration-200">
+            <a
+            href="https://transitley.studentacco.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:shadow-lg transition-shadow duration-200"
+            >
             <FeatureCard
               icon={
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+              </svg>
               }
               title="Accommodation Assistance"
               description="Help finding a place that feels like home"
             />
-          </Link>
+            </a>
           <Link to="/job" className="hover:shadow-lg transition-shadow duration-200">
             <FeatureCard
               icon={
