@@ -9,7 +9,9 @@ import '../App.css'
 // import Banner from '../components/event/Banner';
 import Role from '../components/home/Role';
 import Intro from '../components/home/Intro';
+import LanguageCourseCards from '../components/home/LanguageCourseCards';
 // import VideoTestimonials from '../components/home/VideoTestimonials';
+
 
 
 export default function HomePage() {
@@ -19,6 +21,7 @@ export default function HomePage() {
       {/* <Banner /> */}
       <Intro />
       <Role />
+      <LanguageCourseCards />
       {/* <StatsSection /> */}
          {/* <StartNow />
       <FeaturesSection /> */}
