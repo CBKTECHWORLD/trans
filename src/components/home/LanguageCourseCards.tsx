@@ -3,17 +3,17 @@ import { Clock, Users, Award, ExternalLink, Globe } from 'lucide-react';
 
 const LanguageCourseCards = () => {
 const languages = [
-    {
-        name: 'Spanish',
-        flag: '🇪🇸',
-        gradient: 'from-red-500 to-yellow-500',
-        bgColor: 'bg-red-50',
-        textColor: 'text-red-800',
-        buttonGradient: 'from-red-600 to-yellow-600 hover:from-red-700 hover:to-yellow-700',
-        description: 'Master the world\'s 2nd most spoken language. Perfect for business and travel.',
-        level: 'Beginner to Advanced',
-        students: '500+ enrolled'
-    },
+    // {
+    //     name: 'Spanish',
+    //     flag: '🇪🇸',
+    //     gradient: 'from-red-500 to-yellow-500',
+    //     bgColor: 'bg-red-50',
+    //     textColor: 'text-red-800',
+    //     buttonGradient: 'from-red-600 to-yellow-600 hover:from-red-700 hover:to-yellow-700',
+    //     description: 'Master the world\'s 2nd most spoken language. Perfect for business and travel.',
+    //     level: 'Beginner to Advanced',
+    //     students: '500+ enrolled'
+    // },
     {
         name: 'French',
         flag: '🇫🇷',
@@ -47,17 +47,7 @@ const languages = [
         level: 'Beginner to Advanced',
         students: '600+ enrolled'
     }
-    // {
-    //   name: 'Mandarin',
-    //   flag: '🇨🇳',
-    //   gradient: 'from-red-600 to-yellow-500',
-    //   bgColor: 'bg-red-50',
-    //   textColor: 'text-red-800',
-    //   buttonGradient: 'from-red-600 to-yellow-500 hover:from-red-700 hover:to-yellow-600',
-    //   description: 'World\'s most spoken language. Essential for global business and trade.',
-    //   level: 'Beginner to Intermediate',
-    //   students: '420+ enrolled'
-    // }
+
 ];
 
   const handleBookNow = (language: string) => {
@@ -86,7 +76,7 @@ const languages = [
                     >
                         {/* Language Header */}
                         <div className={`h-20 bg-gradient-to-br ${language.gradient} relative`}>
-                            <div className="absolute inset-0 bg-black bg-opacity-10"></div>
+                            <div className="absolute inset-0 bg-amber-600 bg-opacity-10"></div>
                             <div className="absolute inset-0 flex items-center justify-center">
                                 <div className="text-center text-white">
                                     {/* <div className="text-2xl mb-1">{language.flag}</div> */}

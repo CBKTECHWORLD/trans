@@ -59,7 +59,7 @@ export default function Business() {
         'Warehousing solutions',
         'Distribution and logistics setup'
       ],
-      transitleyAdvantage: 'We offer sourcing support from India, Europe, and Asia. Our integrated logistics includes warehousing, packaging, and delivery via DTA Express.'
+      transitleyAdvantage: 'We offer sourcing support from India, Europe, and Asia. Our integrated logistics includes warehousing, packaging, and delivery.'
     },
     {
       step: 5,
@@ -102,7 +102,7 @@ export default function Business() {
     { service: 'Market & Competitor Analysis', icon: Users, description: 'Comprehensive market research and competitive landscape analysis' },
     { service: 'Business Registration', icon: FileCheck, description: 'Complete registration process for Ltd, Sole Trader, and other structures' },
     { service: 'Product Sourcing', icon: Globe, description: 'Sourcing support from India, EU, and UK suppliers' },
-    { service: 'Warehousing & Logistics', icon: Truck, description: 'Integrated logistics solutions via DTA Express' },
+    { service: 'Warehousing & Logistics', icon: Truck, description: 'Integrated logistics solutions' },
     { service: 'Accounting & Tax Compliance', icon: Banknote, description: 'Professional bookkeeping and HMRC compliance services' },
     { service: 'Website & E-commerce', icon: Globe, description: 'Digital presence and online store development' },
     { service: 'Legal & Immigration Advice', icon: Building2, description: 'Affordable legal guidance for business and immigration matters' }
@@ -113,7 +113,7 @@ export default function Business() {
     'Tailored for students, immigrants, and new entrepreneurs',
     'Expert guidance at every step',
     'Affordable and transparent pricing',
-    'Integrated logistics via DTA Express',
+    'Integrated logistics',
     'In-house certified accountants',
     'Digital marketing and web development',
     'Ongoing support and consultation'
