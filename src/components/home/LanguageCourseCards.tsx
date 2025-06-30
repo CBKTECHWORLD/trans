@@ -6,8 +6,8 @@ const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/1-fOcqfMKJXuq7wHnUhZ3xj
 const languages = [
     { name: 'French', icon: <Landmark className="w-10 h-10 text-blue-500" />, url: GOOGLE_FORM_URL },
     { name: 'German', icon: <Landmark className="w-10 h-10 text-blue-500" />, url: GOOGLE_FORM_URL },
-    { name: 'IELTS Academic', icon: <GraduationCap className="w-10 h-10 text-blue-500" />, url: GOOGLE_FORM_URL },    
-    { name: 'IELTS General', icon: <GraduationCap className="w-10 h-10 text-blue-500" />, url: GOOGLE_FORM_URL },
+    { name: 'IELTS Academic and General', icon: <GraduationCap className="w-10 h-10 text-blue-500" />, url: GOOGLE_FORM_URL },    
+    { name: 'GMAT', icon: <GraduationCap className="w-10 h-10 text-blue-500" />, url: GOOGLE_FORM_URL },
     { name: 'TOEFL', icon: <BookOpen className="w-10 h-10 text-blue-500" />, url: GOOGLE_FORM_URL },
     { name: 'PTE', icon: <BookOpen className="w-10 h-10 text-blue-500" />, url: GOOGLE_FORM_URL },
     { name: 'SAT', icon: <GraduationCap className="w-10 h-10 text-blue-500" />, url: GOOGLE_FORM_URL },    
@@ -32,12 +32,12 @@ const LanguageCourseCards = () => (
                         href={language.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex flex-col items-center border-2 border-blue-200 rounded-xl p-6 w-48 bg-white shadow hover:border-blue-400 transition no-underline"
+                        className="flex flex-col items-center border-2 border-blue-500 rounded-xl p-6 w-48 bg-white shadow hover:border-blue-400 transition no-underline"
                     >
                         <div className="mb-3">
                             {language.icon}
                         </div>
-                        <div className="text-lg font-semibold text-gray-800">{language.name}</div>
+                        <div className="text-lg font-semibold text-blue-800">{language.name}</div>
                     </a>
                 ))}
             </div>

@@ -111,8 +111,55 @@ export default function Finance() {
   return (
     <div className="bg-slate-50 min-h-screen">
       <div className="max-w-6xl mx-auto px-4 py-8 md:py-12">
-        <header className="mb-10 text-center">
-          <h1 className="text-3xl md:text-4xl font-bold text-indigo-800 mb-2">
+      
+          
+            <h2 className="text-2xl md:text-3xl font-bold text-amber-600 mb-4 flex items-center justify-center gap-2">
+              Our Bank Partners
+            </h2>
+            <div className="flex flex-wrap justify-center gap-6 mb-4">
+              {[
+                { src: "/bank/1.jpg", alt: "Financial Partner 1 Logo" },
+                { src: "/bank/2.png", alt: "Financial Partner 1 Logo" },
+                { src: "/bank/3.png", alt: "Financial Partner 1 Logo" },
+                { src: "/bank/4.png", alt: "Financial Partner 1 Logo" },
+                { src: "/bank/5.jpg", alt: "Financial Partner 1 Logo" },
+                { src: "/bank/6.png", alt: "Financial Partner 1 Logo" },
+                { src: "/bank/7.png", alt: "Financial Partner 1 Logo" },
+                { src: "/bank/8.png", alt: "Financial Partner 1 Logo" },
+                { src: "/bank/9.png", alt: "Financial Partner 1 Logo" },
+                { src: "/bank/10.png", alt: "Financial Partner 1 Logo" },
+                { src: "/bank/11.png", alt: "Financial Partner 1 Logo" },
+                { src: "/bank/12.png", alt: "Financial Partner 1 Logo" },
+                // Add more partners here as needed
+              ].map((partner, idx) => (
+                <button
+                  key={partner.src}
+                  onClick={() => window.open('https://docs.google.com/forms/d/1-fOcqfMKJXuq7wHnUhZ3xjYxY3_jPFSuE6-ml9o3hSc', '_blank')}
+                  className="focus:outline-none"
+                  aria-label={partner.alt}
+                  type="button"
+                >
+                  <img
+                    src={partner.src}
+                    alt={partner.alt}
+                    className="h-9 w-auto hover:scale-105 transition-transform"
+                    style={{ maxHeight: 60 }}
+                  />
+                </button>
+              ))}
+            </div>
+            <div className="flex justify-center mb-6">
+              <button
+                onClick={() => window.open('https://docs.google.com/forms/d/1-fOcqfMKJXuq7wHnUhZ3xjYxY3_jPFSuE6-ml9o3hSc', '_blank')}
+                className="bg-amber-600 hover:bg-amber-700 text-white font-semibold px-6 py-2 rounded shadow transition-colors"
+                type="button"
+              >
+                Get Quote
+              </button>
+            </div>
+          
+              <header className="mb-10 text-center">
+            <h1 className="text-3xl md:text-4xl font-bold text-indigo-800 mb-2">
             Cost of Living & Tuition Fees
           </h1>
           <p className="text-xl text-slate-700">
