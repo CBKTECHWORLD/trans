@@ -114,7 +114,7 @@ export default function Finance() {
       
           
             <h2 className="text-2xl md:text-3xl font-bold text-amber-600 mb-4 flex items-center justify-center gap-2">
-              Our Bank Partners
+              Our Educational Loan Partners
             </h2>
             <div className="flex flex-wrap justify-center gap-6 mb-4">
               {[
