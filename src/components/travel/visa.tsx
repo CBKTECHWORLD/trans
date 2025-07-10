@@ -3,345 +3,316 @@ import React from 'react';
 const VisaInfoPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50">
+
       <div className="container mx-auto px-4 py-12">
+        <div className="mb-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+          {[
+            {
+              title: "Skilled Worker Visa",
+              description: "For professionals with a job offer from a UK employer.",
+              anchor: "Skilled",
+              color: "from-blue-700 via-blue-600 to-blue-500",
+            },
+            {
+              title: "Graduate Route",
+              description: "For recent graduates of UK universities to stay and work.",
+              anchor: "graduate",
+              color: "from-green-600 via-green-500 to-green-400",
+            },
+            {
+              title: "Innovator Founder Visa",
+              description: "For entrepreneurs with innovative business ideas.",
+              anchor: "innovator",
+              color: "from-purple-700 via-purple-600 to-purple-500",
+            },
+            {
+              title: "Health and Care Worker Visa",
+              description: "For healthcare professionals joining the NHS or care sector.",
+              anchor: "health",
+              color: "from-pink-600 via-pink-500 to-pink-400",
+            },
+            {
+              title: "Family Route (Visitor) Visa",
+              description: "For joining family members who are settled in the UK.",
+              anchor: "visitor",
+              color: "from-yellow-500 via-yellow-400 to-yellow-300",
+            },
+            {
+              title: "Global Talent Visa",
+              description: "For leaders or emerging leaders in academia, arts, or tech.",
+              anchor: "global-talent",
+              color: "from-indigo-700 via-indigo-600 to-indigo-500",
+            },
+            {
+              title: "Expansion Worker & Business Visas",
+              description: "For business expansion and sponsorship routes.",
+              anchor: "business",
+              color: "from-red-600 via-red-500 to-red-400",
+            },
+          ].map((item) => (
+            <a
+              key={item.title}
+              href={`#${item.anchor}`}
+              className={`block bg-gradient-to-r ${item.color} rounded-lg p-3 shadow-md border border-opacity-40 hover:scale-105 transition-transform cursor-pointer`}
+            >
+              <h3 className="text-base font-bold text-white mb-0.5 drop-shadow">{item.title}</h3>
+              <p className="text-white text-xs drop-shadow">{item.description}</p>
+            </a>
+          ))}
+        </div>
         <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-md overflow-hidden">
           <div className="bg-blue-600 text-white p-6">
-            {/* <p className="mb-4 text-lg">Welcome! This page provides an overview of the main UK visa types and how they can lead to permanent residency. Whether you are planning to study, visit, work, join family, or start a business, understanding your options is the first step.</p> */}  
-          
-            <div className="mb-6 bg-gradient-to-r from-blue-700 via-blue-600 to-blue-500 rounded-xl p-6 shadow-lg border border-blue-400">
-              <h2 className="text-xl font-extrabold mb-3 text-white tracking-wide flex items-center gap-2">
-              <svg className="w-6 h-6 text-white inline-block" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M12 11c0-1.657-1.343-3-3-3s-3 1.343-3 3 1.343 3 3 3 3-1.343 3-3zm0 0c0-1.657 1.343-3 3-3s3 1.343 3 3-1.343 3-3 3-3-1.343-3-3zm0 8v-5m0 0c-4.418 0-8-1.79-8-4V7a2 2 0 012-2h16a2 2 0 012 2v3c0 2.21-3.582 4-8 4z" />
-              </svg>
-              Visa, we offer
-              </h2>
-              <ul className="space-y-2">
-              <li className="flex items-start gap-2">
-                <span className="mt-1 text-blue-200">•</span>
-                <span>
-                <span className="font-semibold text-white">Skilled Worker Visa:</span>
-                <span className="text-blue-100"> For professionals with a job offer from a UK employer.</span>
-                </span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="mt-1 text-blue-200">•</span>
-                <span>
-                <span className="font-semibold text-white">Graduate Route:</span>
-                <span className="text-blue-100"> For recent graduates of UK universities to stay and work.</span>
-                </span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="mt-1 text-blue-200">•</span>
-                <span>
-                <span className="font-semibold text-white">Innovator Founder Visa:</span>
-                <span className="text-blue-100"> For entrepreneurs with innovative business ideas.</span>
-                </span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="mt-1 text-blue-200">•</span>
-                <span>
-                <span className="font-semibold text-white">Health and Care Worker Visa:</span>
-                <span className="text-blue-100"> For healthcare professionals joining the NHS or care sector.</span>
-                </span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="mt-1 text-blue-200">•</span>
-                <span>
-                <span className="font-semibold text-white">Family Route Visa:</span>
-                <span className="text-blue-100"> For joining family members who are settled in the UK.</span>
-                </span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="mt-1 text-blue-200">•</span>
-                <span>
-                <span className="font-semibold text-white">Global Talent Visa:</span>
-                <span className="text-blue-100"> For leaders or emerging leaders in academia, arts, or tech.</span>
-                </span>
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="mt-1 text-blue-200">•</span>
-                <span>
-                <span className="font-semibold text-white">Expansion Worker &amp; Business Visas:</span>
-                <span className="text-blue-100"> For business expansion and sponsorship routes.</span>
-                </span>
-              </li>
-              {/* <li className="flex items-start gap-2">
-                <span className="mt-1 text-blue-200">•</span>
-                <span>
-                <span className="font-semibold text-white">Asylum or Humanitarian Protection:</span>
-                <span className="text-blue-100"> For those seeking refuge or protection in the UK.</span>
-                </span>
-              </li> */}
-              </ul>
-            </div>
-            <h1 className="text-3xl font-bold mb-2">🛂 How to Settle in the UK</h1>
-            <p className="text-xl">A Complete Guide to Immigration Visa Types and Pathways to Permanent Residency</p>
+
           </div>
-          
-          <div className="p-6 text-black">
-            <p className="mb-6 ">
-              Settling in the United Kingdom is a long-term aspiration for many migrants globally. Whether you're coming for work, study, business, or family, the UK offers several immigration routes that can lead to Indefinite Leave to Remain (ILR) — a crucial milestone on the path to British citizenship.
+          <h1 className="text-3xl font-bold mb-2 text-blue-600">🛂 How to Settle in the UK</h1>
+          <p className="text-xl text-blue-400">A Complete Guide to Immigration Visa Types and Pathways to Permanent Residency</p>
+        </div>
+
+        <div className="p-6 text-black">
+          <p className="mb-6 ">
+            Settling in the United Kingdom is a long-term aspiration for many migrants globally. Whether you're coming for work, study, business, or family, the UK offers several immigration routes that can lead to Indefinite Leave to Remain (ILR) — a crucial milestone on the path to British citizenship.
+          </p>
+          <p className="mb-6 k">
+            This guide outlines the key UK visa types, their eligibility criteria, duration, and how they can transition into permanent settlement.
+          </p>
+
+          <hr className="my-8 border-gray-200" />
+
+          <div className="mb-8 text-black">
+            <h2 className="text-2xl font-semibold mb-3" id="Skilled">1. Skilled Worker Visa (formerly Tier 2 General)</h2>
+            <p className="text-blue-600 font-medium mb-2">✅ Best for: Professionals with a job offer in the UK</p>
+
+            <h3 className=" text-lg font-medium mt-4">Overview:</h3>
+            <p className="mb-2 ">
+              The Skilled Worker visa allows you to live and work in the UK with a licensed employer sponsor. It replaced the Tier 2 General visa in December 2020.
             </p>
-            <p className="mb-6 k">
-              This guide outlines the key UK visa types, their eligibility criteria, duration, and how they can transition into permanent settlement.
+
+            <h3 className="text-lg font-medium mt-4">Key Criteria:</h3>
+            <ul className="text-black list-disc pl-6 mb-4">
+              <li>Job offer from a Home Office-licensed sponsor</li>
+              <li>Job must be on the Skilled Occupation List</li>
+              <li>Minimum salary: Usually £26,200/year or £10.75/hour, subject to job type</li>
+            </ul>
+
+            <h3 className=" text-black text-lg font-medium mt-4">Path to Settlement:</h3>
+            <ul className="text-black list-disc pl-6 mb-4">
+              <li>After 5 years on this visa, you can apply for Indefinite Leave to Remain</li>
+              <li>Must meet salary threshold and continuous residency rules</li>
+            </ul>
+
+            <div className="bg-gray-50 p-4 rounded-md">
+              <p className="text-black text-sm">📚 Reference:</p>
+              <p className="text-black text-sm">UK Gov – Skilled Worker visa</p>
+              <a href="https://www.gov.uk/skilled-worker-visa" className="text-blue-600 hover:underline text-sm" target="_blank" rel="noopener noreferrer">
+                https://www.gov.uk/skilled-worker-visa
+              </a>
+            </div>
+          </div>
+
+          <hr className="my-8 border-gray-200" />
+
+          <div className="mb-8 text-black">
+            <h2 className="text-2xl font-semibold mb-3" id="graduate">🎓 2. Graduate Route (Post-Study Work Visa)</h2>
+            <p className="text-blue-600 font-medium mb-2">✅ Best for: International students who completed a UK degree</p>
+
+            <h3 className=" text-black text-lg font-medium mt-4">Overview:</h3>
+            <p className=" text-black mb-2">
+              This visa gives students up to 2 years (or 3 years for PhD graduates) to stay and work (or look for work) in the UK after completing a degree.
             </p>
-            
-            <hr className="my-8 border-gray-200" />
-            
-            <div className="mb-8 text-black">
-              <h2 className="text-2xl font-semibold mb-3">1. Skilled Worker Visa (formerly Tier 2 General)</h2>
-              <p className="text-blue-600 font-medium mb-2">✅ Best for: Professionals with a job offer in the UK</p>
-              
-              <h3 className=" text-lg font-medium mt-4">Overview:</h3>
-              <p className="mb-2 ">
-                The Skilled Worker visa allows you to live and work in the UK with a licensed employer sponsor. It replaced the Tier 2 General visa in December 2020.
-              </p>
-              
-              <h3 className="text-lg font-medium mt-4">Key Criteria:</h3>
-              <ul className="text-black list-disc pl-6 mb-4">
-                <li>Job offer from a Home Office-licensed sponsor</li>
-                <li>Job must be on the Skilled Occupation List</li>
-                <li>Minimum salary: Usually £26,200/year or £10.75/hour, subject to job type</li>
-              </ul>
-              
-              <h3 className=" text-black text-lg font-medium mt-4">Path to Settlement:</h3>
-              <ul className="text-black list-disc pl-6 mb-4">
-                <li>After 5 years on this visa, you can apply for Indefinite Leave to Remain</li>
-                <li>Must meet salary threshold and continuous residency rules</li>
-              </ul>
-              
-              <div className="bg-gray-50 p-4 rounded-md">
-                <p className="text-black text-sm">📚 Reference:</p>
-                <p className="text-black text-sm">UK Gov – Skilled Worker visa</p>
-                <a href="https://www.gov.uk/skilled-worker-visa" className="text-blue-600 hover:underline text-sm" target="_blank" rel="noopener noreferrer">
-                  https://www.gov.uk/skilled-worker-visa
-                </a>
-              </div>
+
+            <h3 className=" text-black text-lg font-medium mt-4">Key Points:</h3>
+            <ul className="text-black list-disc pl-6 mb-4">
+              <li>No sponsorship required</li>
+              <li>Cannot be extended, but you can switch to Skilled Worker or other routes</li>
+            </ul>
+
+            <h3 className="text-black text-lg font-medium mt-4">Path to Settlement:</h3>
+            <ul className="text-black list-disc pl-6 mb-4">
+              <li>Cannot directly lead to ILR, but can switch to eligible routes like Skilled Worker</li>
+            </ul>
+
+            <div className="bg-gray-50 p-4 rounded-md">
+              <p className="text-black text-sm">📚 Reference:</p>
+              <p className="text-black text-sm">UK Gov – Graduate visa</p>
+              <a href="https://www.gov.uk/graduate-visa" className="text-blue-600 hover:underline text-sm" target="_blank" rel="noopener noreferrer">
+                https://www.gov.uk/graduate-visa
+              </a>
             </div>
-            
-            <hr className="my-8 border-gray-200" />
-            
-            <div className="mb-8 text-black">
-              <h2 className="text-2xl font-semibold mb-3">🎓 2. Graduate Route (Post-Study Work Visa)</h2>
-              <p className="text-blue-600 font-medium mb-2">✅ Best for: International students who completed a UK degree</p>
-              
-              <h3 className=" text-black text-lg font-medium mt-4">Overview:</h3>
-              <p className=" text-black mb-2">
-                This visa gives students up to 2 years (or 3 years for PhD graduates) to stay and work (or look for work) in the UK after completing a degree.
-              </p>
-              
-              <h3 className=" text-black text-lg font-medium mt-4">Key Points:</h3>
-              <ul className="text-black list-disc pl-6 mb-4">
-                <li>No sponsorship required</li>
-                <li>Cannot be extended, but you can switch to Skilled Worker or other routes</li>
-              </ul>
-              
-              <h3 className="text-black text-lg font-medium mt-4">Path to Settlement:</h3>
-              <ul className="text-black list-disc pl-6 mb-4">
-                <li>Cannot directly lead to ILR, but can switch to eligible routes like Skilled Worker</li>
-              </ul>
-              
-              <div className="bg-gray-50 p-4 rounded-md">
-                <p className="text-black text-sm">📚 Reference:</p>
-                <p className="text-black text-sm">UK Gov – Graduate visa</p>
-                <a href="https://www.gov.uk/graduate-visa" className="text-blue-600 hover:underline text-sm" target="_blank" rel="noopener noreferrer">
-                  https://www.gov.uk/graduate-visa
-                </a>
-              </div>
+          </div>
+
+          <hr className="my-8 border-gray-200" />
+
+          <div className="mb-8 text-black">
+            <h2 className="text-black text-2xl font-semibold mb-3" id="innovator">💼 3. Innovator Founder Visa</h2>
+            <p className="text-blue-600 font-medium mb-2">✅ Best for: Entrepreneurs with an innovative business idea</p>
+
+            <h3 className="text-black text-lg font-medium mt-4">Overview:</h3>
+            <p className="mb-2">
+              Launched in April 2023, it replaced the older Innovator and Start-Up visas. Designed for founders with scalable business models.
+            </p>
+
+            <h3 className="text-black text-lg font-medium mt-4">Key Criteria:</h3>
+            <ul className="text-black list-disc pl-6 mb-4">
+              <li>Must have a UK-approved endorsing body</li>
+              <li>Business idea must be innovative, viable, and scalable</li>
+              <li>No minimum investment required</li>
+            </ul>
+
+            <h3 className="text-black text-lg font-medium mt-4">Path to Settlement:</h3>
+            <ul className="text-black list-disc pl-6 mb-4">
+              <li>Apply for ILR after 3 years, if business shows significant growth and job creation</li>
+            </ul>
+
+            <div className="bg-gray-50 p-4 rounded-md">
+              <p className="text-black text-sm">📚 Reference:</p>
+              <p className="text-black text-sm">UK Gov – Innovator Founder visa</p>
+              <a href="https://www.gov.uk/innovator-founder-visa" className="text-blue-600 hover:underline text-sm" target="_blank" rel="noopener noreferrer">
+                https://www.gov.uk/innovator-founder-visa
+              </a>
             </div>
-            
-            <hr className="my-8 border-gray-200" />
-            
-            <div className="mb-8 text-black">
-              <h2 className="text-black text-2xl font-semibold mb-3">💼 3. Innovator Founder Visa</h2>
-              <p className="text-blue-600 font-medium mb-2">✅ Best for: Entrepreneurs with an innovative business idea</p>
-              
-              <h3 className="text-black text-lg font-medium mt-4">Overview:</h3>
-              <p className="mb-2">
-                Launched in April 2023, it replaced the older Innovator and Start-Up visas. Designed for founders with scalable business models.
-              </p>
-              
-              <h3 className="text-black text-lg font-medium mt-4">Key Criteria:</h3>
-              <ul className="text-black list-disc pl-6 mb-4">
-                <li>Must have a UK-approved endorsing body</li>
-                <li>Business idea must be innovative, viable, and scalable</li>
-                <li>No minimum investment required</li>
-              </ul>
-              
-              <h3 className="text-black text-lg font-medium mt-4">Path to Settlement:</h3>
-              <ul className="text-black list-disc pl-6 mb-4">
-                <li>Apply for ILR after 3 years, if business shows significant growth and job creation</li>
-              </ul>
-              
-              <div className="bg-gray-50 p-4 rounded-md">
-                <p className="text-black text-sm">📚 Reference:</p>
-                <p className="text-black text-sm">UK Gov – Innovator Founder visa</p>
-                <a href="https://www.gov.uk/innovator-founder-visa" className="text-blue-600 hover:underline text-sm" target="_blank" rel="noopener noreferrer">
-                  https://www.gov.uk/innovator-founder-visa
-                </a>
-              </div>
+          </div>
+
+          <hr className="my-8 border-gray-200" />
+
+          <div className="mb-8">
+            <h2 className="text-black text-2xl font-semibold mb-3" id="health">🏥 4. Health and Care Worker Visa</h2>
+            <p className="text-blue-600 font-medium mb-2">✅ Best for: Doctors, nurses, and care workers</p>
+
+            <h3 className="text-black text-lg font-medium mt-4">Overview:</h3>
+            <p className="text-black mb-2">
+              A fast-track subcategory of the Skilled Worker visa, created to address NHS staffing needs.
+            </p>
+
+            <h3 className="text-black text-lg font-medium mt-4">Key Benefits:</h3>
+            <ul className="text-black list-disc pl-6 mb-4">
+              <li>Lower visa fees and fast processing</li>
+              <li>Exemption from Immigration Health Surcharge (IHS)</li>
+            </ul>
+
+            <h3 className="text-black text-lg font-medium mt-4">Path to Settlement:</h3>
+            <ul className="text-black list-disc pl-6 mb-4">
+              <li>Eligible for ILR after 5 years, same as Skilled Worker route</li>
+            </ul>
+
+            <div className="bg-gray-50 p-4 rounded-md">
+              <p className="text-black text-sm">📚 Reference:</p>
+              <p className="text-black text-sm">UK Gov – Health and Care Worker visa</p>
+              <a href="https://www.gov.uk/health-care-worker-visa" className="text-blue-600 hover:underline text-sm" target="_blank" rel="noopener noreferrer">
+                https://www.gov.uk/health-care-worker-visa
+              </a>
             </div>
-            
-            <hr className="my-8 border-gray-200" />
-            
-            <div className="mb-8">
-              <h2 className="text-black text-2xl font-semibold mb-3">🏥 4. Health and Care Worker Visa</h2>
-              <p className="text-blue-600 font-medium mb-2">✅ Best for: Doctors, nurses, and care workers</p>
-              
-              <h3 className="text-black text-lg font-medium mt-4">Overview:</h3>
-              <p className="text-black mb-2">
-                A fast-track subcategory of the Skilled Worker visa, created to address NHS staffing needs.
-              </p>
-              
-              <h3 className="text-black text-lg font-medium mt-4">Key Benefits:</h3>
-              <ul className="text-black list-disc pl-6 mb-4">
-                <li>Lower visa fees and fast processing</li>
-                <li>Exemption from Immigration Health Surcharge (IHS)</li>
-              </ul>
-              
-              <h3 className="text-black text-lg font-medium mt-4">Path to Settlement:</h3>
-              <ul className="text-black list-disc pl-6 mb-4">
-                <li>Eligible for ILR after 5 years, same as Skilled Worker route</li>
-              </ul>
-              
-              <div className="bg-gray-50 p-4 rounded-md">
-                <p className="text-black text-sm">📚 Reference:</p>
-                <p className="text-black text-sm">UK Gov – Health and Care Worker visa</p>
-                <a href="https://www.gov.uk/health-care-worker-visa" className="text-blue-600 hover:underline text-sm" target="_blank" rel="noopener noreferrer">
-                  https://www.gov.uk/health-care-worker-visa
-                </a>
-              </div>
+          </div>
+
+          <hr className="my-8 border-gray-200" />
+
+          <div className="mb-8">
+            <h2 className="text-black text-2xl font-semibold mb-3" id="visitor">💑 5. Family Route Visa (Spouse, Partner, Parent)</h2>
+            <p className="text-blue-600 font-medium mb-2">✅ Best for: Joining a British citizen or person with ILR</p>
+
+            <h3 className="text-black text-lg font-medium mt-4">Overview:</h3>
+            <p className="text-black mb-2">
+              Allows family members to join their partner or parent in the UK.
+            </p>
+
+            <h3 className="text-black text-lg font-medium mt-4">Key Criteria:</h3>
+            <ul className="text-black list-disc pl-6 mb-4">
+              <li>Genuine relationship proof</li>
+              <li>Minimum income threshold: £29,000 (from April 2024), rising to £38,700 (by early 2025)</li>
+            </ul>
+
+            <h3 className="text-black text-lg font-medium mt-4">Path to Settlement:</h3>
+            <ul className="text-black list-disc pl-6 mb-4">
+              <li>Eligible for ILR after 5 years (or 10 years in some cases)</li>
+            </ul>
+
+            <div className="bg-gray-50 p-4 rounded-md">
+              <p className="text-black text-sm">📚 Reference:</p>
+              <p className="text-black text-sm">UK Gov – Family visas</p>
+              <a href="https://www.gov.uk/uk-family-visa" className="text-blue-600 hover:underline text-sm" target="_blank" rel="noopener noreferrer">
+                https://www.gov.uk/uk-family-visa
+              </a>
             </div>
-            
-            <hr className="my-8 border-gray-200" />
-            
-            <div className="mb-8">
-              <h2 className="text-black text-2xl font-semibold mb-3">💑 5. Family Route Visa (Spouse, Partner, Parent)</h2>
-              <p className="text-blue-600 font-medium mb-2">✅ Best for: Joining a British citizen or person with ILR</p>
-              
-              <h3 className="text-black text-lg font-medium mt-4">Overview:</h3>
-              <p className="text-black mb-2">
-                Allows family members to join their partner or parent in the UK.
-              </p>
-              
-              <h3 className="text-black text-lg font-medium mt-4">Key Criteria:</h3>
-              <ul className="text-black list-disc pl-6 mb-4">
-                <li>Genuine relationship proof</li>
-                <li>Minimum income threshold: £29,000 (from April 2024), rising to £38,700 (by early 2025)</li>
-              </ul>
-              
-              <h3 className="text-black text-lg font-medium mt-4">Path to Settlement:</h3>
-              <ul className="text-black list-disc pl-6 mb-4">
-                <li>Eligible for ILR after 5 years (or 10 years in some cases)</li>
-              </ul>
-              
-              <div className="bg-gray-50 p-4 rounded-md">
-                <p className="text-black text-sm">📚 Reference:</p>
-                <p className="text-black text-sm">UK Gov – Family visas</p>
-                <a href="https://www.gov.uk/uk-family-visa" className="text-blue-600 hover:underline text-sm" target="_blank" rel="noopener noreferrer">
-                  https://www.gov.uk/uk-family-visa
-                </a>
-              </div>
+          </div>
+
+          <hr className="my-8 border-gray-200" />
+
+          <div className="mb-8">
+            <h2 className="text-black text-2xl font-semibold mb-3" id="global-talent">🌍 6. Global Talent Visa</h2>
+            <p className="text-blue-600 font-medium mb-2">✅ Best for: High achievers in tech, science, arts, and academia</p>
+
+            <h3 className="text-black text-lg font-medium mt-4">Overview:</h3>
+            <p className="mb-2 text-black">
+              No job offer required. You must be a leader or emerging leader in your field, endorsed by an official body like Tech Nation (now Tech Nation Founders), Arts Council, etc.
+            </p>
+
+            <h3 className="text-black text-lg font-medium mt-4">Path to Settlement:</h3>
+            <ul className="text-black list-disc pl-6 mb-4">
+              <li>ILR after 3 years (fast-track) or 5 years depending on achievements</li>
+            </ul>
+
+            <div className="bg-gray-50 p-4 rounded-md">
+              <p className="text-black text-sm">📚 Reference:</p>
+              <p className="text-black text-sm">UK Gov – Global Talent visa</p>
+              <a href="https://www.gov.uk/global-talent" className="text-blue-600 hover:underline text-sm" target="_blank" rel="noopener noreferrer">
+                https://www.gov.uk/global-talent
+              </a>
             </div>
-            
-            <hr className="my-8 border-gray-200" />
-            
-            <div className="mb-8">
-              <h2 className="text-black text-2xl font-semibold mb-3">🌍 6. Global Talent Visa</h2>
-              <p className="text-blue-600 font-medium mb-2">✅ Best for: High achievers in tech, science, arts, and academia</p>
-              
-              <h3 className="text-black text-lg font-medium mt-4">Overview:</h3>
-              <p className="mb-2 text-black">
-                No job offer required. You must be a leader or emerging leader in your field, endorsed by an official body like Tech Nation (now Tech Nation Founders), Arts Council, etc.
-              </p>
-              
-              <h3 className="text-black text-lg font-medium mt-4">Path to Settlement:</h3>
-              <ul className="text-black list-disc pl-6 mb-4">
-                <li>ILR after 3 years (fast-track) or 5 years depending on achievements</li>
-              </ul>
-              
-              <div className="bg-gray-50 p-4 rounded-md">
-                <p className="text-black text-sm">📚 Reference:</p>
-                <p className="text-black text-sm">UK Gov – Global Talent visa</p>
-                <a href="https://www.gov.uk/global-talent" className="text-blue-600 hover:underline text-sm" target="_blank" rel="noopener noreferrer">
-                  https://www.gov.uk/global-talent
-                </a>
-              </div>
+          </div>
+
+          <hr className="my-8 border-gray-200" />
+
+          <div className="mb-8 text-black">
+            <h2 className="text-2xl font-semibold mb-3" id="business">🏢 7. Start a Business via UK Expansion Worker or Sponsor License</h2>
+            <p className="text-blue-600 font-medium mb-2">✅ Best for: Businessmen expanding overseas operations to the UK</p>
+
+            <p className="mb-2">Options include:</p>
+            <ul className="list-disc pl-6 mb-4">
+              <li>UK Expansion Worker visa (part of Global Business Mobility route)</li>
+              <li>Innovator Founder visa</li>
+              <li>Apply for a sponsor license and sponsor yourself under Skilled Worker (complex but possible)</li>
+            </ul>
+
+            <div className="bg-gray-50 p-4 rounded-md text-black">
+              <p className="text-sm">📚 Reference:</p>
+              <p className="text-sm">UK Gov – Global Business Mobility visas</p>
+              <a href="https://www.gov.uk/uk-expansion-worker-visa" className="text-blue-600 hover:underline text-sm" target="_blank" rel="noopener noreferrer">
+                https://www.gov.uk/uk-expansion-worker-visa
+              </a>
             </div>
-            
-            <hr className="my-8 border-gray-200" />
-            
-            <div className="mb-8 text-black">
-              <h2 className="text-2xl font-semibold mb-3">🏢 7. Start a Business via UK Expansion Worker or Sponsor License</h2>
-              <p className="text-blue-600 font-medium mb-2">✅ Best for: Businessmen expanding overseas operations to the UK</p>
-              
-              <p className="mb-2">Options include:</p>
-              <ul className="list-disc pl-6 mb-4">
-                <li>UK Expansion Worker visa (part of Global Business Mobility route)</li>
-                <li>Innovator Founder visa</li>
-                <li>Apply for a sponsor license and sponsor yourself under Skilled Worker (complex but possible)</li>
-              </ul>
-              
-              <div className="bg-gray-50 p-4 rounded-md text-black">
-                <p className="text-sm">📚 Reference:</p>
-                <p className="text-sm">UK Gov – Global Business Mobility visas</p>
-                <a href="https://www.gov.uk/uk-expansion-worker-visa" className="text-blue-600 hover:underline text-sm" target="_blank" rel="noopener noreferrer">
-                  https://www.gov.uk/uk-expansion-worker-visa
-                </a>
-              </div>
+          </div>
+
+          <hr className="my-8 border-gray-200" />
+
+        
+          <div className="mb-8 text-black">
+            <h2 className="text-2xl font-semibold mb-3">✅ What is Indefinite Leave to Remain (ILR)?</h2>
+            <p className="mb-4">
+              It is the UK equivalent of permanent residency. Once you have ILR, you:
+            </p>
+            <ul className="list-disc pl-6 mb-4">
+              <li>Can live and work in the UK with no time limit</li>
+              <li>Can apply for British Citizenship after 1 year (if eligible)</li>
+              <li>Can access public funds (subject to restrictions)</li>
+            </ul>
+
+            <div className="bg-gray-50 p-4 rounded-md">
+              <p className="text-sm">📚 UK ILR eligibility</p>
+              <a href="https://www.gov.uk/indefinite-leave-to-remain" className="text-blue-600 hover:underline text-sm" target="_blank" rel="noopener noreferrer">
+                https://www.gov.uk/indefinite-leave-to-remain
+              </a>
             </div>
-            
-            <hr className="my-8 border-gray-200" />
-            
-            {/* <div className="mb-8 text-black">
-              <h2 className="text-2xl font-semibold mb-3">🛬 8. Asylum or Humanitarian Protection</h2>
-              <p className="text-blue-600 font-medium mb-2">✅ Best for: Refugees or individuals fleeing persecution</p>
-              
-              <ul className="list-disc pl-6 mb-4">
-                <li>After 5 years of protection in the UK, you may apply for ILR</li>
-                <li>Subject to strict eligibility and evidence requirements</li>
-              </ul>
-              
-              <div className="bg-gray-50 p-4 rounded-md text-black">
-                <p className="text-sm">📚 Reference:</p>
-                <p className="text-sm">UK Gov – Claim asylum in the UK</p>
-                <a href="https://www.gov.uk/claim-asylum" className="text-blue-600 hover:underline text-sm" target="_blank" rel="noopener noreferrer">
-                  https://www.gov.uk/claim-asylum
-                </a>
-              </div>
-            </div> */}
-            
-            {/* <hr className="my-8 border-gray-200" /> */}
-            
-            <div className="mb-8 text-black">
-              <h2 className="text-2xl font-semibold mb-3">✅ What is Indefinite Leave to Remain (ILR)?</h2>
-              <p className="mb-4">
-                It is the UK equivalent of permanent residency. Once you have ILR, you:
-              </p>
-              <ul className="list-disc pl-6 mb-4">
-                <li>Can live and work in the UK with no time limit</li>
-                <li>Can apply for British Citizenship after 1 year (if eligible)</li>
-                <li>Can access public funds (subject to restrictions)</li>
-              </ul>
-              
-              <div className="bg-gray-50 p-4 rounded-md">
-                <p className="text-sm">📚 UK ILR eligibility</p>
-                <a href="https://www.gov.uk/indefinite-leave-to-remain" className="text-blue-600 hover:underline text-sm" target="_blank" rel="noopener noreferrer">
-                  https://www.gov.uk/indefinite-leave-to-remain
-                </a>
-              </div>
-            </div>
-            
-            <div className="mt-10 border-t border-gray-200 pt-6 text-black">
-              <p className="text-sm text-gray-600">
-                Last updated: May 2025. Information on this page is for guidance only and subject to change.
-                Please always refer to the official UK government website for the most current visa regulations.
-              </p>
-            </div>
+          </div>
+
+          <div className="mt-10 border-t border-gray-200 pt-6 text-black">
+            <p className="text-sm text-gray-600">
+              Last updated: May 2025. Information on this page is for guidance only and subject to change.
+              Please always refer to the official UK government website for the most current visa regulations.
+            </p>
           </div>
         </div>
       </div>
-   </div>
+    </div>
+
   );
 };
 

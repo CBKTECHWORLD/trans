@@ -5,19 +5,46 @@ const Banner: React.FC = () => {
   
   const banners = [
     {
-      title: "Discover Exciting Events",
-      subtitle: "Find and register for the best events happening near you",
-      bgColor: "bg-blue-600"
+      title: "Study Abroad Opportunities",
+      subtitle: "Explore top universities and programs worldwide.",
+      bgColor: "bg-blue-600",
+      image: "/images/study-abroad.jpg",
+      link: "/study-abroad"
     },
     {
-      title: "Early Bird Discounts",
-      subtitle: "Get special pricing on upcoming featured events",
-      bgColor: "bg-purple-600"
+      title: "Finance Your Education",
+      subtitle: "Find scholarships, loans, and financial planning tips.",
+      bgColor: "bg-purple-600",
+      image: "/images/finance.jpg",
+      link: "/finance"
     },
     {
-      title: "Join Our Community",
-      subtitle: "Connect with like-minded people at our exclusive events",
-      bgColor: "bg-green-600"
+      title: "Visa Guidance",
+      subtitle: "Get expert advice on student, visitor, innovator and other visas applications.",
+      bgColor: "bg-green-600",
+      image: "/images/visa.jpg",
+      link: "/visa"
+    },
+    {
+      title: "Accommodation Solutions",
+      subtitle: "Discover safe and affordable student housing before reaching the UK.",
+      bgColor: "bg-yellow-600",
+      image: "/images/accommodation.jpg",
+      link: "/accommodation"
+    },
+    {
+      title: "Jobs",
+      subtitle: "Find full-time jobs, internships, part-time jobs and work placements.",
+      bgColor: "bg-red-400",
+      image: "/images/jobs.jpg",
+      link: "/jobs"
+    },
+    {
+      title: "Business & Entrepreneurship",
+      subtitle: "Learn how to start and grow your business in the United Kingdom.",
+      bgColor: "bg-indigo-600",
+      image: "/images/business.jpg",
+      link: "/business"
     }
   ];
 
@@ -34,7 +61,7 @@ const Banner: React.FC = () => {
 
   return (
     <div className={`w-full ${currentBanner.bgColor} transition-all duration-500 ease-in-out`}>
-      <div className="container mx-auto px-4 py-16 text-center">
+      <div className="container mx-auto px-4 py-20 text-center">
         <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 transition-opacity duration-300">
           {currentBanner.title}
         </h1>
