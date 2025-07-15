@@ -108,65 +108,126 @@ export default function Finance() {
     { location: 'Other Cities', cost: '£20,000 – £35,000' }
   ];
 
+  const forexLink = "https://transitley.extravelmoney.com/";
   return (
     <div className="bg-slate-50 min-h-screen">
-      <div className="max-w-6xl mx-auto px-4 py-8 md:py-12">
-      
-          
-            <h2 className="text-2xl md:text-3xl font-bold text-amber-600 mb-4 flex items-center justify-center gap-2">
-              Our Educational Loan Partners
-            </h2>
-            <div className="flex flex-wrap justify-center gap-6 mb-4">
-              {[
-                { src: "/bank/1.jpg", alt: "Financial Partner 1 Logo" },
-                { src: "/bank/2.png", alt: "Financial Partner 1 Logo" },
-                { src: "/bank/3.png", alt: "Financial Partner 1 Logo" },
-                { src: "/bank/4.png", alt: "Financial Partner 1 Logo" },
-                { src: "/bank/5.jpg", alt: "Financial Partner 1 Logo" },
-                { src: "/bank/6.png", alt: "Financial Partner 1 Logo" },
-                { src: "/bank/7.png", alt: "Financial Partner 1 Logo" },
-                { src: "/bank/8.png", alt: "Financial Partner 1 Logo" },
-                { src: "/bank/9.png", alt: "Financial Partner 1 Logo" },
-                { src: "/bank/10.png", alt: "Financial Partner 1 Logo" },
-                { src: "/bank/11.png", alt: "Financial Partner 1 Logo" },
-                { src: "/bank/12.png", alt: "Financial Partner 1 Logo" },
-                // Add more partners here as needed
-              ].map((partner, idx) => (
-                <button
-                  key={partner.src}
-                  onClick={() => window.open('https://docs.google.com/forms/d/1-fOcqfMKJXuq7wHnUhZ3xjYxY3_jPFSuE6-ml9o3hSc', '_blank')}
-                  className="focus:outline-none"
-                  aria-label={partner.alt}
-                  type="button"
-                >
-                  <img
-                    src={partner.src}
-                    alt={partner.alt}
-                    className="h-9 w-auto hover:scale-105 transition-transform"
-                    style={{ maxHeight: 60 }}
-                  />
-                </button>
-              ))}
-            </div>
-            <div className="flex justify-center mb-6">
-              <button
-                onClick={() => window.open('https://docs.google.com/forms/d/1-fOcqfMKJXuq7wHnUhZ3xjYxY3_jPFSuE6-ml9o3hSc', '_blank')}
-                className="bg-amber-600 hover:bg-amber-700 text-white font-semibold px-6 py-2 rounded shadow transition-colors"
-                type="button"
-              >
-                Get Quote
-              </button>
-            </div>
-          
-              <header className="mb-10 text-center">
-            <h1 className="text-3xl md:text-4xl font-bold text-indigo-800 mb-2">
-            Cost of Living & Tuition Fees
+      <div className="max-w-6xl mx-auto px-4 py-8 md:py-12 border-b border-grey-200">
+
+
+        <h2 className="text-3xl md:text-4xl font-bold text-amber-600 mb-4 flex items-center justify-center gap-2">
+          Our Educational Loan Partners
+        </h2>
+        <div className="flex flex-wrap justify-center gap-6 mb-4">
+          {[
+            { src: "/bank/1.jpg", alt: "Financial Partner 1 Logo" },
+            { src: "/bank/2.png", alt: "Financial Partner 1 Logo" },
+            { src: "/bank/3.png", alt: "Financial Partner 1 Logo" },
+            { src: "/bank/4.png", alt: "Financial Partner 1 Logo" },
+            { src: "/bank/5.jpg", alt: "Financial Partner 1 Logo" },
+            { src: "/bank/6.png", alt: "Financial Partner 1 Logo" },
+            { src: "/bank/7.png", alt: "Financial Partner 1 Logo" },
+            { src: "/bank/8.png", alt: "Financial Partner 1 Logo" },
+            { src: "/bank/9.png", alt: "Financial Partner 1 Logo" },
+            { src: "/bank/10.png", alt: "Financial Partner 1 Logo" },
+            { src: "/bank/11.png", alt: "Financial Partner 1 Logo" },
+            { src: "/bank/12.png", alt: "Financial Partner 1 Logo" },
+            // Add more partners here as needed
+          ].map((partner, idx) => (
+            <button
+              key={partner.src}
+              onClick={() => window.open('https://docs.google.com/forms/d/1-fOcqfMKJXuq7wHnUhZ3xjYxY3_jPFSuE6-ml9o3hSc', '_blank')}
+              className="focus:outline-none"
+              aria-label={partner.alt}
+              type="button"
+            >
+              <img
+                src={partner.src}
+                alt={partner.alt}
+                className="h-9 w-auto hover:scale-105 transition-transform"
+                style={{ maxHeight: 60 }}
+              />
+            </button>
+          ))}
+        </div>
+        <div className="flex justify-center mb-6">
+          <button
+            onClick={() => window.open('https://docs.google.com/forms/d/1-fOcqfMKJXuq7wHnUhZ3xjYxY3_jPFSuE6-ml9o3hSc', '_blank')}
+            className="bg-amber-600 hover:bg-amber-700 text-white font-semibold px-6 py-2 rounded shadow transition-colors"
+            type="button"
+          >
+            Get Quote
+          </button>
+        </div>
+
+        <header className="mb-10 text-center">
+          <h1 className="text-3xl md:text-4xl font-bold text-indigo-800 mb-2">
+            Forex and International Transfers
           </h1>
           <p className="text-xl text-slate-700">
-            For International Students in the UK (2025)
+            Pay your university fees and send money abroad at competitive rates.
           </p>
         </header>
 
+
+        {(() => {
+
+          return (
+            <div className="flex justify-center gap-4 mt-4 mb-8 ">
+              <div className="flex flex-col items-center gap-2 border-2 border-slate-200 p-4 rounded-lg">
+                <p className="text-slate-700 text-center mb-1">
+                  Pay your university fees anytime, anywhere.
+                </p>
+                <a
+                  href={forexLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-5 py-2 rounded shadow transition-colors"
+                >
+                  Pay Fees
+                </a>
+              </div>
+
+              <div className="flex flex-col items-center gap-2 border-2 border-slate-200 p-4 rounded-lg">
+                <p className="text-slate-700 text-center mb-1">
+                  Want to support your loved ones with their expenses?
+                </p>
+                <a
+                  href={forexLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-5 py-2 rounded shadow transition-colors"
+                >
+                  Send Money
+                </a>
+
+              </div>
+              <div className="flex flex-col items-center gap-2 border-2 border-slate-200 p-4 rounded-lg">
+                <p className="text-slate-700 text-center mb-1">
+                  Get Forex card at your doorstep
+                </p>
+                <a
+                  href={forexLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-5 py-2 rounded shadow transition-colors"
+                >
+                  Get Forex Card
+                </a>
+
+              </div>
+              <p></p>
+              <br />
+            </div>
+          );
+        })()}
+        <header className="mb-10 text-center">
+          <h1 className="text-3xl md:text-4xl font-bold text-indigo-800 mb-2">
+            Cost of Living & Tuition Fees
+          </h1>
+          <p className="text-xl text-slate-700">
+            For International Students in the UK
+          </p>
+        </header>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-10">
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
             <div className="bg-indigo-600 px-6 py-4 flex items-center">
@@ -240,11 +301,10 @@ export default function Finance() {
                     <button
                       key={city}
                       onClick={() => setSelectedCity(city)}
-                      className={`px-4 py-2 rounded text-sm font-medium ${
-                        selectedCity === city
-                          ? 'bg-amber-600 text-white'
-                          : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
-                      }`}
+                      className={`px-4 py-2 rounded text-sm font-medium ${selectedCity === city
+                        ? 'bg-amber-600 text-white'
+                        : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                        }`}
                     >
                       {city}
                     </button>
@@ -277,7 +337,7 @@ export default function Finance() {
                   <p className="text-xl font-bold text-amber-700">{livingCosts[selectedCity].total}</p>
                 </div>
               </div>
-              
+
               {selectedCity === 'London' && (
                 <p className="mt-4 text-sm text-slate-600 italic">
                   Students in London typically spend <span className="font-semibold">30%–50% more</span> than those in other cities, mainly due to higher rent.
@@ -359,6 +419,24 @@ export default function Finance() {
             <li>• Times Higher Education & QS Rankings</li>
             <li>• Mintel Student Spending UK Reports (2024/2025)</li>
           </ul>
+        </div>
+        <div>
+          <a
+            href={forexLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-5 py-2 rounded shadow transition-colors center block mt-2 mb-4 text-center"
+          >
+            Get Forex Card at Doorstep
+          </a>
+          <a
+            href={forexLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-amber-600 hover:bg-amber-700 text-white font-semibold px-2 py-2 rounded shadow transition-colors center block mt-2 mb-4 text-center"
+          >
+            Pay International Fees
+          </a>
         </div>
       </div>
     </div>
