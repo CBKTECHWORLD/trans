@@ -109,11 +109,10 @@ export default function Finance() {
   ];
 
   const forexLink = "https://transitley.extravelmoney.com/";
+  // const forexLink = "https://docs.google.com/forms/d/1-fOcqfMKJXuq7wHnUhZ3xjYxY3_jPFSuE6-ml9o3hSc";
   return (
     <div className="bg-slate-50 min-h-screen">
       <div className="max-w-6xl mx-auto px-4 py-8 md:py-12 border-b border-grey-200">
-
-
         <h2 className="text-3xl md:text-4xl font-bold text-amber-600 mb-4 flex items-center justify-center gap-2">
           Our Educational Loan Partners
         </h2>
@@ -164,70 +163,47 @@ export default function Finance() {
             Forex and International Transfers
           </h1>
           <p className="text-xl text-slate-700">
-            Pay your university fees and send money abroad at competitive rates.
+            Pay your university fees and send money abroad at competitive rates. Available only in India
           </p>
         </header>
 
-
-        {(() => {
-
-          return (
-            <div className="flex justify-center gap-4 mt-4 mb-8 ">
-              <div className="flex flex-col items-center gap-2 border-2 border-slate-200 p-4 rounded-lg">
-                <p className="text-slate-700 text-center mb-1">
-                  Pay your university fees anytime, anywhere.
-                </p>
-                <a
-                  href={forexLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-5 py-2 rounded shadow transition-colors"
-                >
-                  Pay Fees
-                </a>
-              </div>
-
-              <div className="flex flex-col items-center gap-2 border-2 border-slate-200 p-4 rounded-lg">
-                <p className="text-slate-700 text-center mb-1">
-                  Want to support your loved ones with their expenses?
-                </p>
-                <a
-                  href={forexLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-5 py-2 rounded shadow transition-colors"
-                >
-                  Send Money
-                </a>
-
-              </div>
-              <div className="flex flex-col items-center gap-2 border-2 border-slate-200 p-4 rounded-lg">
-                <p className="text-slate-700 text-center mb-1">
-                  Get Forex card at your doorstep
-                </p>
-                <a
-                  href={forexLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-5 py-2 rounded shadow transition-colors"
-                >
-                  Get Forex Card
-                </a>
-
-              </div>
-              <p></p>
-              <br />
-            </div>
-          );
-        })()}
-        <header className="mb-10 text-center">
+        <div className="flex justify-center gap-6 mt-6 mb-4">
+          <div className="flex flex-col items-center gap-2 border-2 border-emerald-500 bg-emerald-50 p-6 rounded-xl w-80 shadow-md transition hover:scale-105 hover:shadow-lg">
+            <p className="text-slate-700 text-center mb-1 font-medium">
+              Pay your university fees anytime, anywhere.
+            </p>
+          </div>
+          <div className="flex flex-col items-center gap-2 border-2 border-indigo-500 bg-indigo-50 p-6 rounded-xl w-80 shadow-md transition hover:scale-105 hover:shadow-lg">
+            <p className="text-slate-700 text-center mb-1 font-medium">
+              Want to support your loved ones with their expenses?
+            </p>
+          </div>
+          <div className="flex flex-col items-center gap-2 border-2 border-amber-500 bg-amber-50 p-6 rounded-xl w-80 shadow-md transition hover:scale-105 hover:shadow-lg">
+            <p className="text-slate-700 text-center mb-1 font-medium">
+              Get Forex card at your doorstep
+            </p>
+          </div>
+        </div>
+        <div className="flex justify-center mb-8">
+          <a
+            href={forexLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-8 py-3 rounded-xl shadow-lg transition-colors text-lg animate-bounce hover:animate-none focus:animate-none"
+            style={{ animationDuration: '1.2s' }}
+          >
+            Transfer Now
+          </a>
+        </div>
+        
+        <div className="mb-10 text-center">
           <h1 className="text-3xl md:text-4xl font-bold text-indigo-800 mb-2">
             Cost of Living & Tuition Fees
           </h1>
           <p className="text-xl text-slate-700">
             For International Students in the UK
           </p>
-        </header>
+        </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-10">
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
             <div className="bg-indigo-600 px-6 py-4 flex items-center">

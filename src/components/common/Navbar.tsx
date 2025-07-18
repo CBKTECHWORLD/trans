@@ -15,8 +15,18 @@ export default function Navbar() {
         <div className="flex items-center space-x-10 ml-auto">
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-6">
-            <Link to="/universities" className="text-lg text-gray-700 hover:text-blue-600">Study in UK</Link>
-            {/* <Link to="/exam" className="text-lg text-gray-700 hover:text-blue-600">Exam</Link> */}
+            <div className="relative group">
+              <button className="text-lg text-gray-700 hover:text-blue-600 flex items-center focus:outline-none">
+                Study Abroad
+                <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div className="absolute left-0 mt-2 w-40 bg-white border rounded shadow-lg opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity z-20">
+                <Link to="/universities" className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600">Study in UK</Link>
+                <Link to="/studyusa" className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600">Study in USA</Link>
+              </div>
+            </div>            {/* <Link to="/exam" className="text-lg text-gray-700 hover:text-blue-600">Exam</Link> */}
             <Link to="/finance" className="text-lg text-gray-700 hover:text-blue-600">Finance</Link>
             <Link to="/travel" className="text-lg text-gray-700 hover:text-blue-600">Visas</Link>
             {/* <Link to="/contact" className="text-lg text-gray-700 hover:text-blue-600">Contact</Link> */}

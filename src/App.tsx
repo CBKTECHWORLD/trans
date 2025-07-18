@@ -21,6 +21,7 @@ import Forex from './pages/Forex';
 import About from './pages/About';
 import Legal from './pages/Legal';
 import GoogleTagManager from './components/GTM';
+import StudyUSA from './components/studyabroad/studyusa';
 
 const App: React.FC = () => {
   return (
@@ -34,6 +35,7 @@ const App: React.FC = () => {
               <Route path="/" element={<HomePage />} />
               <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/universities" element={<Universities />} />
+              <Route path="/studyusa" element={<StudyUSA />} />
               <Route path="/contact" element={<ContactSection />} />
               <Route path="/events" element={<EventsPage />} />
               <Route path="/cvmaker" element={<CVMaker />} />
