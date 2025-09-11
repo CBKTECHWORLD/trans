@@ -6,7 +6,7 @@
 import '../App.css'
 // import StartNow from '../components/home/StartNow';
 // import Best from '../components/home/Best';
-import Banner from '../components/event/Banner';
+import Banner from '../components/home/Banner';
 import Role from '../components/home/Role';
 import Intro from '../components/home/Intro';
 import LanguageCourseCards from '../components/home/LanguageCourseCards';

@@ -45,17 +45,20 @@ const Role: React.FC = () => {
             />
             </Link>
           
-          <Link to="/flight" className="hover:shadow-lg transition-shadow duration-200">
+         
+            <Link to="https://forms.gle/ix3BmsY5T7HoMfzn7" className="hover:shadow-lg transition-shadow duration-200">
             <FeatureCard
               icon={
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
-                </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <rect x="3" y="7" width="18" height="10" rx="2" stroke="currentColor" strokeWidth={2} />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 7l9 6 9-6" />
+              </svg>
               }
-              title="Book Flights & Travel Deals"
-              description="Exclusive offers on flights to the UK"
+              title="Courier Services"
+              description="Send parcels from India to worldwide destinations"
             />
-          </Link>
+            </Link>
+           
           
           <Link to="/accommodation" className="hover:shadow-lg transition-shadow duration-200">
             <FeatureCard
@@ -90,7 +93,17 @@ const Role: React.FC = () => {
               description="Get assistance in starting your UK company"
             />
           </Link>
-          
+             <Link to="/flight" className="hover:shadow-lg transition-shadow duration-200">
+            <FeatureCard
+              icon={
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+              </svg>
+              }
+              title="Book Flights & Travel Deals"
+              description="Exclusive offers on flights to the UK"
+            />
+            </Link>
         </div>
       </div>
     </section>

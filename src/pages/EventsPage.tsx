@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Banner from '../components/event/Banner';
+import Banner from '../components/home/Banner';
 import EventCard from '../components/event/EventCard';
 import EventModal from '../components/event/EventModal';
 import eventsData from '../data/events.json'; 

@@ -5,6 +5,13 @@ const Banner: React.FC = () => {
   
   const banners = [
     {
+      title: "Courier Services",
+      subtitle: "Send parcels and documents securely From India to the UK.",
+      bgColor: "bg-teal-600",
+      image: "/images/courier.jpg",
+      link: "https://forms.gle/ix3BmsY5T7HoMfzn7"
+    },
+    {
       title: "Study Abroad Opportunities",
       subtitle: "Explore top universities and programs worldwide.",
       bgColor: "bg-blue-600",
@@ -45,7 +52,7 @@ const Banner: React.FC = () => {
       bgColor: "bg-indigo-600",
       image: "/images/business.jpg",
       link: "/business"
-    }
+    }    
   ];
 
   useEffect(() => {
