@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import VisaInfoPage from "../components/travel/visa";
+import Visawithsolicit from "../components/travel/visa1";
+
 
 const Travel: React.FC = () => {
     // const [activeTab, setActiveTab] = useState<"visa" | "passport">("visa");
@@ -27,7 +29,8 @@ const Travel: React.FC = () => {
         //     </div>
         // </div>
         <div>
-            <VisaInfoPage />
+            {/* <VisaInfoPage /> */}
+            <Visawithsolicit />
         </div>
     );
 };

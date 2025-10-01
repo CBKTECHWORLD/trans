@@ -9,7 +9,7 @@ import '../App.css'
 import Banner from '../components/home/Banner';
 import Role from '../components/home/Role';
 import Intro from '../components/home/Intro';
-import LanguageCourseCards from '../components/home/LanguageCourseCards';
+// import LanguageCourseCards from '../components/home/LanguageCourseCards';
 // import VideoTestimonials from '../components/home/VideoTestimonials';
 
 
@@ -21,7 +21,7 @@ export default function HomePage() {
       <Banner />
       <Intro />
       <Role />
-      <LanguageCourseCards />
+      {/* <LanguageCourseCards /> */}
       {/* <StatsSection /> */}
          {/* <StartNow />
       <FeaturesSection /> */}

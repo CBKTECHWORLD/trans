@@ -3,69 +3,94 @@ import React from 'react';
 const VisaInfoPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50">
+<div className="container mx-auto px-4 py-12">
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+    {/* Left side - First three important visas */}
+    <div className="space-y-4">
+      {[
+        {
+          title: "Global Talent Visa",
+          description: "For leaders or emerging leaders in academia, arts, or tech.",
+          anchor: "global-talent",
+          color: "from-indigo-700 via-indigo-600 to-indigo-500",
+        },
+        {
+          title: "Innovator Founder Visa",
+          description: "For entrepreneurs with innovative business ideas.",
+          anchor: "innovator",
+          color: "from-purple-700 via-purple-600 to-purple-500",
+        },
+        {
+          title: "Graduate Route",
+          description: "For recent graduates of UK universities to stay and work.",
+          anchor: "graduate",
+          color: "from-green-600 via-green-500 to-green-400",
+        },
+      ].map((item) => (
+        <a
+          key={item.title}
+          href={`#${item.anchor}`}
+          className={`block bg-gradient-to-r ${item.color} rounded-lg p-4 shadow-md border border-opacity-30 hover:scale-[1.02] transition-transform`}
+        >
+          <h3 className="text-base font-semibold text-white mb-1 drop-shadow">
+            {item.title}
+          </h3>
+          <p className="text-xs text-white drop-shadow">{item.description}</p>
+        </a>
+      ))}
+    </div>
 
-      <div className="container mx-auto px-4 py-12">
-        <div className="mb-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-          {[
-            {
-              title: "Skilled Worker Visa",
-              description: "For professionals with a job offer from a UK employer.",
-              anchor: "Skilled",
-              color: "from-blue-700 via-blue-600 to-blue-500",
-            },
-            {
-              title: "Graduate Route",
-              description: "For recent graduates of UK universities to stay and work.",
-              anchor: "graduate",
-              color: "from-green-600 via-green-500 to-green-400",
-            },
-            {
-              title: "Innovator Founder Visa",
-              description: "For entrepreneurs with innovative business ideas.",
-              anchor: "innovator",
-              color: "from-purple-700 via-purple-600 to-purple-500",
-            },
-            {
-              title: "Health and Care Worker Visa",
-              description: "For healthcare professionals joining the NHS or care sector.",
-              anchor: "health",
-              color: "from-pink-600 via-pink-500 to-pink-400",
-            },
-            {
-              title: "Family Route (Visitor) Visa",
-              description: "For joining family members who are settled in the UK.",
-              anchor: "visitor",
-              color: "from-yellow-500 via-yellow-400 to-yellow-300",
-            },
-            {
-              title: "Global Talent Visa",
-              description: "For leaders or emerging leaders in academia, arts, or tech.",
-              anchor: "global-talent",
-              color: "from-indigo-700 via-indigo-600 to-indigo-500",
-            },
-            {
-              title: "Expansion Worker & Business Visas",
-              description: "For business expansion and sponsorship routes.",
-              anchor: "business",
-              color: "from-red-600 via-red-500 to-red-400",
-            },
-          ].map((item) => (
-            <a
-              key={item.title}
-              href={`#${item.anchor}`}
-              className={`block bg-gradient-to-r ${item.color} rounded-lg p-3 shadow-md border border-opacity-40 hover:scale-105 transition-transform cursor-pointer`}
-            >
-              <h3 className="text-base font-bold text-white mb-0.5 drop-shadow">{item.title}</h3>
-              <p className="text-white text-xs drop-shadow">{item.description}</p>
-            </a>
-          ))}
-        </div>
-        <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-md overflow-hidden">
-          <div className="bg-blue-600 text-white p-6">
+    {/* Right side - Other visas */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+      {[
+        {
+          title: "Skilled Worker Visa",
+          description: "For professionals with a job offer from a UK employer.",
+          anchor: "skilled",
+          color: "from-blue-700 via-blue-600 to-blue-500",
+        },
+        {
+          title: "Health and Care Worker Visa",
+          description: "For healthcare professionals joining the NHS or care sector.",
+          anchor: "health",
+          color: "from-pink-600 via-pink-500 to-pink-400",
+        },
+        {
+          title: "Family Route (Visitor) Visa",
+          description: "For joining family members who are settled in the UK.",
+          anchor: "visitor",
+          color: "from-yellow-500 via-yellow-400 to-yellow-300",
+        },
+        {
+          title: "Expansion Worker & Business Visas",
+          description: "For business expansion and sponsorship routes.",
+          anchor: "business",
+          color: "from-red-600 via-red-500 to-red-400",
+        },
+      ].map((item) => (
+        <a
+          key={item.title}
+          href={`#${item.anchor}`}
+          className={`block bg-gradient-to-r ${item.color} rounded-md p-3 shadow-sm border border-opacity-30 hover:scale-[1.02] transition-transform`}
+        >
+          <h3 className="text-sm font-medium text-white mb-0.5 drop-shadow">
+            {item.title}
+          </h3>
+          <p className="text-xs text-white drop-shadow">{item.description}</p>
+        </a>
+      ))}
+    </div>
+  </div>
 
-          </div>
-          <h1 className="text-3xl font-bold mb-2 text-blue-600">🛂 How to Settle in the UK</h1>
-          <p className="text-xl text-blue-400">A Complete Guide to Immigration Visa Types and Pathways to Permanent Residency</p>
+  {/* Bottom gap */}
+  <div className="mt-10"></div>
+
+
+
+
+        <div className="max-w-4xl mb-1">
+          <h1 className="text-3xl font-bold mb-2 text-blue-600 text-left">How to Settle in the UK</h1>
+          <p className="text-xl text-blue-400 text-left">A Complete Guide to Immigration Visa Types and Pathways to Permanent Residency</p>
         </div>
 
         <div className="p-6 text-black">
@@ -283,7 +308,7 @@ const VisaInfoPage: React.FC = () => {
 
           <hr className="my-8 border-gray-200" />
 
-        
+
           <div className="mb-8 text-black">
             <h2 className="text-2xl font-semibold mb-3">✅ What is Indefinite Leave to Remain (ILR)?</h2>
             <p className="mb-4">

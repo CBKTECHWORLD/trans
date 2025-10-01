@@ -135,11 +135,11 @@ export default function Job() {
     <div className="bg-slate-50 min-h-screen">
       <div className="max-w-6xl mx-auto px-4 py-8 md:py-12">
         <header className="mb-10 text-center">
-            <h1 className="text-3xl md:text-4xl font-bold text-indigo-800 mb-2">
+          <h1 className="text-3xl md:text-4xl font-bold text-indigo-800 mb-2">
             UK Job Search Guide
-            </h1>
-            {/* Notice Board for Current Openings */}
-            <div className="flex justify-center mt-4">
+          </h1>
+
+          {/* <div className="flex justify-center mt-4">
               <div className="relative bg-yellow-50 border-4 border-yellow-400 rounded-xl shadow-lg px-6 py-4 w-full max-w-2xl">
               <div className="absolute -top-4 left-1/2 -translate-x-1/2 flex items-center">
                 <span className="bg-yellow-400 text-white font-bold px-4 py-1 rounded-full shadow-md text-lg tracking-wide">
@@ -151,33 +151,13 @@ export default function Job() {
                 <Briefcase className="mr-2 text-yellow-600" size={20} />
                 Current Openings
                 </h3>
-               {/* Animated/marquee-style or two-column job openings */}
+            
           <div className="mt-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 animate-marquee">
               {[
                 "Receptionist - Crawley",
                 "Offlicence - Dorking",
-                "Chef assistant - Crawley",
-                "F&B team member ×4 - Guildford",
-                "F&B team members X2 - Hailsham BN27 - Full time",
-                "Store Manager X1 - Hailsham BN27 - Full time",
-                "F&B team member X1 - Tadley RG26 - Full time",
-                "Store Manager X1 - Tadley RG26- Full time",
-                "Food court Supervisor-Tadley - Full time",
-                "Food court assistant-Littlehampton - Full time",
-                "Petrol site-Doncaster",
-                "Off licence-Lancaster",
-                "Off licence-Jaywick",
-                "Crew Member, Subway-Wales",
-                "Off licence-Northampton",
-                "Petrol Site-Bradford",
-                "Off licence-Gosport",
-                "Petrol site-Hull",
-                "Petrol Site-Gloucecster",
-                "Off licence-Liverpool - 2",
-                "Petrol Assistant-Halifax",
-                "Cafe Assistant-Rotherham",
-                "Super market-Bowburn",
+            
                 "Petrol Station-Lancaster",
                 "Petrol Station-Barrow",
                 "Off Licence Job - Scotland-Elgin",
@@ -197,7 +177,7 @@ export default function Job() {
                 </div>
               ))}
             </div>
-            {/* Optional: Add a simple marquee animation for mobile/small screens */}
+          
             <style>
               {`
                 // @media (max-width: 767px) {
@@ -213,33 +193,57 @@ export default function Job() {
             </style>
           </div>
               </div>
-              </div>
-            </div>
+              </div> */}
+          {/* </div> */}
           <p className="text-xl text-slate-700">
             Strategic approaches for landing part-time and full-time positions
           </p>
-         
-        </header>
+/* Call to Action Banner */
+ <div className="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-lg p-8 text-white text-center">
+          <h2 className="text-2xl font-bold mb-4">Ready to Find your job in UK?</h2>
+          <p className="text-lg mb-6">
+            Whether you're seeking your first part-time job or aiming for a full-time role,
+            Transitley guides you every step of the way in your UK job search journey.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="mailto:mani@transitley.com?subject=Free%20Business%20Consultation"
+              className="bg-white text-indigo-600 px-6 py-3 rounded-lg font-semibold hover:bg-slate-100 transition-colors flex items-center justify-center"
+            >
+              <Phone className="mr-2" size={20} />
+              Free Consultation
+            </a>
+            <a
+              href="https://docs.google.com/forms/d/1-fOcqfMKJXuq7wHnUhZ3xjYxY3_jPFSuE6-ml9o3hSc"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors flex items-center justify-center"
+            >
+              Learn More
+              <ArrowRight className="ml-2" size={20} />
+            </a>
+          </div>
+        </div>
 
+        </header>
+  
         <div className="mb-8">
           <div className="flex justify-center space-x-4">
             <button
               onClick={() => setSelectedJobType('part-time')}
-              className={`px-6 py-3 rounded-lg font-semibold ${
-                selectedJobType === 'part-time'
+              className={`px-6 py-3 rounded-lg font-semibold ${selectedJobType === 'part-time'
                   ? 'bg-indigo-600 text-white'
                   : 'bg-white text-slate-700 hover:bg-slate-100'
-              }`}
+                }`}
             >
               Part-Time Jobs (30-60 Days)
             </button>
             <button
               onClick={() => setSelectedJobType('full-time')}
-              className={`px-6 py-3 rounded-lg font-semibold ${
-                selectedJobType === 'full-time'
+              className={`px-6 py-3 rounded-lg font-semibold ${selectedJobType === 'full-time'
                   ? 'bg-indigo-600 text-white'
                   : 'bg-white text-slate-700 hover:bg-slate-100'
-              }`}
+                }`}
             >
               Full-Time Jobs (3 Months)
             </button>
@@ -445,7 +449,7 @@ export default function Job() {
               </ul>
               <div className="mt-4 p-3 bg-rose-50 rounded-lg">
                 <p className="text-sm text-rose-800">
-                  <span className="font-semibold">Tip:</span> If you don't have a National Insurance Number, 
+                  <span className="font-semibold">Tip:</span> If you don't have a National Insurance Number,
                   apply via gov.uk as soon as possible.
                 </p>
               </div>
@@ -473,7 +477,7 @@ export default function Job() {
             </div>
             <div className="mt-6 p-4 bg-slate-100 rounded-lg">
               <p className="text-sm text-slate-600 italic">
-                <span className="font-semibold">Remember:</span> 80% of job placements involve networking. 
+                <span className="font-semibold">Remember:</span> 80% of job placements involve networking.
                 Building relationships is as important as having the right skills.
               </p>
             </div>
@@ -502,31 +506,7 @@ export default function Job() {
           </div>
         </div>
 
-          <div className="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-lg p-8 text-white text-center">
-          <h2 className="text-2xl font-bold mb-4">Ready to Find your job in UK?</h2>
-            <p className="text-lg mb-6">
-            Whether you're seeking your first part-time job or aiming for a full-time role, 
-            Transitley guides you every step of the way in your UK job search journey.
-            </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="mailto:mani@transitley.com?subject=Free%20Business%20Consultation"
-              className="bg-white text-indigo-600 px-6 py-3 rounded-lg font-semibold hover:bg-slate-100 transition-colors flex items-center justify-center"
-            >
-              <Phone className="mr-2" size={20} />
-              Free Consultation
-            </a>
-            <a
-              href="https://docs.google.com/forms/d/1-fOcqfMKJXuq7wHnUhZ3xjYxY3_jPFSuE6-ml9o3hSc"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="border border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors flex items-center justify-center"
-            >
-              Learn More
-              <ArrowRight className="ml-2" size={20} />
-            </a>
-          </div>
-        </div>
+     
       </div>
     </div>
   );

@@ -93,7 +93,7 @@ const Role: React.FC = () => {
               description="Get assistance in starting your UK company"
             />
           </Link>
-             <Link to="/flight" className="hover:shadow-lg transition-shadow duration-200">
+             {/* <Link to="/flight" className="hover:shadow-lg transition-shadow duration-200">
             <FeatureCard
               icon={
               <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -103,7 +103,7 @@ const Role: React.FC = () => {
               title="Book Flights & Travel Deals"
               description="Exclusive offers on flights to the UK"
             />
-            </Link>
+            </Link> */}
         </div>
       </div>
     </section>

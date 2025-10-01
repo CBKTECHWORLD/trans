@@ -51,54 +51,68 @@ const About: React.FC = () => {
             {/* What We Do */}
             <div className="mb-12">
               <div className="flex items-center space-x-3 mb-6">
-                <div className="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center">
-                  <Star className="w-5 h-5 text-indigo-600" />
-                </div>
-                <h2 className="text-indigo-700 font-semibold text-2xl">What We Do</h2>
+              <div className="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center">
+                <Star className="w-5 h-5 text-indigo-600" />
+              </div>
+              <h2 className="text-indigo-700 font-semibold text-2xl">What We Do</h2>
               </div>
               <div className="grid md:grid-cols-2 gap-4">
-                <div className="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-400">
-                  <div className="flex items-center space-x-2 mb-2">
-                    <GraduationCap className="w-5 h-5 text-blue-600" />
-                    <span className="font-bold text-blue-900">University Admissions</span>
-                  </div>
-                  <p className="text-blue-800 text-sm">Expert support for applying to top UK universities.</p>
+              <div className="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-400">
+                <div className="flex items-center space-x-2 mb-2">
+                <GraduationCap className="w-5 h-5 text-blue-600" />
+                <span className="font-bold text-blue-900">University Admissions</span>
                 </div>
-                <div className="bg-green-50 p-4 rounded-lg border-l-4 border-green-400">
-                  <div className="flex items-center space-x-2 mb-2">
-                    <BookOpen className="w-5 h-5 text-green-600" />
-                    <span className="font-bold text-green-900">IELTS Coaching</span>
-                  </div>
-                  <p className="text-green-800 text-sm">Online classes to boost your English skills and secure your required scores.</p>
+                <p className="text-blue-800 text-sm">Expert support for applying to top UK universities.</p>
+              </div>
+              {/* <div className="bg-green-50 p-4 rounded-lg border-l-4 border-green-400">
+                <div className="flex items-center space-x-2 mb-2">
+                <BookOpen className="w-5 h-5 text-green-600" />
+                <span className="font-bold text-green-900">IELTS Coaching</span>
                 </div>
-                <div className="bg-purple-50 p-4 rounded-lg border-l-4 border-purple-400">
-                  <div className="flex items-center space-x-2 mb-2">
-                    <Briefcase className="w-5 h-5 text-purple-600" />
-                    <span className="font-bold text-purple-900">Jobs Portal</span>
-                  </div>
-                  <p className="text-purple-800 text-sm">Explore verified part-time and full-time job opportunities tailored for new arrivals.</p>
+                <p className="text-green-800 text-sm">Online classes to boost your English skills and secure your required scores.</p>
+              </div> */}
+              <div className="bg-purple-50 p-4 rounded-lg border-l-4 border-purple-400">
+                <div className="flex items-center space-x-2 mb-2">
+                <Briefcase className="w-5 h-5 text-purple-600" />
+                <span className="font-bold text-purple-900">Jobs Portal</span>
                 </div>
-                <div className="bg-orange-50 p-4 rounded-lg border-l-4 border-orange-400">
-                  <div className="flex items-center space-x-2 mb-2">
-                    <Home className="w-5 h-5 text-orange-600" />
-                    <span className="font-bold text-orange-900">Accommodation Help</span>
-                  </div>
-                  <p className="text-orange-800 text-sm">Find shared housing, student rooms, or private rentals before you arrive.</p>
+                <p className="text-purple-800 text-sm">Explore verified part-time and full-time job opportunities tailored for new arrivals.</p>
+              </div>
+              <div className="bg-orange-50 p-4 rounded-lg border-l-4 border-orange-400">
+                <div className="flex items-center space-x-2 mb-2">
+                <Home className="w-5 h-5 text-orange-600" />
+                <span className="font-bold text-orange-900">Accommodation Help</span>
                 </div>
-                <div className="bg-indigo-50 p-4 rounded-lg border-l-4 border-indigo-400">
-                  <div className="flex items-center space-x-2 mb-2">
-                    <Plane className="w-5 h-5 text-indigo-600" />
-                    <span className="font-bold text-indigo-900">Flight Bookings</span>
-                  </div>
-                  <p className="text-indigo-800 text-sm">Get affordable international travel options, booked with ease.</p>
+                <p className="text-orange-800 text-sm">Find shared housing, student rooms, or private rentals before you arrive.</p>
+              </div>
+              {/* <div className="bg-indigo-50 p-4 rounded-lg border-l-4 border-indigo-400">
+                <div className="flex items-center space-x-2 mb-2">
+                <Plane className="w-5 h-5 text-indigo-600" />
+                <span className="font-bold text-indigo-900">Flight Bookings</span>
                 </div>
-                <div className="bg-emerald-50 p-4 rounded-lg border-l-4 border-emerald-400">
-                  <div className="flex items-center space-x-2 mb-2">
-                    <DollarSign className="w-5 h-5 text-emerald-600" />
-                    <span className="font-bold text-emerald-900">Forex Services</span>
-                  </div>
-                  <p className="text-emerald-800 text-sm">Safe and simple currency exchange services in India before you depart.</p>
+                <p className="text-indigo-800 text-sm">Get affordable international travel options, booked with ease.</p>
+              </div> */}
+              <div className="bg-emerald-50 p-4 rounded-lg border-l-4 border-emerald-400">
+                <div className="flex items-center space-x-2 mb-2">
+                <DollarSign className="w-5 h-5 text-emerald-600" />
+                <span className="font-bold text-emerald-900">Forex Services</span>
                 </div>
+                <p className="text-emerald-800 text-sm">Safe and simple currency exchange services in India before you depart.</p>
+              </div>
+              <div className="bg-pink-50 p-4 rounded-lg border-l-4 border-pink-400">
+                <div className="flex items-center space-x-2 mb-2">
+                <Briefcase className="w-5 h-5 text-pink-600" />
+                <span className="font-bold text-pink-900">Business Services</span>
+                </div>
+                <p className="text-pink-800 text-sm">Guidance and resources for entrepreneurs and business setup in your new country.</p>
+              </div>
+              <div className="bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-400">
+                <div className="flex items-center space-x-2 mb-2">
+                <Star className="w-5 h-5 text-yellow-600" />
+                <span className="font-bold text-yellow-900">Global Talent Visa</span>
+                </div>
+                <p className="text-yellow-800 text-sm">Personalized support for Global Talent Visa applications and relocation.</p>
+              </div>
               </div>
             </div>
 
