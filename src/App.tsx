@@ -22,6 +22,7 @@ import About from './pages/About';
 import Legal from './pages/Legal';
 import GoogleTagManager from './components/GTM';
 import StudyUSA from './components/studyabroad/studyusa';
+import StudentAmbassador from './pages/StudentAmbassador';
 
 const App: React.FC = () => {
   return (
@@ -42,6 +43,7 @@ const App: React.FC = () => {
               <Route path="/travel" element={<Travel />} />
               <Route path="/finance" element={<Finance />} />
               <Route path="/accommodation" element={<Accommodation />} />
+              <Route path="/studentambassador" element={<StudentAmbassador />} />
               
               <Route path="/job" element={<Job />} />
               <Route path="/business" element={<Business />} />

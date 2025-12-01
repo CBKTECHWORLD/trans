@@ -71,7 +71,7 @@ const About: React.FC = () => {
                 </div>
                 <p className="text-green-800 text-sm">Online classes to boost your English skills and secure your required scores.</p>
               </div> */}
-              <div className="bg-purple-50 p-4 rounded-lg border-l-4 border-purple-400">
+              {/* <div className="bg-purple-50 p-4 rounded-lg border-l-4 border-purple-400">
                 <div className="flex items-center space-x-2 mb-2">
                 <Briefcase className="w-5 h-5 text-purple-600" />
                 <span className="font-bold text-purple-900">Jobs Portal</span>
@@ -84,7 +84,7 @@ const About: React.FC = () => {
                 <span className="font-bold text-orange-900">Accommodation Help</span>
                 </div>
                 <p className="text-orange-800 text-sm">Find shared housing, student rooms, or private rentals before you arrive.</p>
-              </div>
+              </div> */}
               {/* <div className="bg-indigo-50 p-4 rounded-lg border-l-4 border-indigo-400">
                 <div className="flex items-center space-x-2 mb-2">
                 <Plane className="w-5 h-5 text-indigo-600" />

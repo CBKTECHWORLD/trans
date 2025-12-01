@@ -42,6 +42,7 @@ export default function Navbar() {
               Accommodation
             </a> */}
             <Link to="/accommodation" className="text-lg text-gray-700 hover:text-blue-600">Accommodation</Link>
+             <Link to="/studentambassador" className="text-lg text-gray-700 hover:text-blue-600">Student Ambassador</Link>
             <Link to="/job" className="text-lg text-gray-700 hover:text-blue-600">Jobs</Link>
             <Link to="/business" className="text-lg text-gray-700 hover:text-blue-600">Business</Link>
 
@@ -89,6 +90,7 @@ export default function Navbar() {
             <Link to="/finance" className="text-lg text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Finance</Link>
             <Link to="/travel" className="text-lg text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Visas</Link>
             <Link to="/Accommodation" className="text-lg text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Accommodation</Link>
+            <Link to="/studentambassador" className="text-lg text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Student Ambassador</Link>
             {/* <Link to="/contact" className="text-lg text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Contact</Link>
             <Link to="/events" className="text-lg text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Events</Link> */}
             {/* <Link to="/flight" className="text-lg text-gray-700 hover:text-blue-600" onClick={() => setMenuOpen(false)}>Flight</Link>

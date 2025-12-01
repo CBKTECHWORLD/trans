@@ -1,335 +1,172 @@
-import React from 'react';
-import { Shield, Mail, Phone, FileText, Users, Lock, Globe, CheckCircle } from 'lucide-react';
+// Legal.tsx
+import React from "react";
 
 const Legal: React.FC = () => {
-    return (
-        <div className="min-h-screen bg-gray-50">
-            {/* Header */}
-            <div className="bg-blue-900 text-white py-12">
-                <div className="max-w-4xl mx-auto px-6">
-                    <div className="flex items-center gap-3 mb-4">
-                        <Shield className="w-8 h-8" />
-                        <h1 className="text-3xl font-bold">Privacy Policy</h1>
-                    </div>
-                    <p className="text-blue-100 text-lg">
-                        Your privacy and data protection are our top priorities
-                    </p>
-                    <p className="text-blue-200 text-sm mt-2">
-                        Last Updated: May 30, 2025
-                    </p>
-                </div>
-            </div>
+  return (
+    <div className="bg-white text-black min-h-screen py-12 px-6 sm:px-12 md:px-24">
+      <div className="max-w-5xl mx-auto">
+        <h1 className="text-3xl font-bold mb-4 text-center">Legal & Privacy Policy</h1>
+        <p className="text-center text-sm mb-8">Last Updated: 30 May 2025</p>
 
-            {/* Main Content */}
-            <div className="max-w-4xl mx-auto px-6 py-12">
-                {/* Introduction */}
-                <div className="bg-white rounded-lg shadow-sm p-8 mb-8">
-                    <p className="text-gray-700 leading-relaxed">
-                        Transitley (referred to as "we," "us," or "our"), headquartered at Manchester, UK, with a presence in India,
-                        is committed to protecting your personal data in compliance with the UK General Data Protection Regulation (GDPR),
-                        the UK Data Protection Act 2018, the Privacy and Electronic Communications Regulations (PECR), and India's
-                        Digital Personal Data Protection Act, 2023 (DPDP Act). This Privacy Policy explains how we collect, use, store,
-                        and protect your personal data when you use our website (https://transitley.com/) or our immigration services.
-                    </p>
-                </div>
+        {/* Privacy Policy Section */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-semibold mb-4">Privacy Policy</h2>
 
-                {/* Section 1: Data We Collect */}
-                <div className="bg-white rounded-lg shadow-sm p-8 mb-8">
-                    <div className="flex items-center gap-3 mb-6">
-                        <FileText className="w-6 h-6 text-blue-600" />
-                        <h2 className="text-2xl font-semibold text-gray-900">1. Data We Collect</h2>
-                    </div>
-                    <p className="text-gray-700 mb-4">We may collect the following personal data:</p>
-                    <div className="space-y-4">
-                        <div className="flex items-start gap-3">
-                            <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
-                            <div>
-                                <span className="font-medium text-gray-900">Personal Information:</span>
-                                <span className="text-gray-700"> Name, email address, phone number, date of birth, nationality, passport details, and other identification data provided during visa or immigration applications.</span>
-                            </div>
-                        </div>
-                        <div className="flex items-start gap-3">
-                            <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
-                            <div>
-                                <span className="font-medium text-gray-900">Immigration-Related Data:</span>
-                                <span className="text-gray-700"> Visa status, application history, employment details, and educational qualifications.</span>
-                            </div>
-                        </div>
-                        <div className="flex items-start gap-3">
-                            <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
-                            <div>
-                                <span className="font-medium text-gray-900">Technical Data:</span>
-                                <span className="text-gray-700"> IP address, browser type, device information, and usage data collected via cookies (see our Cookie Policy).</span>
-                            </div>
-                        </div>
-                        <div className="flex items-start gap-3">
-                            <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
-                            <div>
-                                <span className="font-medium text-gray-900">Dependants' Data:</span>
-                                <span className="text-gray-700"> Information about family members or dependants included in immigration applications (e.g., names, ages, English language proficiency).</span>
-                            </div>
-                        </div>
-                        <div className="flex items-start gap-3">
-                            <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
-                            <div>
-                                <span className="font-medium text-gray-900">Financial Data:</span>
-                                <span className="text-gray-700"> Payment details for services, such as credit card or bank account information.</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <p className="mb-6">
+            At <strong>Transitley</strong> ("we", "us", or "our"), we value your privacy and are committed to safeguarding your personal information.
+            This policy complies with the <strong>UK General Data Protection Regulation (UK GDPR)</strong>, the <strong>EU GDPR</strong>, and the
+            <strong> Digital Personal Data Protection Act, 2023 (India)</strong>. It explains how we collect, use, store, and protect your personal data
+            through our website <a href="https://transitley.com" className="text-blue-600 underline">https://transitley.com</a> and our consultancy, visa, and immigration services.
+          </p>
 
-                {/* Section 2: How We Collect Data */}
-                <div className="bg-white rounded-lg shadow-sm p-8 mb-8">
-                    <div className="flex items-center gap-3 mb-6">
-                        <Users className="w-6 h-6 text-blue-600" />
-                        <h2 className="text-2xl font-semibold text-gray-900">2. How We Collect Data</h2>
-                    </div>
-                    <p className="text-gray-700 mb-4">We collect data:</p>
-                    <div className="space-y-3">
-                        <div className="flex items-start gap-3">
-                            <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                            <p className="text-gray-700">When you submit forms or applications on our website.</p>
-                        </div>
-                        <div className="flex items-start gap-3">
-                            <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                            <p className="text-gray-700">Through cookies and similar technologies (see Cookie Policy).</p>
-                        </div>
-                        <div className="flex items-start gap-3">
-                            <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                            <p className="text-gray-700">During communications via email, phone, or in-person consultations.</p>
-                        </div>
-                        <div className="flex items-start gap-3">
-                            <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                            <p className="text-gray-700">From third parties, such as UK Visas and Immigration (UKVI), immigration agents, or educational institutions, with your consent or as required by law.</p>
-                        </div>
-                    </div>
-                </div>
+          <h3 className="text-xl font-semibold mb-2">1. Data We Collect</h3>
+          <ul className="list-disc pl-6 mb-6 space-y-2">
+            <li>Personal details such as name, contact number, date of birth, and email address.</li>
+            <li>Identification details including passport, visa information, and government-issued IDs.</li>
+            <li>Educational, employment, and financial information required for service processing.</li>
+            <li>Technical information such as IP address, browser type, and device identifiers (via cookies).</li>
+            <li>Dependants’ or family information, if provided for immigration or visa purposes.</li>
+            <li>Any data voluntarily shared through forms, calls, or consultations.</li>
+          </ul>
 
-                {/* Section 3: Lawful Basis for Processing */}
-                <div className="bg-white rounded-lg shadow-sm p-8 mb-8 text-gray-700">
-                    <div className="flex items-center gap-3 mb-6">
-                        <Lock className="w-6 h-6 text-blue-600" />
-                        <h2 className="text-2xl font-semibold text-gray-900">3. Lawful Basis for Processing</h2>
-                    </div>
-                    <div className="space-y-6">
-                        <div>
-                            <h3 className="text-lg font-medium text-gray-900 mb-3">GDPR (UK): We process data based on:</h3>
-                            <div className="space-y-2 ml-4">
-                                <div><span className="font-medium">Consent:</span> For marketing communications and non-essential cookies.</div>
-                                <div><span className="font-medium">Contractual Necessity:</span> To provide immigration services or process visa applications.</div>
-                                <div><span className="font-medium">Legal Obligation:</span> To comply with UKVI requirements, such as sponsor licence compliance or reporting.</div>
-                                <div><span className="font-medium">Legitimate Interests:</span> For website analytics, fraud prevention, and service improvement.</div>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 className="text-lg font-medium text-gray-900 mb-3">DPDP Act (India):</h3>
-                            <p className="text-gray-700 ml-4">
-                                We obtain explicit, freely given, informed, and specific consent from Indian users for data processing
-                                and cross-border transfers. You may withdraw consent at any time.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+          <h3 className="text-xl font-semibold mb-2">2. Purpose of Processing</h3>
+          <ul className="list-disc pl-6 mb-6 space-y-2">
+            <li>Providing requested immigration, education, or consultancy services.</li>
+            <li>Fulfilling legal and regulatory requirements in the UK, EU, or India.</li>
+            <li>Improving service quality, analytics, and customer support.</li>
+            <li>Preventing fraud or unauthorised access.</li>
+            <li>Communicating with you, including service updates and marketing (only with your consent).</li>
+          </ul>
 
-                {/* Section 4: Purpose of Processing */}
-                <div className="bg-white rounded-lg shadow-sm p-8 mb-8">
-                    <div className="flex items-center gap-3 mb-6">
-                        <Globe className="w-6 h-6 text-blue-600" />
-                        <h2 className="text-2xl font-semibold text-gray-900">4. Purpose of Processing</h2>
-                    </div>
-                    <p className="text-gray-700 mb-4">We use your data to:</p>
-                    <div className="grid md:grid-cols-2 gap-4">
-                        <div className="space-y-3">
-                            <div className="flex items-start gap-3">
-                                <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
-                                <p className="text-gray-700">Process and manage immigration and visa applications.</p>
-                            </div>
-                            <div className="flex items-start gap-3">
-                                <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
-                                <p className="text-gray-700">Comply with UKVI requirements, including monitoring application status and reporting.</p>
-                            </div>
-                            <div className="flex items-start gap-3">
-                                <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
-                                <p className="text-gray-700">Provide personalized immigration advice and services.</p>
-                            </div>
-                        </div>
-                        <div className="space-y-3">
-                            <div className="flex items-start gap-3">
-                                <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
-                                <p className="text-gray-700">Improve our website and services through analytics.</p>
-                            </div>
-                            <div className="flex items-start gap-3">
-                                <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
-                                <p className="text-gray-700">Communicate updates, promotions, or service-related information (with consent).</p>
-                            </div>
-                            <div className="flex items-start gap-3">
-                                <CheckCircle className="w-5 h-5 text-green-500 mt-1 flex-shrink-0" />
-                                <p className="text-gray-700">Ensure security and prevent fraud.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <h3 className="text-xl font-semibold mb-2">3. Legal Basis for Processing</h3>
+          <ul className="list-disc pl-6 mb-6 space-y-2">
+            <li><strong>Consent:</strong> When you voluntarily share data or agree to marketing.</li>
+            <li><strong>Contractual Necessity:</strong> To fulfil requested services or agreements.</li>
+            <li><strong>Legal Obligation:</strong> Compliance with immigration, KYC, and data laws.</li>
+            <li><strong>Legitimate Interest:</strong> Business analytics, fraud prevention, and security.</li>
+          </ul>
 
-                {/* Section 5: Data Sharing */}
-                <div className="bg-white rounded-lg shadow-sm p-8 mb-8">
-                    <h2 className="text-2xl font-semibold text-gray-900 mb-6">5. Data Sharing</h2>
-                    <p className="text-gray-700 mb-4">We may share your data with:</p>
-                    <div className="space-y-3">
-                        <div className="p-4 bg-blue-50 rounded-lg">
-                            <span className="font-medium text-gray-900">UK Home Office/UKVI:</span>
-                            <span className="text-gray-700"> To comply with immigration compliance requirements.</span>
-                        </div>
-                        <div className="p-4 bg-blue-50 rounded-lg">
-                            <span className="font-medium text-gray-900">Immigration Agents:</span>
-                            <span className="text-gray-700"> Registered with the Office of the Immigration Services Commissioner (OISC) or approved bodies, under strict contractual terms.</span>
-                        </div>
-                        <div className="p-4 bg-blue-50 rounded-lg">
-                            <span className="font-medium text-gray-900">Service Providers:</span>
-                            <span className="text-gray-700"> IT providers, payment processors, and analytics services, subject to GDPR and DPDP Act safeguards.</span>
-                        </div>
-                        <div className="p-4 bg-blue-50 rounded-lg">
-                            <span className="font-medium text-gray-900">Indian Authorities:</span>
-                            <span className="text-gray-700"> As required by the DPDP Act for Indian users' data.</span>
-                        </div>
-                        <div className="p-4 bg-blue-50 rounded-lg">
-                            <span className="font-medium text-gray-900">Other Parties:</span>
-                            <span className="text-gray-700"> With your consent or as required by law (e.g., law enforcement, fraud prevention agencies).</span>
-                        </div>
-                    </div>
-                    <p className="text-gray-700 mt-4 p-4 bg-yellow-50 rounded-lg border-l-4 border-yellow-400">
-                        For cross-border data transfers (e.g., UK to India), we use UK-approved International Data Transfer Agreements
-                        or equivalent safeguards under the DPDP Act.
-                    </p>
-                </div>
+          <h3 className="text-xl font-semibold mb-2">4. Data Storage & Retention</h3>
+          <p className="mb-6">
+            We securely store your data in compliance with international security standards. Data is retained only as long as
+            required for the purposes stated or as required by law. Upon request, you may exercise your rights to access, correct,
+            or delete your data.
+          </p>
 
-                {/* Section 6: Data Retention */}
-                <div className="bg-white rounded-lg shadow-sm p-8 mb-8">
-                    <h2 className="text-2xl font-semibold text-gray-900 mb-6">6. Data Retention</h2>
-                    <div className="space-y-4">
-                        <div className="flex items-start gap-3">
-                            <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                            <p className="text-gray-700">
-                                We retain personal data for as long as necessary to fulfill the purposes outlined, typically up to 6 months
-                                post-service for UKVI compliance and tax purposes.
-                            </p>
-                        </div>
-                        <div className="flex items-start gap-3">
-                            <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                            <p className="text-gray-700">
-                                Indian users' data is retained as per DPDP Act requirements, with deletion upon withdrawal of consent unless legally required.
-                            </p>
-                        </div>
-                        <div className="flex items-start gap-3">
-                            <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                            <p className="text-gray-700">
-                                Data in backup archives is securely stored and isolated until deletion is possible.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+          <h3 className="text-xl font-semibold mb-2">5. Data Sharing & Third Parties</h3>
+          <p className="mb-6">
+            We do not sell or rent your personal information. However, data may be shared with:
+          </p>
+          <ul className="list-disc pl-6 mb-6 space-y-2">
+            <li>Government authorities, embassies, or immigration bodies where legally necessary.</li>
+            <li>Accredited partners or vendors working under confidentiality agreements.</li>
+            <li>Legal or compliance advisors in connection with lawful requests.</li>
+          </ul>
+          <p className="mb-6">
+            <strong>Disclaimer:</strong> Transitley shall not be liable for data misuse or disclosure caused by third-party systems, government databases,
+            or circumstances beyond our reasonable control.
+          </p>
 
-                {/* Section 7: Your Rights */}
-                <div className="bg-white rounded-lg shadow-sm p-8 mb-8 text-gray-700 ">
-                    <h2 className="text-2xl font-semibold text-gray-900 mb-6">7. Your Rights</h2>
-                    <div className="grid md:grid-cols-2 gap-6">
-                        <div className="p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg">
-                            <h3 className="text-lg font-medium text-gray-900 mb-3">GDPR (UK)</h3>
-                            <p className="text-gray-700 mb-3">You have the right to:</p>
-                            <div className="space-y-2 text-sm">
-                                <div>• Access, rectify, or erase your data</div>
-                                <div>• Restrict or object to processing</div>
-                                <div>• Data portability</div>
-                                <div>• Lodge complaints with the UK Information Commissioner's Office (ICO)</div>
-                            </div>
-                        </div>
-                        <div className="p-6 bg-gradient-to-br from-green-50 to-green-100 rounded-lg">
-                            <h3 className="text-lg font-medium text-gray-900 mb-3">DPDP Act (India)</h3>
-                            <p className="text-gray-700 mb-3">Indian users have the right to:</p>
-                            <div className="space-y-2 text-sm">
-                                <div>• Access, correct, or erase data</div>
-                                <div>• Withdraw consent at any time</div>
-                                <div>• Nominate a representative for data rights</div>
-                                <div>• File grievances with our Data Protection Officer or the Data Protection Board of India</div>
-                            </div>
-                        </div>
-                    </div>
-                    <p className="text-gray-700 mt-4 text-center">
-                        To exercise your rights, contact our Data Protection Officer (details below).
-                    </p>
-                </div>
+          <h3 className="text-xl font-semibold mb-2">6. User Rights</h3>
+          <ul className="list-disc pl-6 mb-6 space-y-2">
+            <li>Right to access, rectify, or delete your data.</li>
+            <li>Right to withdraw consent at any time.</li>
+            <li>Right to restrict processing or data portability.</li>
+            <li>Right to lodge a complaint with a data protection authority.</li>
+          </ul>
 
-                {/* Section 8: Data Security */}
-                <div className="bg-white rounded-lg shadow-sm p-8 mb-8">
-                    <h2 className="text-2xl font-semibold text-gray-900 mb-6">8. Data Security</h2>
-                    <p className="text-gray-700">
-                        We use encryption, access controls, and regular security audits to protect your data. We comply with UKVI's
-                        compliance requirements and DPDP Act security standards.
-                    </p>
-                </div>
+          <h3 className="text-xl font-semibold mb-2">7. Security & Responsibility</h3>
+          <p className="mb-6">
+            We employ encryption, firewalls, and secure access controls to protect your data. However, data transmission over
+            the internet carries inherent risks. You are responsible for ensuring that the information provided is accurate and
+            authorised for use.
+          </p>
+          <p className="mb-6">
+            Transitley shall not be liable for unauthorised access, technical failures, or third-party breaches beyond our control.
+          </p>
 
-                {/* Section 9: Cross-Border Data Transfers */}
-                <div className="bg-white rounded-lg shadow-sm p-8 mb-8">
-                    <h2 className="text-2xl font-semibold text-gray-900 mb-6">9. Cross-Border Data Transfers</h2>
-                    <p className="text-gray-700">
-                        Data may be transferred between the UK and India. We ensure compliance with GDPR (using standard contractual clauses)
-                        and DPDP Act (with explicit consent for Indian users).
-                    </p>
-                </div>
+          <h3 className="text-xl font-semibold mb-2">8. Cookies & Tracking</h3>
+          <p className="mb-6">
+            Our site uses cookies for analytics and user experience enhancement. You may disable cookies via your browser settings,
+            though some features may not function correctly.
+          </p>
 
-                {/* Section 10: Contact Us */}
-                <div className="bg-white rounded-lg shadow-sm p-8 mb-8">
-                    <div className="flex items-center gap-3 mb-6">
-                        <Mail className="w-6 h-6 text-blue-600" />
-                        <h2 className="text-2xl font-semibold text-gray-900">10. Contact Us</h2>
-                    </div>
-                    <p className="text-gray-700 mb-6">
-                        For questions, grievances, or to exercise your rights, contact our Data Protection Officer:
-                    </p>
-                    <div className="grid md:grid-cols-2 gap-6">
-                        <div className="p-6 bg-gray-50 rounded-lg">
-                            <h3 className="font-medium text-gray-900 mb-4">Data Protection Officer</h3>
-                            <div className="space-y-3">
-                                <div className="flex items-center gap-3">
-                                    <Mail className="w-5 h-5 text-gray-500" />
-                                    <a href="mailto:dpo@transitley.com" className="text-blue-600 hover:text-blue-800">
-                                        dpo@transitley.com
-                                    </a>
-                                </div>
-                                <div className="flex items-center gap-3">
-                                    <Phone className="w-5 h-5 text-gray-500" />
-                                    <div className="text-gray-700">
-                                        <div>+44 (0)7552426454 (UK)</div>
-                                        <div>+91 9600616051 (India)</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="p-6 bg-gray-50 rounded-lg">
-                            <h3 className="font-medium text-gray-900 mb-4">India Grievance</h3>
-                            <div className="space-y-3">
-                                {/* <div className="text-gray-700">Bala krishnan</div> */}
-                                <div className="flex items-center gap-3">
-                                    <Mail className="w-5 h-5 text-gray-500" />
-                                    <a href="mailto:grievance@transitley.com" className="text-blue-600 hover:text-blue-800">
-                                        grievance@transitley.com
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <h3 className="text-xl font-semibold mb-2">9. Cross-Border Data Transfers</h3>
+          <p className="mb-6">
+            Data transfers between the UK, EU, and India are protected using lawful transfer mechanisms and contractual safeguards.
+          </p>
 
-                {/* Section 11: Changes to This Policy */}
-                <div className="bg-white rounded-lg shadow-sm p-8 mb-8">
-                    <h2 className="text-2xl font-semibold text-gray-900 mb-6">11. Changes to This Policy</h2>
-                    <p className="text-gray-700">
-                        We may update this policy to reflect changes in UK or Indian laws. Check this page regularly for updates.
-                    </p>
-                </div>
-            </div>
-        </div>
-    );
+          <h3 className="text-xl font-semibold mb-2">10. Policy Updates</h3>
+          <p className="mb-6">
+            This Privacy Policy may be updated periodically. The latest version will always be available on our website.
+          </p>
+
+          <h3 className="text-xl font-semibold mb-2">11. Contact Information</h3>
+          <p className="mb-6">
+            For questions about privacy or data access requests, please contact: <br />
+            <strong>Email:</strong> privacy@transitley.com <br />
+            <strong>Address:</strong> Transitley Ltd, Manchester, UK
+          </p>
+        </section>
+
+        {/* Terms & Conditions Section */}
+        <section>
+          <h2 className="text-2xl font-semibold mb-4">Terms & Conditions</h2>
+
+          <p className="mb-6">
+            These Terms & Conditions ("Terms") govern your access to and use of Transitley’s website and services.
+            By using our services, you agree to comply with these Terms in full.
+          </p>
+
+          <h3 className="text-xl font-semibold mb-2">1. Use of Services</h3>
+          <p className="mb-6">
+            You agree to use our services solely for lawful purposes and not engage in any activity that disrupts, damages,
+            or interferes with our systems, website, or reputation.
+          </p>
+
+          <h3 className="text-xl font-semibold mb-2">2. Accuracy of Information</h3>
+          <p className="mb-6">
+            All information you provide must be accurate and complete. Transitley is not responsible for errors or delays
+            resulting from false, incomplete, or misleading information supplied by clients.
+          </p>
+
+          <h3 className="text-xl font-semibold mb-2">3. Limitation of Liability</h3>
+          <p className="mb-6">
+            Transitley shall not be liable for any direct, indirect, or consequential losses resulting from the use of our
+            website, information, or services. Our advice and documentation are provided based on information supplied by the client.
+          </p>
+
+          <h3 className="text-xl font-semibold mb-2">4. Third-Party Links</h3>
+          <p className="mb-6">
+            Our website may contain links to third-party sites. We are not responsible for the content, accuracy, or privacy
+            practices of these external websites.
+          </p>
+
+          <h3 className="text-xl font-semibold mb-2">5. Intellectual Property</h3>
+          <p className="mb-6">
+            All content, branding, and materials on this website are the intellectual property of Transitley. You may not
+            reproduce or distribute any material without written consent.
+          </p>
+
+          <h3 className="text-xl font-semibold mb-2">6. Governing Law</h3>
+          <p className="mb-6">
+            These Terms shall be governed by and construed in accordance with the laws of England and Wales, and applicable
+            Indian laws for operations in India.
+          </p>
+
+          <h3 className="text-xl font-semibold mb-2">7. Contact</h3>
+          <p className="mb-6">
+            For legal or contractual queries, please contact: <br />
+            <strong>Email:</strong> legal@transitley.com
+          </p>
+
+          <p className="text-sm text-gray-600 mt-8">
+            © {new Date().getFullYear()} Transitley. All rights reserved.
+          </p>
+        </section>
+      </div>
+    </div>
+  );
 };
 
 export default Legal;
