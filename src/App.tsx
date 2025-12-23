@@ -23,6 +23,8 @@ import Legal from './pages/Legal';
 import GoogleTagManager from './components/GTM';
 import StudyUSA from './components/studyabroad/studyusa';
 import StudentAmbassador from './pages/StudentAmbassador';
+import StudyCanada from './components/studyabroad/studycanada';
+import StudyGermany from './components/studyabroad/studygermany';
 
 const App: React.FC = () => {
   return (
@@ -35,8 +37,10 @@ const App: React.FC = () => {
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/dashboard" element={<Dashboard />} />
-              <Route path="/universities" element={<Universities />} />
+              <Route path="/studyuk" element={<Universities />} />
               <Route path="/studyusa" element={<StudyUSA />} />
+              <Route path="/studycanada" element={<StudyCanada />} />
+              <Route path="/studygermany" element={<StudyGermany />} />
               <Route path="/contact" element={<ContactSection />} />
               <Route path="/events" element={<EventsPage />} />
               <Route path="/cvmaker" element={<CVMaker />} />
