@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white py-12">
+    <footer className="bg-gradient-to-r from-[#0C1216] to-[#192C34] text-white py-12">
       {/* Footer Bottom Section */}
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -26,6 +26,7 @@ export default function Footer() {
                 <li><Link to="/" className="text-white-400 hover:text-white">Home</Link></li>
                 <li><Link to="/about" className="text-white-400 hover:text-white">About Us</Link></li>
                 <li><Link to="/legal" className="text-white-400 hover:text-white">Legal</Link></li>
+                <li><Link to="/studentambassador" className="text-white-400 hover:text-white">Career</Link></li>
               
             </ul>
           </div>

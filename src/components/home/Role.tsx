@@ -9,9 +9,9 @@ interface FeatureCardProps {
 
 const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description }) => {
   return (
-    <div className="bg-white rounded-lg p-6 flex flex-col items-center text-center border border-blue-800">
-      <div className="text-blue-600 mb-4">{icon}</div>
-      <h3 className="text-lg font-semibold text-gray-800 mb-2">{title}</h3>
+    <div className="bg-white rounded-lg p-4 flex flex-col items-center text-center border border-green-800">
+      <div className="text-green-600 mb-4">{icon}</div>
+      <h3 className="text-lg font-semibold text-green-800 mb-2">{title}</h3>
       <p className="text-gray-600 text-sm">{description}</p>
     </div>
   );
@@ -19,10 +19,11 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description }) =
 
 const Role: React.FC = () => {
   return (
-    <section className="py-16 bg-gray-50">
+    <section  className="min-h-[70vh] py-16 bg-cover bg-center bg-no-repeat bg-gray-100"
+  style={{ backgroundImage: "url('/images/bg.png')" }}>
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <Link to="/universities" className="hover:shadow-lg transition-shadow duration-200">
+          <Link to="/studyuk" className="hover:shadow-lg transition-shadow duration-200">
             <FeatureCard
               icon={
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">

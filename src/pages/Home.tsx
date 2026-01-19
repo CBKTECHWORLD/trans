@@ -8,20 +8,18 @@ import '../App.css'
 // import Best from '../components/home/Best';
 import Banner from '../components/home/Banner';
 import Role from '../components/home/Role';
-import Intro from '../components/home/Intro';
-// import LanguageCourseCards from '../components/home/LanguageCourseCards';
+// import Intro from '../components/home/Intro';
+import LanguageCourseCards from '../components/home/LanguageCourseCards';
 // import VideoTestimonials from '../components/home/VideoTestimonials';
-
-
 
 export default function HomePage() {
   return (
     <>
       {/* <HeroSection /> */}
       <Banner />
-      <Intro />
+      {/* <Intro /> */}
       <Role />
-      {/* <LanguageCourseCards /> */}
+      <LanguageCourseCards />
       {/* <StatsSection /> */}
          {/* <StartNow />
       <FeaturesSection /> */}

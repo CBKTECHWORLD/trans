@@ -80,13 +80,14 @@ export default function Navbar() {
                 </div>
               )}
             </div>            
-            
+            <a href="/languagecourses" className="text-lg text-gray-700 hover:text-blue-600">Academy</a>
             <a href="/finance" className="text-lg text-gray-700 hover:text-blue-600">Finance</a>
             <a href="/travel" className="text-lg text-gray-700 hover:text-blue-600">Visas</a>
             <a href="/accommodation" className="text-lg text-gray-700 hover:text-blue-600">Accommodation</a>
             <a href="/studentambassador" className="text-lg text-gray-700 hover:text-blue-600">Student Ambassador</a>
             <a href="/job" className="text-lg text-gray-700 hover:text-blue-600">Jobs</a>
             <a href="/business" className="text-lg text-gray-700 hover:text-blue-600">Business</a>
+            
           </div>
         </div>
         <div className="flex items-center space-x-4">
@@ -161,13 +162,14 @@ export default function Navbar() {
                 </div>
               )}
             </div>            
-
+ <a href="/languagecourses" className="text-lg text-gray-700 hover:text-blue-600" onClick={closeAll}>Academy</a>
             <a href="/finance" className="text-lg text-gray-700 hover:text-blue-600" onClick={closeAll}>Finance</a>
             <a href="/travel" className="text-lg text-gray-700 hover:text-blue-600" onClick={closeAll}>Visas</a>
             <a href="/accommodation" className="text-lg text-gray-700 hover:text-blue-600" onClick={closeAll}>Accommodation</a>
             <a href="/studentambassador" className="text-lg text-gray-700 hover:text-blue-600" onClick={closeAll}>Student Ambassador</a>
             <a href="/job" className="text-lg text-gray-700 hover:text-blue-600" onClick={closeAll}>Jobs</a>
             <a href="/business" className="text-lg text-gray-700 hover:text-blue-600" onClick={closeAll}>Business</a>
+           
           </div>
           <div className="flex-1" onClick={closeAll} />
         </div>

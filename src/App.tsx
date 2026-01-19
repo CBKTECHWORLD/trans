@@ -25,6 +25,7 @@ import StudyUSA from './components/studyabroad/studyusa';
 import StudentAmbassador from './pages/StudentAmbassador';
 import StudyCanada from './components/studyabroad/studycanada';
 import StudyGermany from './components/studyabroad/studygermany';
+import LanguageCourses from './pages/LanguageCourses';
 
 const App: React.FC = () => {
   return (
@@ -55,6 +56,7 @@ const App: React.FC = () => {
               <Route path="/forex" element={<Forex />} />
               <Route path="/about" element={<About />} />
               <Route path="/legal" element={<Legal />} />
+              <Route path="/languagecourses" element={<LanguageCourses />} />
             </Routes>
           </main>
           {/* <WhatsAppButton /> */}
