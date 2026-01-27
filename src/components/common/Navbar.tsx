@@ -19,11 +19,14 @@ const CloseIcon = ({ size = 28 }) => (
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [careerDropdownOpen, setCareerDropdownOpen] = useState(false);
   const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
+  const [mobileCareerDropdownOpen, setMobileCareerDropdownOpen] = useState(false);
 
   const closeAll = () => {
     setMenuOpen(false);
     setMobileDropdownOpen(false);
+    setMobileCareerDropdownOpen(false);
   };
 
   return (
@@ -32,7 +35,7 @@ export default function Navbar() {
         <a href="/" className="flex items-center">
           <img src="/logo1.png" alt="Transitley Logo" className="h-10 w-auto" />
         </a>
-        <sup className="ml-1 text-xs text-blue-800 align-super">®</sup>
+        <sup className="ml-1 text-xs text-green-800 align-super">®</sup>
         <div className="flex items-center space-x-10 ml-auto">
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-6">
@@ -42,7 +45,7 @@ export default function Navbar() {
               onMouseLeave={() => setDropdownOpen(false)}
             >
               <button 
-                className="text-lg text-gray-700 hover:text-blue-600 flex items-center focus:outline-none"
+                className="text-lg text-gray-700 hover:text-green-600 flex items-center focus:outline-none"
               >
                 Study Abroad
                 <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
@@ -54,25 +57,25 @@ export default function Navbar() {
                   <div className="bg-white border rounded shadow-lg">
                     <a 
                       href="/studyuk" 
-                      className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600"
+                      className="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-600"
                     >
                       Study in UK
                     </a>
                     <a 
                       href="/studyusa" 
-                      className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600"
+                      className="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-600"
                     >
                       Study in USA
                     </a>
                     <a 
                       href="/studycanada" 
-                      className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600"
+                      className="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-600"
                     >
                       Study in Canada
                     </a>
                     <a 
                       href="/studygermany" 
-                      className="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600"
+                      className="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-600"
                     >
                       Study in Germany
                     </a>
@@ -80,13 +83,40 @@ export default function Navbar() {
                 </div>
               )}
             </div>            
-            <a href="/languagecourses" className="text-lg text-gray-700 hover:text-blue-600">Academy</a>
-            <a href="/finance" className="text-lg text-gray-700 hover:text-blue-600">Finance</a>
-            <a href="/travel" className="text-lg text-gray-700 hover:text-blue-600">Visas</a>
-            <a href="/accommodation" className="text-lg text-gray-700 hover:text-blue-600">Accommodation</a>
-            <a href="/studentambassador" className="text-lg text-gray-700 hover:text-blue-600">Student Ambassador</a>
-            <a href="/job" className="text-lg text-gray-700 hover:text-blue-600">Jobs</a>
-            <a href="/business" className="text-lg text-gray-700 hover:text-blue-600">Business</a>
+            <a href="/languagecourses" className="text-lg text-gray-700 hover:text-green-600">Academy</a>
+            <a href="/finance" className="text-lg text-gray-700 hover:text-green-600">Finance</a>
+            <a href="/travel" className="text-lg text-gray-700 hover:text-green-600">Visas</a>
+            <a href="/accommodation" className="text-lg text-gray-700 hover:text-green-600">Accommodation</a>
+            
+            <div 
+              className="relative"
+              onMouseEnter={() => setCareerDropdownOpen(true)}
+              onMouseLeave={() => setCareerDropdownOpen(false)}
+            >
+              <button 
+                className="text-lg text-gray-700 hover:text-green-600 flex items-center focus:outline-none"
+              >
+                Career
+                <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              {careerDropdownOpen && (
+                <div className="absolute left-0 mt-0 pt-2 w-48 z-20">
+                  <div className="bg-white border rounded shadow-lg">
+                    <a 
+                      href="/studentambassador" 
+                      className="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-600"
+                    >
+                      Student Ambassador
+                    </a>
+                  </div>
+                </div>
+              )}
+            </div>
+            
+            <a href="/job" className="text-lg text-gray-700 hover:text-green-600">Jobs</a>
+            <a href="/business" className="text-lg text-gray-700 hover:text-green-600">Business</a>
             
           </div>
         </div>
@@ -115,7 +145,7 @@ export default function Navbar() {
 
             <div className="mt-8">
               <button 
-                className="text-lg text-gray-700 hover:text-blue-600 flex items-center focus:outline-none w-full"
+                className="text-lg text-gray-700 hover:text-green-600 flex items-center focus:outline-none w-full"
                 onClick={() => setMobileDropdownOpen(!mobileDropdownOpen)}
               >
                 Study Abroad
@@ -133,28 +163,28 @@ export default function Navbar() {
                 <div className="mt-2 pl-4 space-y-2">
                   <a 
                     href="/studyuk" 
-                    className="block py-2 text-gray-700 hover:text-blue-600"
+                    className="block py-2 text-gray-700 hover:text-green-600"
                     onClick={closeAll}
                   >
                     Study in UK
                   </a>
                   <a 
                     href="/studyusa" 
-                    className="block py-2 text-gray-700 hover:text-blue-600"
+                    className="block py-2 text-gray-700 hover:text-green-600"
                     onClick={closeAll}
                   >
                     Study in USA
                   </a>
                   <a 
                     href="/studycanada" 
-                    className="block py-2 text-gray-700 hover:text-blue-600"
+                    className="block py-2 text-gray-700 hover:text-green-600"
                     onClick={closeAll}
                   >
                     Study in Canada
                   </a>
                   <a 
                     href="/studygermany" 
-                    className="block py-2 text-gray-700 hover:text-blue-600"
+                    className="block py-2 text-gray-700 hover:text-green-600"
                     onClick={closeAll}
                   >
                     Study in Germany
@@ -162,13 +192,42 @@ export default function Navbar() {
                 </div>
               )}
             </div>            
- <a href="/languagecourses" className="text-lg text-gray-700 hover:text-blue-600" onClick={closeAll}>Academy</a>
-            <a href="/finance" className="text-lg text-gray-700 hover:text-blue-600" onClick={closeAll}>Finance</a>
-            <a href="/travel" className="text-lg text-gray-700 hover:text-blue-600" onClick={closeAll}>Visas</a>
-            <a href="/accommodation" className="text-lg text-gray-700 hover:text-blue-600" onClick={closeAll}>Accommodation</a>
-            <a href="/studentambassador" className="text-lg text-gray-700 hover:text-blue-600" onClick={closeAll}>Student Ambassador</a>
-            <a href="/job" className="text-lg text-gray-700 hover:text-blue-600" onClick={closeAll}>Jobs</a>
-            <a href="/business" className="text-lg text-gray-700 hover:text-blue-600" onClick={closeAll}>Business</a>
+            <a href="/languagecourses" className="text-lg text-gray-700 hover:text-green-600" onClick={closeAll}>Academy</a>
+            <a href="/finance" className="text-lg text-gray-700 hover:text-green-600" onClick={closeAll}>Finance</a>
+            <a href="/travel" className="text-lg text-gray-700 hover:text-green-600" onClick={closeAll}>Visas</a>
+            <a href="/accommodation" className="text-lg text-gray-700 hover:text-green-600" onClick={closeAll}>Accommodation</a>
+            
+            <div>
+              <button 
+                className="text-lg text-gray-700 hover:text-green-600 flex items-center focus:outline-none w-full"
+                onClick={() => setMobileCareerDropdownOpen(!mobileCareerDropdownOpen)}
+              >
+                Career
+                <svg 
+                  className={`ml-1 w-4 h-4 transition-transform ${mobileCareerDropdownOpen ? 'rotate-180' : ''}`} 
+                  fill="none" 
+                  stroke="currentColor" 
+                  strokeWidth="2" 
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              {mobileCareerDropdownOpen && (
+                <div className="mt-2 pl-4 space-y-2">
+                  <a 
+                    href="/studentambassador" 
+                    className="block py-2 text-gray-700 hover:text-green-600"
+                    onClick={closeAll}
+                  >
+                    Student Ambassador
+                  </a>
+                </div>
+              )}
+            </div>
+            
+            <a href="/job" className="text-lg text-gray-700 hover:text-green-600" onClick={closeAll}>Jobs</a>
+            <a href="/business" className="text-lg text-gray-700 hover:text-green-600" onClick={closeAll}>Business</a>
            
           </div>
           <div className="flex-1" onClick={closeAll} />

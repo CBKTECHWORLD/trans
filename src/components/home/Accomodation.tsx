@@ -52,39 +52,52 @@ const Accommodation: React.FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
       {/* Header Section */}
-      <div className="relative bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white py-20 overflow-hidden">
-        <div className="absolute inset-0 bg-black opacity-10"></div>
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20"></div>
-        <div className="relative max-w-6xl mx-auto px-6">
-          <div className="text-center">
-            <div className="flex justify-center mb-6">
-              <div className="bg-white/20 backdrop-blur-sm rounded-full p-4">
-                <Home className="h-12 w-12 text-white" />
-              </div>
-            </div>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
-              UK Rental Guide
-            </h1>
-            <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Your complete guide to renting in the UK - designed for international students, skilled workers, and newcomers
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <div className="bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 flex items-center">
-                <Star className="h-5 w-5 mr-2" />
-                <span className="text-sm font-medium">Step-by-Step Process</span>
-              </div>
-              <div className="bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 flex items-center">
-                <Shield className="h-5 w-5 mr-2" />
-                <span className="text-sm font-medium">Know Your Rights</span>
-              </div>
-              <div className="bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 flex items-center">
-                <Clock className="h-5 w-5 mr-2" />
-                <span className="text-sm font-medium">Start 1-2 Months Early</span>
-              </div>
-            </div>
-          </div>
+ <div
+  className="relative text-white py-20 overflow-hidden bg-cover bg-center bg-no-repeat"
+  style={{ backgroundImage: "url('/images/uk-rental-hero.jpg')" }}
+>
+  {/* Dark overlay for readability */}
+  <div className="absolute inset-0 bg-black/50"></div>
+
+  {/* Optional subtle colour tint (remove if not needed) */}
+  <div className="absolute inset-0 bg-indigo-900/30"></div>
+
+  <div className="relative max-w-6xl mx-auto px-6">
+    <div className="text-center">
+      <div className="flex justify-center mb-6">
+        <div className="bg-white/20 backdrop-blur-sm rounded-full p-4">
+          <Home className="h-12 w-12 text-white" />
         </div>
       </div>
+
+      <h1 className="text-5xl md:text-6xl font-bold mb-6">
+        UK Rental Guide
+      </h1>
+
+      <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto leading-relaxed">
+        Your complete guide to renting in the UK – designed for international students, skilled workers, and newcomers
+      </p>
+
+      <div className="flex flex-wrap justify-center gap-4">
+        <div className="bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 flex items-center">
+          <Star className="h-5 w-5 mr-2" />
+          <span className="text-sm font-medium">Step-by-Step Process</span>
+        </div>
+
+        <div className="bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 flex items-center">
+          <Shield className="h-5 w-5 mr-2" />
+          <span className="text-sm font-medium">Know Your Rights</span>
+        </div>
+
+        <div className="bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 flex items-center">
+          <Clock className="h-5 w-5 mr-2" />
+          <span className="text-sm font-medium">Start 1–2 Months Early</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
       {/* Alert Banner */}
       <div className="max-w-6xl mx-auto px-6 -mt-10 relative z-10">

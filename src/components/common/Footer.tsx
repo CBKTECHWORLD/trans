@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="bg-gradient-to-r from-[#0C1216] to-[#192C34] text-white py-12">
       {/* Footer Bottom Section */}
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="space-y-8">
             <header className="mb-8">
               <div className="bg-white rounded p-2 inline-block relative">
@@ -31,6 +31,16 @@ export default function Footer() {
             </ul>
           </div>
 
+  <div>
+            <h4 className="font-semibold mb-4">Study Abroad</h4>
+            <ul className="space-y-4">
+                <li><Link to="studyuk" className="text-white-400 hover:text-white">Study in UK</Link></li>
+                <li><Link to="/studyusa" className="text-white-400 hover:text-white">Study in USA</Link></li>
+                <li><Link to="/studycanada" className="text-white-400 hover:text-white">Study in Canada</Link></li>
+                <li><Link to="/studygermany" className="text-white-400 hover:text-white">Study in Germany</Link></li>
+              
+            </ul>
+          </div>
           <div>
             <h4 className="font-semibold mb-4">Contact</h4>
             <div className="flex items-start">
