@@ -26,6 +26,7 @@ import StudentAmbassador from './pages/StudentAmbassador';
 import StudyCanada from './components/studyabroad/studycanada';
 import StudyGermany from './components/studyabroad/studygermany';
 import LanguageCourses from './pages/LanguageCourses';
+import StudyUK from './components/studyabroad/studyuk';
 
 const App: React.FC = () => {
   return (
@@ -38,7 +39,8 @@ const App: React.FC = () => {
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/dashboard" element={<Dashboard />} />
-              <Route path="/studyuk" element={<Universities />} />
+              {/* <Route path="/studyuk" element={<Universities />} /> */}
+              <Route path="/studyuk" element={<StudyUK />} />
               <Route path="/studyusa" element={<StudyUSA />} />
               <Route path="/studycanada" element={<StudyCanada />} />
               <Route path="/studygermany" element={<StudyGermany />} />

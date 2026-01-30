@@ -4,107 +4,203 @@ import { Link } from 'react-router-dom';
 interface FeatureCardProps {
   icon: React.ReactNode;
   title: string;
-  description: string;
+  link: string;
 }
 
-const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description }) => {
+const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, link }) => {
   return (
-    <div className="bg-white rounded-lg p-4 flex flex-col items-center text-center border border-green-800">
-      <div className="text-green-600 mb-4">{icon}</div>
-      <h3 className="text-lg font-semibold text-green-800 mb-2">{title}</h3>
-      <p className="text-gray-600 text-sm">{description}</p>
-    </div>
+    <Link to={link} className="group">
+      <div className="bg-white rounded-xl px-6 py-3 shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105 border-2 border-green-100 hover:border-green-300">
+        <div className="flex items-center gap-3">
+          <div className="text-green-600 flex-shrink-0">
+            {icon}
+          </div>
+          <h3 className="text-sm font-semibold text-gray-800 whitespace-nowrap">{title}</h3>
+        </div>
+      </div>
+    </Link>
   );
 };
 
 const Role: React.FC = () => {
+  // Define your services here - Easy to add or remove!
+  const services = [
+    {
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+        </svg>
+      ),
+      title: "Study in the UK",
+      link: "/studyuk"
+    },
+    {
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <rect x="3" y="7" width="18" height="10" rx="2" stroke="currentColor" strokeWidth={2} />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 7l9 6 9-6" />
+        </svg>
+      ),
+      title: "Courier Services",
+      link: "https://forms.gle/ix3BmsY5T7HoMfzn7"
+    },
+    {
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+        </svg>
+      ),
+      title: "Launch Your Business",
+      link: "/business"
+    },
+    {
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      ),
+      title: "Forex & International Transfers",
+      link: "https://transitley.extravelmoney.com/"
+    },
+    {
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+        </svg>
+      ),
+      title: "Accommodation",
+      link: "/accommodation"
+    },
+    {
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+        </svg>
+      ),
+      title: "Find Jobs",
+      link: "/job"
+    }
+    // To add more services, just copy the pattern above and add here!
+    // The circle will automatically adjust to fit all services evenly
+  ];
+
+  // Calculate positions in a circle
+  const calculatePosition = (index: number, total: number) => {
+    const radius = 220; // Distance from center - reduced for closer positioning
+    const angle = (index * 360) / total - 90; // Start from top (-90 degrees)
+    const radian = (angle * Math.PI) / 180;
+    
+    const x = 50 + radius * Math.cos(radian) / 6; // Divide by 6 to convert to percentage units
+    const y = 50 + radius * Math.sin(radian) / 6;
+    
+    return { x, y };
+  };
+
   return (
-    <section  className="min-h-[70vh] py-16 bg-cover bg-center bg-no-repeat bg-gray-100"
-  style={{ backgroundImage: "url('/images/bg.png')" }}>
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <Link to="/studyuk" className="hover:shadow-lg transition-shadow duration-200">
-            <FeatureCard
-              icon={
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                </svg>
-              }
-              title="Study in the UK"
-              description="Admission support for top UK universities"
-            />
-          </Link>
-            <Link to="https://transitley.extravelmoney.com/" className="hover:shadow-lg transition-shadow duration-200">
-            <FeatureCard
-              icon={
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              }
-              title="Forex & International Transfers"
-              description="Send money abroad at competitive rates"
-            />
-            </Link>
-          
-         
-            <Link to="https://forms.gle/ix3BmsY5T7HoMfzn7" className="hover:shadow-lg transition-shadow duration-200">
-            <FeatureCard
-              icon={
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <rect x="3" y="7" width="18" height="10" rx="2" stroke="currentColor" strokeWidth={2} />
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 7l9 6 9-6" />
-              </svg>
-              }
-              title="Courier Services"
-              description="Send parcels from India to worldwide destinations"
-            />
-            </Link>
-           
-          
-          <Link to="/accommodation" className="hover:shadow-lg transition-shadow duration-200">
-            <FeatureCard
-              icon={
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                </svg>
-              }
-              title="Accommodation Assistance"
-              description="Help finding a place that feels like home"
-            />
-          </Link>
-          <Link to="/job" className="hover:shadow-lg transition-shadow duration-200">
-            <FeatureCard
-              icon={
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-              }
-              title="Find Jobs"
-              description="Search jobs to support your studies"
-            />
-          </Link>
-          <Link to="/business" className="hover:shadow-lg transition-shadow duration-200">
-            <FeatureCard
-              icon={
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                </svg>
-              }
-              title="Launch Your Business"
-              description="Get assistance in starting your UK company"
-            />
-          </Link>
-             {/* <Link to="/flight" className="hover:shadow-lg transition-shadow duration-200">
-            <FeatureCard
-              icon={
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
-              </svg>
-              }
-              title="Book Flights & Travel Deals"
-              description="Exclusive offers on flights to the UK"
-            />
-            </Link> */}
+    <section className="min-h-[80vh] py-12 bg-gray-50 relative overflow-hidden">
+      
+      <div className="container mx-auto px-4 relative z-10">
+        {/* Desktop Circular Layout */}
+        <div className="hidden lg:block">
+          <div className="relative w-full max-w-6xl mx-auto" style={{ height: '650px' }}>
+            
+            {/* Double Circular Arc Lines */}
+            <svg className="absolute inset-0 w-full h-full pointer-events-none" style={{ zIndex: 1 }}>
+              <defs>
+                <linearGradient id="circleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style={{ stopColor: '#10b981', stopOpacity: 0.3 }} />
+                  <stop offset="50%" style={{ stopColor: '#059669', stopOpacity: 0.4 }} />
+                  <stop offset="100%" style={{ stopColor: '#10b981', stopOpacity: 0.3 }} />
+                </linearGradient>
+              </defs>
+              
+              {/* Inner circle */}
+              <circle 
+                cx="50%" 
+                cy="50%" 
+                r="250" 
+                fill="none" 
+                stroke="url(#circleGrad)" 
+                strokeWidth="1.5"
+                opacity="0.5"
+              />
+              
+              {/* Outer circle */}
+              <circle 
+                cx="50%" 
+                cy="50%" 
+                r="310" 
+                fill="none" 
+                stroke="url(#circleGrad)" 
+                strokeWidth="1.5"
+                opacity="0.5"
+              />
+            </svg>
+
+            {/* Central Student Image */}
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" style={{ zIndex: 20 }}>
+              <div className="relative">
+                {/* Glow effect */}
+                <div className="absolute inset-0 bg-green-400 rounded-full blur-xl opacity-30"></div>
+                
+                {/* Image container - supports PNG with transparency */}
+                <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl bg-white">
+                  <img
+                    src="/images/student.png"
+                    alt="Student"
+                    className="w-full h-full object-cover"
+                    onError={(e) => {
+                      // Try .jpg if .png fails
+                      const target = e.target as HTMLImageElement;
+                      if (target.src.endsWith('.png')) {
+                        target.src = '/images/student.jpg';
+                      } else {
+                        // Final fallback to emoji
+                        target.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="192" height="192"%3E%3Crect fill="%2310b981" width="192" height="192"/%3E%3Ctext x="50%25" y="50%25" font-size="64" text-anchor="middle" dy=".3em" fill="white"%3E👨‍🎓%3C/text%3E%3C/svg%3E';
+                      }
+                    }}
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Service Cards - Automatically positioned in circle */}
+            {services.map((service, index) => {
+              const pos = calculatePosition(index, services.length);
+              return (
+                <div 
+                  key={index}
+                  className="absolute transform -translate-x-1/2 -translate-y-1/2" 
+                  style={{ 
+                    left: `${pos.x}%`, 
+                    top: `${pos.y}%`,
+                    zIndex: 10 
+                  }}
+                >
+                  <FeatureCard
+                    icon={service.icon}
+                    title={service.title}
+                    link={service.link}
+                  />
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Mobile/Tablet Grid Layout */}
+        <div className="lg:hidden">
+          <h2 className="text-2xl font-bold text-center text-gray-800 mb-8">Our Services</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-3xl mx-auto">
+            {services.map((service, index) => (
+              <FeatureCard
+                key={index}
+                icon={service.icon}
+                title={service.title}
+                link={service.link}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>
