@@ -10,6 +10,9 @@ import Banner from '../components/home/Banner';
 import Role from '../components/home/Role';
 // import Intro from '../components/home/Intro';
 import LanguageCourseCards from '../components/home/LanguageCourseCards';
+import WhatsAppCommunity from '../components/home/whatsappsection';
+import CourierSection from '../components/home/Courier';
+import RecognisedBy from '../components/home/Recognised';
 // import VideoTestimonials from '../components/home/VideoTestimonials';
 
 export default function HomePage() {
@@ -20,6 +23,10 @@ export default function HomePage() {
       {/* <Intro /> */}
       <Role />
       <LanguageCourseCards />
+     
+      <CourierSection />
+      <RecognisedBy />
+       <WhatsAppCommunity />
       {/* <StatsSection /> */}
          {/* <StartNow />
       <FeaturesSection /> */}

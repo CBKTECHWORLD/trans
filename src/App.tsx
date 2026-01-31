@@ -27,6 +27,9 @@ import StudyCanada from './components/studyabroad/studycanada';
 import StudyGermany from './components/studyabroad/studygermany';
 import LanguageCourses from './pages/LanguageCourses';
 import StudyUK from './components/studyabroad/studyuk';
+import CourierSection from './components/home/Courier';
+import WhatsAppCommunity from './components/home/whatsappsection';
+
 
 const App: React.FC = () => {
   return (
@@ -40,6 +43,8 @@ const App: React.FC = () => {
               <Route path="/" element={<HomePage />} />
               <Route path="/dashboard" element={<Dashboard />} />
               {/* <Route path="/studyuk" element={<Universities />} /> */}
+              <Route path="/couriersection" element={<CourierSection />} />
+              <Route path="/whatsappsection" element={<WhatsAppCommunity />} />
               <Route path="/studyuk" element={<StudyUK />} />
               <Route path="/studyusa" element={<StudyUSA />} />
               <Route path="/studycanada" element={<StudyCanada />} />
@@ -59,6 +64,7 @@ const App: React.FC = () => {
               <Route path="/about" element={<About />} />
               <Route path="/legal" element={<Legal />} />
               <Route path="/languagecourses" element={<LanguageCourses />} />
+              <Route path="/recognised" element={<>Recognised Component</>} />
             </Routes>
           </main>
           {/* <WhatsAppButton /> */}

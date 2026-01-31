@@ -1,15 +1,102 @@
-import React from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 interface FeatureCardProps {
   icon: React.ReactNode;
   title: string;
-  link: string;
+  link?: string;
+  hasDropdown?: boolean;
+  dropdownItems?: { title: string; link: string; }[];
+  index?: number;
 }
 
-const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, link }) => {
+const FeatureCard: React.FC<FeatureCardProps> = ({ 
+  icon, 
+  title, 
+  link, 
+  hasDropdown, 
+  dropdownItems,
+  index 
+}) => {
+  const [showDropdown, setShowDropdown] = useState(false);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  const handleMouseEnter = () => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+    setShowDropdown(true);
+  };
+
+  const handleMouseLeave = () => {
+    timeoutRef.current = setTimeout(() => {
+      setShowDropdown(false);
+    }, 300);
+  };
+
+  useEffect(() => {
+    return () => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+    };
+  }, []);
+
+  if (hasDropdown && dropdownItems) {
+    return (
+      <div 
+        className="relative"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        <div className="group cursor-pointer">
+          <div className="bg-white rounded-xl px-6 py-3 shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105 border-2 border-green-100 hover:border-green-300">
+            <div className="flex items-center gap-3">
+              <div className="text-green-600 flex-shrink-0">
+                {icon}
+              </div>
+              <h3 className="text-sm font-semibold text-gray-800 whitespace-nowrap">{title}</h3>
+            </div>
+          </div>
+        </div>
+
+        {/* Dropdown Options - Shows ABOVE in horizontal row */}
+        {showDropdown && (
+          <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 z-50">
+            <div className="flex gap-2">
+              {dropdownItems.map((dropdownItem, idx) => (
+                <Link
+                  key={idx}
+                  to={dropdownItem.link}
+                  className="group/item relative bg-gradient-to-br from-emerald-400 to-green-600 
+                             px-5 py-2.5 rounded-lg shadow-lg 
+                             hover:scale-105 hover:shadow-xl
+                             transition-all duration-300 ease-out
+                             border-2 border-emerald-300 text-center"
+                >
+                  {/* Gradient overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent rounded-lg"></div>
+                  
+                  <span className="relative text-white font-semibold text-sm whitespace-nowrap">
+                    {dropdownItem.title}
+                  </span>
+                  
+                  {/* Shimmer effect on hover */}
+                  <div className="absolute inset-0 rounded-lg opacity-0 group-hover/item:opacity-100 
+                                bg-gradient-to-r from-transparent via-white/30 to-transparent
+                                transform -skew-x-12 transition-opacity duration-500"></div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+    );
+  }
+
+  // Regular card without dropdown
   return (
-    <Link to={link} className="group">
+    <Link to={link || '#'} className="group">
       <div className="bg-white rounded-xl px-6 py-3 shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105 border-2 border-green-100 hover:border-green-300">
         <div className="flex items-center gap-3">
           <div className="text-green-600 flex-shrink-0">
@@ -31,8 +118,14 @@ const Role: React.FC = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
         </svg>
       ),
-      title: "Study in the UK",
-      link: "/studyuk"
+      title: "Study Abroad",
+      hasDropdown: true,
+      dropdownItems: [
+        { title: "Study in UK", link: "/studyuk" },
+        { title: "Study in USA", link: "/studyusa" },
+        { title: "Study in Canada", link: "/studycanada" },
+        { title: "Study in Germany", link: "/studygermany" }
+      ]
     },
     {
       icon: (
@@ -74,23 +167,39 @@ const Role: React.FC = () => {
     {
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+        </svg>
+      ),
+      title: "Visa services",
+      link: "/travel"
+    },
+    {
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
+        </svg>
+      ),
+      title: "IELTS and Foreign Language",
+      link: "/languagecourses"
+    },
+    {
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
         </svg>
       ),
       title: "Find Jobs",
       link: "/job"
     }
-    // To add more services, just copy the pattern above and add here!
-    // The circle will automatically adjust to fit all services evenly
   ];
 
   // Calculate positions in a circle
   const calculatePosition = (index: number, total: number) => {
-    const radius = 220; // Distance from center - reduced for closer positioning
-    const angle = (index * 360) / total - 90; // Start from top (-90 degrees)
+    const radius = 220;
+    const angle = (index * 360) / total - 90;
     const radian = (angle * Math.PI) / 180;
     
-    const x = 50 + radius * Math.cos(radian) / 6; // Divide by 6 to convert to percentage units
+    const x = 50 + radius * Math.cos(radian) / 6;
     const y = 50 + radius * Math.sin(radian) / 6;
     
     return { x, y };
@@ -143,19 +252,17 @@ const Role: React.FC = () => {
                 {/* Glow effect */}
                 <div className="absolute inset-0 bg-green-400 rounded-full blur-xl opacity-30"></div>
                 
-                {/* Image container - supports PNG with transparency */}
-                <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl bg-white">
+                {/* Image container */}
+                <div className="relative w-80 h-80 rounded-full overflow-hidden border-4 border-white shadow-xl bg-white">
                   <img
-                    src="/images/student.png"
+                    src="/images/student2.jpg"
                     alt="Student"
                     className="w-full h-full object-cover"
                     onError={(e) => {
-                      // Try .jpg if .png fails
                       const target = e.target as HTMLImageElement;
                       if (target.src.endsWith('.png')) {
                         target.src = '/images/student.jpg';
                       } else {
-                        // Final fallback to emoji
                         target.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="192" height="192"%3E%3Crect fill="%2310b981" width="192" height="192"/%3E%3Ctext x="50%25" y="50%25" font-size="64" text-anchor="middle" dy=".3em" fill="white"%3E👨‍🎓%3C/text%3E%3C/svg%3E';
                       }
                     }}
@@ -164,7 +271,7 @@ const Role: React.FC = () => {
               </div>
             </div>
 
-            {/* Service Cards - Automatically positioned in circle */}
+            {/* Service Cards */}
             {services.map((service, index) => {
               const pos = calculatePosition(index, services.length);
               return (
@@ -181,6 +288,9 @@ const Role: React.FC = () => {
                     icon={service.icon}
                     title={service.title}
                     link={service.link}
+                    hasDropdown={service.hasDropdown}
+                    dropdownItems={service.dropdownItems}
+                    index={index}
                   />
                 </div>
               );
@@ -198,6 +308,9 @@ const Role: React.FC = () => {
                 icon={service.icon}
                 title={service.title}
                 link={service.link}
+                hasDropdown={service.hasDropdown}
+                dropdownItems={service.dropdownItems}
+                index={index}
               />
             ))}
           </div>
