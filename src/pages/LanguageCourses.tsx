@@ -129,37 +129,64 @@ const LanguageCourses: React.FC = () => {
       {/* Compact Hero Section */}
       <section className="bg-gradient-to-r from-teal-700 to-teal-900 text-white py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            <div className="flex items-center gap-3">
-              <Globe className="w-10 h-10 flex-shrink-0" />
-              <div>
-                <h1 className="text-3xl font-bold">Professional Courses</h1>
-                <p className="text-teal-50 text-sm mt-1">Languages • Competitive Exams • Technical Skills</p>
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            {/* Left Side - Text Content */}
+            <div>
+              <div className="flex items-center gap-3 mb-4">
+                <Globe className="w-10 h-10 flex-shrink-0" />
+                <div>
+                  <h1 className="text-3xl font-bold">Professional Courses</h1>
+                  <p className="text-teal-50 text-sm mt-1">Languages • Competitive Exams • Technical Skills</p>
+                </div>
+              </div>
+              
+              <p className="text-teal-50 text-sm mb-6">
+                Join thousands of successful students achieving academic and professional goals through expert-led programs with flexible schedules, experienced instructors, and proven strategies.
+              </p>
+
+              {/* Buttons */}
+              <div className="flex gap-3 mb-6">
+                <a
+                  href="http://academy.transitley.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm text-white border border-white/30 px-6 py-3 rounded-lg font-semibold hover:bg-white/20 transition-colors"
+                >
+                  Login
+                </a>
+                <a
+                  href="http://academy.transitley.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-white text-teal-900 px-6 py-3 rounded-lg font-semibold hover:bg-teal-50 transition-colors"
+                >
+                  Register Now
+                  <ArrowRight className="w-4 h-4" />
+                </a>
+              </div>
+
+              {/* PDF Link */}
+              <div className="flex flex-wrap items-center gap-4 text-sm">
+                <span className="text-teal-300">•</span>
+                <a 
+                  href="/pdf/academy.pdf" 
+                  download
+                  className="text-white underline hover:text-teal-100 transition-colors"
+                >
+                  Download upcoming batch and price list (PDF)
+                </a>
               </div>
             </div>
-            <div className="flex gap-3">
-              <a
-                href="http://academy.transitley.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex-shrink-0 inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm text-white border border-white/30 px-6 py-3 rounded-lg font-semibold hover:bg-white/20 transition-colors"
-              >
-                Login
-              </a>
-              <a
-                href="http://academy.transitley.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex-shrink-0 inline-flex items-center gap-2 bg-white text-teal-900 px-6 py-3 rounded-lg font-semibold hover:bg-teal-50 transition-colors"
-              >
-                Register Now
-                <ArrowRight className="w-4 h-4" />
-              </a>
+
+            {/* Right Side - Image */}
+            <div className="hidden md:block">
+              <img 
+                src="/images/academybanner.jpg" 
+                alt="Professional Learning" 
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
             </div>
           </div>
-          <p className="text-teal-50 text-sm mt-4 max-w-4xl">
-            Join thousands of successful students achieving academic and professional goals through expert-led programs with flexible schedules, experienced instructors, and proven strategies.
-          </p>
         </div>
       </section>
 

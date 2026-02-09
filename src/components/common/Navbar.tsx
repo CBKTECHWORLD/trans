@@ -88,7 +88,7 @@ export default function Navbar() {
             <a href="/travel" className="text-lg text-gray-700 hover:text-green-600">Visas</a>
             <a href="/accommodation" className="text-lg text-gray-700 hover:text-green-600">Accommodation</a>
             
-            <div 
+            {/* <div 
               className="relative"
               onMouseEnter={() => setCareerDropdownOpen(true)}
               onMouseLeave={() => setCareerDropdownOpen(false)}
@@ -113,8 +113,8 @@ export default function Navbar() {
                   </div>
                 </div>
               )}
-            </div>
-            
+            </div> */}
+            <a href="/career-transitley" className="text-lg text-gray-700 hover:text-green-600">Career</a>
             <a href="/job" className="text-lg text-gray-700 hover:text-green-600">Jobs</a>
             <a href="/business" className="text-lg text-gray-700 hover:text-green-600">Business</a>
             
@@ -131,6 +131,8 @@ export default function Navbar() {
           </button>
         </div>
       </div>
+
+
       {/* Mobile Side Menu */}
       {menuOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-40 z-50 flex">
@@ -197,7 +199,7 @@ export default function Navbar() {
             <a href="/travel" className="text-lg text-gray-700 hover:text-green-600" onClick={closeAll}>Visas</a>
             <a href="/accommodation" className="text-lg text-gray-700 hover:text-green-600" onClick={closeAll}>Accommodation</a>
             
-            <div>
+            {/* <div>
               <button 
                 className="text-lg text-gray-700 hover:text-green-600 flex items-center focus:outline-none w-full"
                 onClick={() => setMobileCareerDropdownOpen(!mobileCareerDropdownOpen)}
@@ -224,8 +226,8 @@ export default function Navbar() {
                   </a>
                 </div>
               )}
-            </div>
-            
+            </div> */}
+             <a href="/career-transitley" className="text-lg text-gray-700 hover:text-green-600" onClick={closeAll}>Career</a>
             <a href="/job" className="text-lg text-gray-700 hover:text-green-600" onClick={closeAll}>Jobs</a>
             <a href="/business" className="text-lg text-gray-700 hover:text-green-600" onClick={closeAll}>Business</a>
            

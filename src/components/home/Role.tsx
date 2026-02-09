@@ -20,75 +20,158 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
 }) => {
   const [showDropdown, setShowDropdown] = useState(false);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+  const cardRef = useRef<HTMLDivElement>(null);
 
   const handleMouseEnter = () => {
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current);
     }
-    setShowDropdown(true);
+    // Only auto-open on desktop
+    if (window.innerWidth >= 1024) {
+      setShowDropdown(true);
+    }
   };
 
   const handleMouseLeave = () => {
-    timeoutRef.current = setTimeout(() => {
-      setShowDropdown(false);
-    }, 300);
+    // Only auto-close on desktop
+    if (window.innerWidth >= 1024) {
+      timeoutRef.current = setTimeout(() => {
+        setShowDropdown(false);
+      }, 300);
+    }
   };
 
+  const handleClick = (e: React.MouseEvent) => {
+    if (hasDropdown) {
+      e.preventDefault();
+      e.stopPropagation();
+      // Toggle dropdown on click
+      setShowDropdown(!showDropdown);
+    }
+  };
+
+  // Close dropdown when clicking outside
   useEffect(() => {
+    const handleClickOutside = (event: Event) => {
+      const target = event.target as Node;
+      if (
+        dropdownRef.current && 
+        !dropdownRef.current.contains(target) &&
+        cardRef.current &&
+        !cardRef.current.contains(target)
+      ) {
+        setShowDropdown(false);
+      }
+    };
+
+    if (showDropdown) {
+      document.addEventListener('mousedown', handleClickOutside);
+      document.addEventListener('touchstart', handleClickOutside);
+    }
+
     return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('touchstart', handleClickOutside);
       if (timeoutRef.current) {
         clearTimeout(timeoutRef.current);
       }
     };
-  }, []);
+  }, [showDropdown]);
 
   if (hasDropdown && dropdownItems) {
     return (
       <div 
+        ref={dropdownRef}
         className="relative"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <div className="group cursor-pointer">
+        <div 
+          ref={cardRef}
+          className="group cursor-pointer"
+          onClick={handleClick}
+        >
           <div className="bg-white rounded-xl px-6 py-3 shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105 border-2 border-green-100 hover:border-green-300">
             <div className="flex items-center gap-3">
               <div className="text-green-600 flex-shrink-0">
                 {icon}
               </div>
               <h3 className="text-sm font-semibold text-gray-800 whitespace-nowrap">{title}</h3>
+              {/* Dropdown indicator */}
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                className={`h-4 w-4 text-green-600 transition-transform duration-200 ml-auto ${showDropdown ? 'rotate-180' : ''}`}
+                fill="none" 
+                viewBox="0 0 24 24" 
+                stroke="currentColor"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
             </div>
           </div>
         </div>
 
-        {/* Dropdown Options - Shows ABOVE in horizontal row */}
+        {/* Dropdown Options */}
         {showDropdown && (
-          <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 z-50">
-            <div className="flex gap-2">
-              {dropdownItems.map((dropdownItem, idx) => (
-                <Link
-                  key={idx}
-                  to={dropdownItem.link}
-                  className="group/item relative bg-gradient-to-br from-emerald-400 to-green-600 
-                             px-5 py-2.5 rounded-lg shadow-lg 
-                             hover:scale-105 hover:shadow-xl
-                             transition-all duration-300 ease-out
-                             border-2 border-emerald-300 text-center"
-                >
-                  {/* Gradient overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent rounded-lg"></div>
-                  
-                  <span className="relative text-white font-semibold text-sm whitespace-nowrap">
-                    {dropdownItem.title}
-                  </span>
-                  
-                  {/* Shimmer effect on hover */}
-                  <div className="absolute inset-0 rounded-lg opacity-0 group-hover/item:opacity-100 
-                                bg-gradient-to-r from-transparent via-white/30 to-transparent
-                                transform -skew-x-12 transition-opacity duration-500"></div>
-                </Link>
-              ))}
+          <>
+            {/* Desktop: Show above horizontally */}
+            <div className="hidden lg:block absolute bottom-full left-1/2 -translate-x-1/2 mb-3 z-[100]">
+              <div className="flex gap-2">
+                {dropdownItems.map((dropdownItem, idx) => (
+                  <Link
+                    key={idx}
+                    to={dropdownItem.link}
+                    className="group/item relative bg-gradient-to-br from-emerald-400 to-green-600 
+                               px-5 py-2.5 rounded-lg shadow-lg 
+                               hover:scale-105 hover:shadow-xl
+                               transition-all duration-300 ease-out
+                               border-2 border-emerald-300 text-center"
+                    onClick={() => setShowDropdown(false)}
+                  >
+                    {/* Gradient overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent rounded-lg"></div>
+                    
+                    <span className="relative text-white font-semibold text-sm whitespace-nowrap">
+                      {dropdownItem.title}
+                    </span>
+                    
+                    {/* Shimmer effect on hover */}
+                    <div className="absolute inset-0 rounded-lg opacity-0 group-hover/item:opacity-100 
+                                  bg-gradient-to-r from-transparent via-white/30 to-transparent
+                                  transform -skew-x-12 transition-opacity duration-500"></div>
+                  </Link>
+                ))}
+              </div>
             </div>
-          </div>
+
+            {/* Mobile: Show below vertically with better positioning */}
+            <div className="lg:hidden absolute top-full left-0 right-0 mt-2 z-[100] px-2">
+              <div className="bg-white rounded-lg shadow-xl border-2 border-green-200 p-2">
+                <div className="flex flex-col gap-2">
+                  {dropdownItems.map((dropdownItem, idx) => (
+                    <Link
+                      key={idx}
+                      to={dropdownItem.link}
+                      className="group/item relative bg-gradient-to-br from-emerald-400 to-green-600 
+                                 px-5 py-3 rounded-lg shadow-md 
+                                 active:scale-95
+                                 transition-all duration-200 ease-out
+                                 border-2 border-emerald-300 text-center"
+                      onClick={() => setShowDropdown(false)}
+                    >
+                      {/* Gradient overlay */}
+                      <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent rounded-lg"></div>
+                      
+                      <span className="relative text-white font-semibold text-sm whitespace-nowrap">
+                        {dropdownItem.title}
+                      </span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </>
         )}
       </div>
     );
@@ -253,7 +336,7 @@ const Role: React.FC = () => {
                 <div className="absolute inset-0 bg-green-400 rounded-full blur-xl opacity-30"></div>
                 
                 {/* Image container */}
-                <div className="relative w-80 h-80 rounded-full overflow-hidden border-4 border-white shadow-xl bg-white">
+                <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-xl bg-white">
                   <img
                     src="/images/student2.jpg"
                     alt="Student"
@@ -261,7 +344,7 @@ const Role: React.FC = () => {
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
                       if (target.src.endsWith('.png')) {
-                        target.src = '/images/student.jpg';
+                        target.src = '/images/student2.jpg';
                       } else {
                         target.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="192" height="192"%3E%3Crect fill="%2310b981" width="192" height="192"/%3E%3Ctext x="50%25" y="50%25" font-size="64" text-anchor="middle" dy=".3em" fill="white"%3E👨‍🎓%3C/text%3E%3C/svg%3E';
                       }
@@ -301,7 +384,7 @@ const Role: React.FC = () => {
         {/* Mobile/Tablet Grid Layout */}
         <div className="lg:hidden">
           <h2 className="text-2xl font-bold text-center text-gray-800 mb-8">Our Services</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-3xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
             {services.map((service, index) => (
               <FeatureCard
                 key={index}

@@ -29,6 +29,7 @@ import LanguageCourses from './pages/LanguageCourses';
 import StudyUK from './components/studyabroad/studyuk';
 import CourierSection from './components/home/Courier';
 import WhatsAppCommunity from './components/home/whatsappsection';
+import CareersPage from './pages/Career';
 
 
 const App: React.FC = () => {
@@ -56,6 +57,7 @@ const App: React.FC = () => {
               <Route path="/finance" element={<Finance />} />
               <Route path="/accommodation" element={<Accommodation />} />
               <Route path="/studentambassador" element={<StudentAmbassador />} />
+              <Route path="/career-transitley" element={<CareersPage />} />
               
               <Route path="/job" element={<Job />} />
               <Route path="/business" element={<Business />} />
