@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 // Simple icon components to replace react-icons
 const MenuIcon = () => (
-  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-gray-700">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-green-700">
     <line x1="3" y1="12" x2="21" y2="12" strokeLinecap="round"></line>
     <line x1="3" y1="6" x2="21" y2="6" strokeLinecap="round"></line>
     <line x1="3" y1="18" x2="21" y2="18" strokeLinecap="round"></line>
@@ -10,7 +10,7 @@ const MenuIcon = () => (
 );
 
 const CloseIcon = ({ size = 28 }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-gray-700">
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-green-700">
     <line x1="18" y1="6" x2="6" y2="18" strokeLinecap="round"></line>
     <line x1="6" y1="6" x2="18" y2="18" strokeLinecap="round"></line>
   </svg>
@@ -33,7 +33,7 @@ export default function Navbar() {
     <nav className="bg-white shadow-md py-4 px-6">
       <div className="container mx-auto flex justify-between items-center">
         <a href="/" className="flex items-center">
-          <img src="/logo1.png" alt="Transitley Logo" className="h-10 w-auto" />
+          <img src="/logo2.png" alt="Transitley Logo" className="h-10 w-auto" />
         </a>
         <sup className="ml-1 text-xs text-green-800 align-super">®</sup>
         <div className="flex items-center space-x-10 ml-auto">

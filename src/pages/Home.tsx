@@ -1,5 +1,5 @@
 // import React from 'react';
-// import HeroSection from '../components/home/Hero';
+import HeroSection from '../components/home/Hero';
 // import StatsSection from '../components/home/Stats'; //Counting number automate
 // import FeaturesSection from '../components/home/Features';
 // import Testimonials from '../components/home/Testimonials';
@@ -18,8 +18,8 @@ import RecognisedBy from '../components/home/Recognised';
 export default function HomePage() {
   return (
     <>
-      {/* <HeroSection /> */}
-      <Banner />
+      <HeroSection />
+      {/* <Banner /> */}
       {/* <Intro /> */}
       <Role />
       <LanguageCourseCards />
