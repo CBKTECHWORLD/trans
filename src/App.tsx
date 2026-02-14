@@ -15,7 +15,7 @@ import Travel from './pages/Travel';
 import Finance from './pages/Finance';
 import Accommodation from './components/home/Accomodation';
 import Job from './pages/Job';
-import Business from './components/home/Business';
+import Business from './pages/Business';
 import Flights from './pages/Flights';
 import Forex from './pages/Forex';
 import About from './pages/About';

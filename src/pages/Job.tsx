@@ -123,7 +123,7 @@ export default function Job() {
   ];
 
   const networkingTips = [
-    'Join Facebook groups for your community/location',
+    'Join Our Whatsapp groups for community network/location',
     'Attend industry meetups and webinars',
     'Connect with UK professionals on LinkedIn',
     'Ask classmates and acquaintances for leads',
@@ -133,51 +133,75 @@ export default function Job() {
 
   return (
     <div className="bg-slate-50 min-h-screen">
-      <div className="max-w-6xl mx-auto px-4 py-8 md:py-12">
-        <header className="mb-10 text-center">
-          <h1 className="text-3xl md:text-4xl font-bold text-indigo-800 mb-2">
-            UK Job Search Guide
-          </h1>
 
-       
-          <p className="text-xl text-slate-700">
-            Strategic approaches for landing part-time and full-time positions
-          </p>
-/* Call to Action Banner */
- <div className="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-lg p-8 text-white text-center">
-          <h2 className="text-2xl font-bold mb-4">Ready to Find your job in UK?</h2>
+      <section className="bg-gradient-to-r from-teal-700 to-teal-900 text-white py-8">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="grid md:grid-cols-2 gap-8 items-center">
+                  {/* Left Side - Text Content */}
+                  <div>
+                    <div className="flex items-center gap-3 mb-4">
+                      <Globe className="w-10 h-10 flex-shrink-0" />
+                      <div>
+                        <h1 className="text-3xl font-bold"> UK Job Search Guide</h1>
+                        
+                      </div>
+                    </div>
+                    
+                    <p className="text-teal-50 text-sm mb-6">
+                      Strategic approaches for landing part-time and full-time positions
+                    </p>
+       <h2 className="text-2xl font-bold mb-4">Ready to Find your job in UK?</h2>
           <p className="text-lg mb-6">
             Whether you're seeking your first part-time job or aiming for a full-time role,
             Transitley guides you every step of the way in your UK job search journey.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="mailto:mani@transitley.com?subject=Free%20Business%20Consultation"
-              className="bg-white text-indigo-600 px-6 py-3 rounded-lg font-semibold hover:bg-slate-100 transition-colors flex items-center justify-center"
-            >
-              <Phone className="mr-2" size={20} />
-              Free Consultation
-            </a>
+      <div className="flex flex-col sm:flex-row gap-2 justify-center">
+     
             <a
               href="https://docs.google.com/forms/d/1-fOcqfMKJXuq7wHnUhZ3xjYxY3_jPFSuE6-ml9o3hSc"
               target="_blank"
               rel="noopener noreferrer"
-              className="border border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors flex items-center justify-center"
+              className="bg-white text-green-600 px-6 py-3 rounded-lg font-semibold hover:bg-slate-100 transition-colors flex items-center justify-center"
             >
-              Learn More
+              Get Free Consultation
               <ArrowRight className="ml-2" size={20} />
             </a>
           </div>
-        </div>
-
-        </header>
+                    {/* PDF Link */}
+                    {/* <div className="flex flex-wrap items-center gap-4 text-sm">
+                      <span className="text-teal-300">•</span>
+                      <a 
+                        href="/pdf/academy.pdf" 
+                        download
+                        className="text-white underline hover:text-teal-100 transition-colors"
+                      >
+                        Download upcoming batch and price list (PDF)
+                      </a>
+                    </div> */}
+                  </div>
+      
+                  {/* Right Side - Image */}
+                  <div className="hidden md:block">
+                    <img 
+                      src="/images/jobbanner.png" 
+                      alt="Professional Learning" 
+                      className="w-full h-auto rounded-lg shadow-lg"
+                    />
+                  </div>
+                </div>
+              </div>
+            </section>
+      
+      <div className="max-w-6xl mx-auto px-4 py-8 md:py-12">
+        <header className="mb-10 text-center">
+         </header>
   
         <div className="mb-8">
           <div className="flex justify-center space-x-4">
             <button
               onClick={() => setSelectedJobType('part-time')}
               className={`px-6 py-3 rounded-lg font-semibold ${selectedJobType === 'part-time'
-                  ? 'bg-indigo-600 text-white'
+                  ? 'bg-green-600 text-white'
                   : 'bg-white text-slate-700 hover:bg-slate-100'
                 }`}
             >
@@ -186,7 +210,7 @@ export default function Job() {
             <button
               onClick={() => setSelectedJobType('full-time')}
               className={`px-6 py-3 rounded-lg font-semibold ${selectedJobType === 'full-time'
-                  ? 'bg-indigo-600 text-white'
+                  ? 'bg-green-600 text-white'
                   : 'bg-white text-slate-700 hover:bg-slate-100'
                 }`}
             >
@@ -196,9 +220,9 @@ export default function Job() {
         </div>
 
         {selectedJobType === 'part-time' && (
-          <div className="space-y-8">
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="bg-blue-600 px-6 py-4 flex items-center">
+           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <div className="bg-emerald-600 px-6 py-4 flex items-center">
                 <Calendar className="text-white mr-2" size={24} />
                 <h2 className="text-xl font-semibold text-white">Part-Time Job Strategy Timeline</h2>
               </div>
@@ -273,7 +297,7 @@ export default function Job() {
         {selectedJobType === 'full-time' && (
           <div className="space-y-8">
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="bg-indigo-600 px-6 py-4 flex items-center">
+              <div className="bg-green-600 px-6 py-4 flex items-center">
                 <Target className="text-white mr-2" size={24} />
                 <h2 className="text-xl font-semibold text-white">3-Month Full-Time Job Strategy</h2>
               </div>
@@ -367,7 +391,7 @@ export default function Job() {
                   <div key={index} className="border border-slate-200 rounded-lg p-4">
                     <div className="flex justify-between items-start mb-2">
                       <h3 className="font-semibold text-slate-800">{platform.name}</h3>
-                      <span className="text-xs bg-teal-100 text-teal-800 px-2 py-1 rounded">
+                      <span className="text-xs bg-teal-100 text-teal-800 px-3 py-1 rounded">
                         {platform.type}
                       </span>
                     </div>
